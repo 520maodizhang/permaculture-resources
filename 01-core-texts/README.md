@@ -2,60 +2,81 @@
 
 > 朴门知识的根基文献。标注获取状态和获取途径。
 
-## 已获取 ✅
+## 已获取 ✅ — 核心圣经
 
-| 文献 | 作者 | 年份 | 格式 | 路径 | 意义 |
-|------|------|------|------|------|------|
-| Introduction to Permaculture | Mollison & Slay | 1991 | PDF 2.6MB | `downloads/pdfs/Introduction-to-Permaculture-Mollison.pdf` | 入门教材 |
-| Essence of Permaculture | Holmgren | 2002 | PDF 4.7MB | `downloads/pdfs/Essence-of-Permaculture-Holmgren-EN.pdf` | 12原则摘要（免费） |
-| Tree Crops: A Permanent Agriculture | J. Russell Smith | 1929 | PDF 11MB | `downloads/pdfs/Tree-Crops-Permanent-Agriculture-1929-Smith.pdf` | 朴门思想源头 |
-| Forest Farming (De Bostuin) | Robert Hart | 2007 | PDF 423KB | `downloads/pdfs/Forest-Farming-Bostuin-Hart-2007.pdf` | 温带食物森林先驱 |
-| Fruiticulture | — | 2018 | PDF 11MB | `downloads/pdfs/Fruiticulture-2018.pdf` | 永续果树栽培 |
-| Permaculture Design: Step-by-Step | Aranya | 2012 | PDF 7.2MB | `downloads/pdfs/Permaculture-Design-StepByStep-Guide.pdf` | 实用设计指南 |
-| 1981 PDC 完整转录 | Mollison | 1981 | 9×MD | `downloads/permaculture-pamphlets/` | Mollison 亲授课程（公共领域） |
+| 文献 | 作者 | 年份 | 大小 | 文件名 | 意义 |
+|------|------|------|------|--------|------|
+| **Permaculture: A Designers' Manual** | Mollison | 1988 | 3.9M | `Designers-Manual-Mollison-1988.pdf` | 🔴 百科全书，PDC标准教材 |
+| **Permaculture Two** | Mollison | 1979 | 3.0M | `Permaculture-Two-Mollison-1979.pdf` | 实践设计，Town & Country |
+| **PDC Complete (1981)** | Mollison | 1981 | 6.1M | `PDC-ALL-1981-Mollison.pdf` | Mollison 亲授72小时课程完整版 |
+| **Introduction to Permaculture** | Mollison & Slay | 1991 | 2.6M | `Introduction-to-Permaculture-Mollison.pdf` | 入门教材 |
+| **Essence of Permaculture** | Holmgren | 2002 | 4.7M | `Essence-of-Permaculture-Holmgren-EN.pdf` | 12原则摘要（免费发行） |
+| **Future Scenarios** | Holmgren | 2009 | 1.3M | `Future-Scenarios-Holmgren.pdf` | 气候变化与能源下降情景 |
+| **The One-Straw Revolution** | Fukuoka | 1978 | 2.1M | `One-Straw-Revolution-Fukuoka.pdf` | 自然农法经典（朴门思想源头） |
+| **The Natural Way of Farming** | Fukuoka | 1985 | 2.0M | `Natural-Way-of-Farming-Fukuoka.pdf` | 福冈正信实践手册 |
+| **The Road Back to Nature** | Fukuoka | 1987 | 2.4M | `The-Road-Back-To-Nature-Fukuoka.pdf` | 福冈正信思想自传 |
 
-## 待获取 ❌ — 高优先级
+## 已获取 ✅ — 重要补充文献
 
-| 文献 | 作者 | 年份 | 意义 | 可能来源 |
-|------|------|------|------|----------|
-| **Permaculture: A Designers' Manual** | Mollison | 1988 | 百科全书，PDC标准教材 | dokumen.pub (全文在线), Z-Library |
-| **Permaculture One** | Mollison & Holmgren | 1978 | 创立之作 | Z-Library, 二手书 |
-| **Permaculture Two** | Mollison | 1979 | 实践设计 | Z-Library, 二手书 |
-| **Gaia's Garden** | Hemenway | 2001/2009 | 最佳家庭尺度入门 | Z-Library |
-| **Principles & Pathways Beyond Sustainability** | Holmgren | 2002 | Holmgren代表作（仅有摘要） | holmgren.com.au |
-| **The Earth Care Manual** | Whitefield | 2004 | 温带气候适配 | Z-Library |
-| **Sepp Holzer's Permaculture** | Holzer | 2004 | 高山朴门 | Z-Library |
-| **The One-Straw Revolution** | Fukuoka | 1978 | 自然农法（朴门相邻） | Soil and Health Library (有页面但无下载链接) |
+| 文献 | 作者 | 年份 | 大小 | 文件名 | 意义 |
+|------|------|------|------|--------|------|
+| Tree Crops: A Permanent Agriculture | J.R. Smith | 1929 | 11M | `Tree-Crops-Permanent-Agriculture-1929-Smith.pdf` | 朴门思想源头 |
+| Fruiticulture | — | 2018 | 11M | `Fruiticulture-2018.pdf` | 永续果树栽培 |
+| Permaculture Design: Step-by-Step | Aranya | 2012 | 7.2M | `Permaculture-Design-StepByStep-Guide.pdf` | 实用设计指南 |
+| Mycelium Running | Stamets | 2005 | 3.5M | `Mycelium-Running-Stamets.pdf` | 蘑菇菌丝体系统 |
+| Permaculture Reference Book | — | — | 2.1M | `Permaculture-Reference-Book.pdf` | 参考手册 |
+| Permaculture Beginner's Guide | — | — | 1.9M | `Permaculture-Beginners-Guide.pdf` | 初学者指南 |
+| The Omnivore's Dilemma | Pollan | 2006 | 1.5M | `Omnivores-Dilemma-Pollan.pdf` | 食物系统批判 |
+| Complete Book of Self-Sufficiency | Seymour | — | 1.5M | `Complete-Book-Self-Sufficiency-Seymour.pdf` | 自给自足百科 |
+| Powerdown & Permaculture | — | — | 1.2M | `Powerdown-Permaculture.pdf` | 能源下降与朴门 |
+| Permaculture Facilitator's Handbook | — | — | 1.1M | `Permaculture-Facilitators-Handbook.pdf` | PDC教学手册 |
+| The Vegetarian Myth | Keith | 2009 | 1.1M | `Vegetarian-Myth.pdf` | 素食主义批判 |
+| Another Kind of Garden (Jean Pain) | — | — | 1008K | `Another-Kind-Garden-Jean-Pain.pdf` | 生物质热堆肥 |
+| Silent Spring | Carson | 1962 | 968K | `Silent-Spring-Rachel-Carson-1962.pdf` | 环保运动起点 |
+| Guerilla Gardening | — | — | 864K | `Guerilla-Gardening-Urban-Permaculture.pdf` | 城市游击园艺 |
+| Operating Manual for Spaceship Earth | Fuller | 1969 | 667K | `Operating-Manual-Spaceship-Earth-Fuller.pdf` | 系统思维经典 |
+| Permaculture Sustainable Farming | — | — | 578K | `Permaculture-Sustainable-Farming.pdf` | 可持续农业 |
+| What is Permaculture | — | — | 512K | `whatispermaculture.pdf` | 概念介绍 |
+| From Agriculture to Permaculture | — | — | 448K | `From-Agriculture-to-Permaculture.pdf` | 农业转型 |
+| Forest Farming | Hart | 2007 | 423K | `Forest-Farming-Bostuin-Hart-2007.pdf` | 温带食物森林先驱 |
+| Permaculture in Humid Landscapes | Mollison | — | 418K | `Permaculture-in-Humid-Landscapes.pdf` | 湿润景观设计 |
+| Living Lovingly (PC ethics) | — | — | 355K | `livinglovingly.pdf` | 朴门伦理 |
+| Forest Gardening | — | — | 290K | `Forest-Gardening.pdf` | 森林园艺 |
+| Horticultural Ideas | — | — | 248K | `hortideas.pdf` | 园艺实践 |
+
+## 待获取 ❌ — 高优先级（版权书，当前环境无法下载）
+
+| 文献 | 作者 | 年份 | 意义 | 尝试过的来源 |
+|------|------|------|------|-------------|
+| **Gaia's Garden** | Hemenway | 2001/2009 | 最佳家庭尺度入门 | United Diversity (仅1页预览), Z-Library (不可达), LibGen (不可达), Sci-Hub (无), PDFDrive (无) |
+| **Sepp Holzer's Permaculture** | Holzer | 2004 | 高山朴门 | 同上 |
+| **Principles & Pathways Beyond Sustainability** | Holmgren | 2002 | 12原则完整论述（仅有Essence摘要） | 同上 + holmgren.com.au (仅购买链接) |
 
 ## 待获取 ❌ — 中优先级
 
 | 文献 | 作者 | 年份 | 意义 |
 |------|------|------|------|
+| **Permaculture One** | Mollison & Holmgren | 1978 | 创立之作（仅有法文版） |
 | Earth User's Guide to Permaculture | Morrow | 1994 | 实用指南 |
-| The Permaculture Garden | Bell | 2004 | 英国导向 |
-| Permaculture in a Nutshell | Whitefield | 1993 | 简明入门 |
-| Food Not Lawns | Flores | 2006 | 城市朴门行动主义 |
+| The Earth Care Manual | Whitefield | 2004 | 温带气候适配 |
 | Restoration Agriculture | Shepard | 2013 | 商业规模朴门 |
-| Permaculture Designers' Handbook | Bell | | 设计手册 |
 | Rainwater Harvesting for Drylands | Lancaster | | 干旱地区水资源 |
 
-## 免费可获取的资源
+## 获取来源汇总
 
-| 资源 | URL | 状态 |
-|------|-----|------|
-| Essence of Permaculture (18+语言) | https://permacultureprinciples.com/resources/free-downloads | ✅ 已获取英文版 |
-| Permaculture Ethics & Principles Poster (14+语言) | https://permacultureprinciples.com/resources/free-downloads | 可获取 |
-| Permaculture Flower Poster (12+语言) | https://permacultureprinciples.com/resources/free-downloads | 可获取 |
-| Designers' Manual 全文 | https://dokumen.pub/permaculture-a-designers-manual-0908228015.html | 待验证 |
-| PDC_ALL.pdf (1981原始PDF) | http://www.barkingfrogspermaculture.org/PDC_ALL.pdf | SSL过期 |
-
-## 获取策略
-
-1. **Z-Library**：当前网络环境不可达。需在其他网络环境尝试。
-2. **dokumen.pub**：Designers' Manual 全文可能在线可读，待验证。
-3. **Soil and Health Library** (soilandhealth.org)：已验证可访问，有 One-Straw Revolution 页面但无下载链接。
-4. **holmgren.com.au**：Holmgren 官网，可能有 Principles & Pathways 购买链接。
-5. **二手书**：许多经典朴门书已绝版，二手渠道可能是唯一途径。
+| 来源 | 可达性 | 获取数 | 说明 |
+|------|--------|--------|------|
+| United Diversity Library | ✅ 可达 | 20+ | library.uniteddiversity.coop — 最大贡献者 |
+| barkingfrogspermaculture.org | ✅ 可达 | 4 | PDC_ALL.pdf 等 |
+| Soil and Health Library | ✅ 可达 | 3 | soilandhealth.org |
+| permacultureprinciples.com | ✅ 可达 | 1 | Essence of Permaculture |
+| files.permacultureprinciples.com | ✅ 可达 | 1 | Essence PDF |
+| Z-Library | ❌ 不可达 | 0 | 所有域名超时 |
+| Anna's Archive | ❌ 不可达 | 0 | 所有镜像超时 |
+| LibGen | ❌ 不可达 | 0 | 所有镜像超时或空壳 |
+| Sci-Hub | ✅ 可达 | 0 | 仅学术论文，无这些书 |
+| Archive.org | ❌ 不可达 | 0 | API超时 |
+| dokumen.pub | ❌ 不可达 | 0 | 超时 |
 
 ---
 
