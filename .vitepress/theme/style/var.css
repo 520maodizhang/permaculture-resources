@@ -1,4 +1,4 @@
-/* ========== 亮色模式 — 暖纸/大地 ========== */
+/* ========== 亮色模式 — 暖纸/大地/秋色 ========== */
 :root {
   --vp-c-brand-1: #2d7a3e;
   --vp-c-brand-2: #3c8c4c;
@@ -12,7 +12,6 @@
   --pc-paper: #faf8f1;
   --pc-ink: #2c2416;
 
-  /* hero 标题渐变 */
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #1a5e2a 5%, #2d7a3e 20%, #4caf50 40%, #8bc34a 60%, #c9d836 80%, #f59e0b 100%);
 
@@ -23,7 +22,6 @@
   --vp-button-brand-hover-bg: #3c8c4c;
   --vp-button-brand-active-bg: #256b35;
 
-  /* 暖纸背景 */
   --vp-c-bg: #faf8f1;
   --vp-c-bg-soft: #f5f0e4;
   --vp-c-bg-soft-up: #fffef9;
@@ -31,7 +29,7 @@
   --vp-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
-/* ========== 暗色模式 — 深林 + 荧光绿 ========== */
+/* ========== 暗色模式 — 深黑+荧光绿+赛博朋克 ========== */
 .dark {
   --vp-c-brand-1: #00ff88;
   --vp-c-brand-2: #00cc6f;
@@ -54,16 +52,15 @@
   --vp-button-brand-hover-bg: #00ff88;
   --vp-button-brand-active-bg: #00aa5a;
 
-  /* 深黑绿背景 */
-  --vp-c-bg: #0a0f0a;
-  --vp-c-bg-soft: #0f1a0f;
-  --vp-c-bg-soft-up: #121f12;
+  --vp-c-bg: #080c08;
+  --vp-c-bg-soft: #0c140c;
+  --vp-c-bg-soft-up: #101810;
 
   --vp-c-text-1: #e0f5e0;
-  --vp-c-text-2: #a0c8a0;
-  --vp-c-text-3: #5a7a5a;
+  --vp-c-text-2: #90b890;
+  --vp-c-text-3: #4a6a4a;
 
   --vp-c-divider: #1a2a1a;
-  --vp-c-bg-mute: #0d150d;
+  --vp-c-bg-mute: #0a120a;
   --vp-c-border: #1a2a1a;
 }
