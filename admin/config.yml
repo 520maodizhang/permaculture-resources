@@ -3,7 +3,7 @@ backend:
   repo: 520maodizhang/permaculture-resources
   branch: main
   auth_type: pkce
-  app_id: Iv1.8a3f5c2b7d6e9a1c
+  app_id: Ov23liYedRWBa9MK7vgE
 
 media_folder: "public/images"
 public_folder: "/images"
