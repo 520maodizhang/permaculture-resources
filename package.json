@@ -1,0 +1,18 @@
+{
+  "name": "permaculture-downloads",
+  "version": "1.0.0",
+  "description": "> \u4e00\u4e2a\u7cfb\u7edf\u6574\u7406\u6734\u95e8\uff08Permaculture\uff09\u8bbe\u8ba1\u601d\u60f3\u7684\u5f00\u653e\u77e5\u8bc6\u5e93\u3002 > \u4e0d\u662f\u6587\u4ef6\u5806\uff0c\u800c\u662f\u6709\u9aa8\u67b6\u3001\u6709\u8840\u8089\u3001\u6709\u5b66\u4e60\u8def\u5f84\u7684\u77e5\u8bc6\u4f53\u7cfb\u3002",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:preview": "vitepress preview ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "type": "module"
+}

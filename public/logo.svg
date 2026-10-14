@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Tree trunk -->
+  <rect x="29" y="38" width="6" height="20" fill="#5d4e37" rx="1"/>
+  <!-- Tree canopy - layers representing permaculture stacking -->
+  <circle cx="32" cy="18" r="14" fill="#3c8c4c"/>
+  <circle cx="22" cy="24" r="9" fill="#4ea35e"/>
+  <circle cx="42" cy="24" r="9" fill="#4ea35e"/>
+  <circle cx="32" cy="30" r="8" fill="#5db86e"/>
+  <!-- Sun -->
+  <circle cx="50" cy="10" r="5" fill="#f4a261"/>
+  <!-- Roots -->
+  <path d="M32 58 Q24 60 20 62 M32 58 Q40 60 44 62 M32 58 L32 62" stroke="#5d4e37" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>
