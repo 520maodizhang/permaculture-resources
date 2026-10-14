@@ -1,83 +1,70 @@
 <template>
   <div class="custom-home">
-    <div class="boot-overlay" v-if="booting">
-      <div class="boot-log">
-        <p v-for="(line, i) in bootLines" :key="i" class="boot-line">
-          <span class="boot-prompt">&gt;</span> {{ line }}
-        </p>
-        <div class="boot-bar"><div class="boot-bar-fill" :style="{ width: bootProgress + '%' }"></div></div>
-        <p class="boot-pct">{{ Math.floor(bootProgress) }}%</p>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-inner">
+        <div class="hero-tag"><span class="tag-dot"></span> ECO-SYSTEM ONLINE · 生态系统已就绪</div>
+        <h1 class="hero-title">
+          <span class="title-zh">朴门永续设计</span>
+          <span class="title-en">PERMACULTURE</span>
+        </h1>
+        <p class="hero-sub">地球照顾 · 人类照顾 · 公平分享<br><span class="sub-en">Earth Care · People Care · Fair Share</span></p>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num" ref="stat1">0</span><span class="stat-label">经典文献</span></div>
+          <div class="stat-line"></div>
+          <div class="stat"><span class="stat-num" ref="stat2">0</span><span class="stat-label">设计原则</span></div>
+          <div class="stat-line"></div>
+          <div class="stat"><span class="stat-num" ref="stat3">0</span><span class="stat-label">PDC课时</span></div>
+        </div>
+        <div class="hero-actions">
+          <a href="#explore" class="btn-primary">进入知识库 →</a>
+          <a href="#downloads" class="btn-ghost">下载文献</a>
+        </div>
       </div>
-    </div>
-    <div class="home-content" v-show="!booting">
-      <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-grid"></div>
-        <div class="hero-inner">
-          <div class="hero-tag"><span class="tag-dot"></span> ECO-SYSTEM ONLINE</div>
-          <h1 class="hero-title">
-            <span class="title-zh">朴门永续设计</span>
-            <span class="title-en">PERMACULTURE</span>
-          </h1>
-          <p class="hero-sub">地球照顾 · 人类照顾 · 公平分享<br><span class="sub-en">Earth Care · People Care · Fair Share</span></p>
-          <div class="hero-stats">
-            <div class="stat"><span class="stat-num" ref="stat1">0</span><span class="stat-label">经典文献</span></div>
-            <div class="stat-line"></div>
-            <div class="stat"><span class="stat-num" ref="stat2">0</span><span class="stat-label">设计原则</span></div>
-            <div class="stat-line"></div>
-            <div class="stat"><span class="stat-num" ref="stat3">0</span><span class="stat-label">PDC课时</span></div>
-          </div>
-          <div class="hero-actions">
-            <a href="#explore" class="btn-primary">进入知识库 →</a>
-            <a href="#downloads" class="btn-ghost">下载文献</a>
-          </div>
+      <div class="scroll-hint"><span>SCROLL</span><div class="scroll-line"></div></div>
+    </section>
+    <section class="principles" id="explore">
+      <div class="section-head"><span class="section-num">01</span><h2>三大伦理 · CORE ETHICS</h2></div>
+      <div class="ethic-cards">
+        <div class="ethic-card" v-for="(e, i) in ethics" :key="i">
+          <div class="ethic-icon">{{ e.icon }}</div>
+          <h3>{{ e.title }}</h3>
+          <p>{{ e.desc }}</p>
+          <span class="ethic-code">{{ e.code }}</span>
         </div>
-        <div class="scroll-hint"><span>SCROLL</span><div class="scroll-line"></div></div>
-      </section>
-      <section class="principles" id="explore">
-        <div class="section-head"><span class="section-num">01</span><h2>三大伦理 · CORE ETHICS</h2></div>
-        <div class="ethic-cards">
-          <div class="ethic-card" v-for="(e, i) in ethics" :key="i">
-            <div class="ethic-icon">{{ e.icon }}</div>
-            <h3>{{ e.title }}</h3>
-            <p>{{ e.desc }}</p>
-            <span class="ethic-code">{{ e.code }}</span>
-          </div>
-        </div>
-      </section>
-      <section class="features">
-        <div class="section-head"><span class="section-num">02</span><h2>知识矩阵 · KNOWLEDGE MATRIX</h2></div>
-        <div class="feature-grid">
-          <a v-for="(f, i) in features" :key="i" :href="f.link" class="feature-card">
-            <div class="card-glow"></div>
-            <span class="card-num">0{{ i + 1 }}</span>
-            <h3>{{ f.title }}</h3>
-            <p>{{ f.desc }}</p>
-            <span class="card-arrow">→</span>
-          </a>
-        </div>
-      </section>
-      <section class="downloads" id="downloads">
-        <div class="section-head"><span class="section-num">03</span><h2>文献库 · LIBRARY</h2></div>
-        <div class="dl-grid">
-          <a v-for="(d, i) in downloads" :key="i" :href="d.url" class="dl-card" :class="{ essential: d.essential }" download>
-            <div class="dl-top"><span class="dl-name">{{ d.name }}</span><span class="dl-tag" v-if="d.essential">★</span></div>
-            <span class="dl-meta">{{ d.author }} · {{ d.size }}</span>
-          </a>
-        </div>
-      </section>
-      <footer class="home-footer">
-        <p>© 2026 朴门永续设计知识库 · CC BY-NC-SA 4.0</p>
-        <p class="footer-sub">Based on the work of Bill Mollison & David Holmgren</p>
-      </footer>
-    </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="section-head"><span class="section-num">02</span><h2>知识矩阵 · KNOWLEDGE MATRIX</h2></div>
+      <div class="feature-grid">
+        <a v-for="(f, i) in features" :key="i" :href="f.link" class="feature-card">
+          <div class="card-glow"></div>
+          <span class="card-num">0{{ i + 1 }}</span>
+          <h3>{{ f.title }}</h3>
+          <p>{{ f.desc }}</p>
+          <span class="card-arrow">→</span>
+        </a>
+      </div>
+    </section>
+    <section class="downloads" id="downloads">
+      <div class="section-head"><span class="section-num">03</span><h2>文献库 · LIBRARY</h2></div>
+      <div class="dl-grid">
+        <a v-for="(d, i) in downloads" :key="i" :href="d.url" class="dl-card" :class="{ essential: d.essential }" download>
+          <div class="dl-top"><span class="dl-name">{{ d.name }}</span><span class="dl-tag" v-if="d.essential">★</span></div>
+          <span class="dl-meta">{{ d.author }} · {{ d.size }}</span>
+        </a>
+      </div>
+    </section>
+    <footer class="home-footer">
+      <p>© 2026 朴门永续设计知识库 · CC BY-NC-SA 4.0</p>
+      <p class="footer-sub">Based on the work of Bill Mollison & David Holmgren</p>
+    </footer>
   </div>
 </template>
+
 <script setup>
 import { ref, onMounted } from 'vue'
-const booting = ref(true)
-const bootProgress = ref(0)
-const bootLines = ref([])
 const stat1 = ref(null), stat2 = ref(null), stat3 = ref(null)
 const ethics = [
   { title: '地球照顾', desc: 'Earth Care — 让所有生命系统继续繁衍', code: 'ETHIC-01', icon: '🌍' },
@@ -107,12 +94,7 @@ const downloads = [
   { name: 'Natural Way of Farming', author: 'Fukuoka 1985', size: '2.0M', essential: false, url: B+'Natural-Way-of-Farming-Fukuoka.pdf' },
   { name: 'PC Design Guide', author: 'Aranya 2012', size: '7.2M', essential: false, url: B+'Permaculture-Design-StepByStep-Guide.pdf' },
 ]
-onMounted(() => {
-  const lines = ['Initializing permaculture system...','Loading ethics framework... [OK]','Loading 12 principles... [OK]','Loading 33 core texts... [OK]','Loading PDC transcripts... [OK]','Connecting to nature... [OK]','System ready.']
-  let li = 0
-  const ti = setInterval(() => { if (li < lines.length) { bootLines.value.push(lines[li]); li++ } else clearInterval(ti) }, 280)
-  const pi = setInterval(() => { bootProgress.value += 2; if (bootProgress.value >= 100) { clearInterval(pi); setTimeout(() => { booting.value = false; animateStats() }, 400) } }, 40)
-})
+onMounted(() => { setTimeout(animateStats, 600) })
 function animateStats() {
   const targets = [33, 12, 72], refs = [stat1.value, stat2.value, stat3.value]
   refs.forEach((el, i) => { if (!el) return; let c = 0; const s = targets[i]/40; const t = setInterval(() => { c += s; if (c >= targets[i]) { c = targets[i]; clearInterval(t) } el.textContent = Math.floor(c) }, 30) })
@@ -120,14 +102,8 @@ function animateStats() {
 </script>
 <style scoped>
 .custom-home { font-family: -apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif; min-height: 100vh; background: #0a0f0a; color: #e8f5e9; overflow-x: hidden; }
-.boot-overlay { position: fixed; inset: 0; z-index: 999; background: #050a05; display: flex; align-items: center; justify-content: center; }
-.boot-log { width: 90%; max-width: 600px; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 14px; }
-.boot-line { color: #4caf50; margin: 4px 0; opacity: 0; animation: fadeIn 0.3s forwards; }
-.boot-prompt { color: #00ff88; }
-@keyframes fadeIn { to { opacity: 1; } }
-.boot-bar { width: 100%; height: 4px; background: #1a2a1a; border-radius: 2px; margin: 16px 0 8px; overflow: hidden; }
-.boot-bar-fill { height: 100%; background: linear-gradient(90deg, #2d7a3e, #00ff88); transition: width 0.04s linear; }
-.boot-pct { color: #00ff88; font-size: 12px; }
+
+/* Hero */
 .hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 30%, #1a3a2a 0%, #0a0f0a 60%), radial-gradient(ellipse at 30% 80%, #0d1f15 0%, transparent 50%); }
 .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(0,255,136,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,255,136,0.04) 1px, transparent 1px); background-size: 40px 40px; }
@@ -153,9 +129,13 @@ function animateStats() {
 .scroll-hint { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; color: rgba(0,255,136,0.4); font-size: 11px; letter-spacing: 2px; font-family: monospace; }
 .scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, rgba(0,255,136,0.4), transparent); animation: scrollLine 2s infinite; }
 @keyframes scrollLine { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform: scaleY(1); transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
+
+/* Sections */
 .section-head { display: flex; align-items: center; gap: 16px; margin-bottom: 48px; }
 .section-num { font-family: 'SF Mono', monospace; font-size: 14px; color: #00ff88; opacity: 0.6; }
 .section-head h2 { font-size: clamp(24px, 4vw, 36px); font-weight: 800; color: #e8f5e9; }
+
+/* Principles */
 .principles { padding: 100px 24px; max-width: 1200px; margin: 0 auto; }
 .ethic-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
 .ethic-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(0,255,136,0.1); border-radius: 16px; padding: 32px; transition: all 0.3s; position: relative; overflow: hidden; }
@@ -164,17 +144,21 @@ function animateStats() {
 .ethic-card h3 { font-size: 22px; margin-bottom: 8px; color: #e8f5e9; }
 .ethic-card p { font-size: 14px; color: rgba(232,245,233,0.6); line-height: 1.6; }
 .ethic-code { position: absolute; top: 16px; right: 16px; font-family: monospace; font-size: 11px; color: rgba(0,255,136,0.4); }
+
+/* Features */
 .features { padding: 100px 24px; max-width: 1200px; margin: 0 auto; }
 .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
 .feature-card { position: relative; display: block; padding: 28px; border: 1px solid rgba(0,255,136,0.1); border-radius: 16px; text-decoration: none; color: inherit; transition: all 0.3s; overflow: hidden; background: rgba(255,255,255,0.02); }
 .feature-card:hover { border-color: rgba(0,255,136,0.4); transform: translateY(-4px); }
-.card-glow { position: absolute; inset: 0; background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(0,255,136,0.08), transparent 60%); opacity: 0; transition: opacity 0.3s; }
+.card-glow { position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, rgba(0,255,136,0.08), transparent 60%); opacity: 0; transition: opacity 0.3s; }
 .feature-card:hover .card-glow { opacity: 1; }
 .card-num { font-family: monospace; font-size: 12px; color: rgba(0,255,136,0.5); }
 .feature-card h3 { font-size: 18px; margin: 8px 0 6px; color: #e8f5e9; }
 .feature-card p { font-size: 13px; color: rgba(232,245,233,0.5); line-height: 1.5; }
 .card-arrow { position: absolute; bottom: 20px; right: 20px; color: #00ff88; opacity: 0; transition: opacity 0.3s; }
 .feature-card:hover .card-arrow { opacity: 1; }
+
+/* Downloads */
 .downloads { padding: 100px 24px; max-width: 1200px; margin: 0 auto; }
 .dl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
 .dl-card { display: block; padding: 16px 20px; border: 1px solid rgba(0,255,136,0.1); border-radius: 12px; text-decoration: none; color: inherit; transition: all 0.2s; background: rgba(255,255,255,0.02); }
@@ -184,6 +168,8 @@ function animateStats() {
 .dl-name { font-size: 14px; font-weight: 600; color: #e8f5e9; }
 .dl-tag { color: #f59e0b; font-size: 14px; }
 .dl-meta { font-size: 12px; color: rgba(232,245,233,0.4); font-family: monospace; }
+
+/* Footer */
 .home-footer { text-align: center; padding: 48px 24px; border-top: 1px solid rgba(0,255,136,0.1); }
 .home-footer p { font-size: 13px; color: rgba(232,245,233,0.4); margin: 4px 0; }
 .footer-sub { font-size: 11px !important; color: rgba(0,255,136,0.3) !important; }
