@@ -61,6 +61,17 @@ body{font-family:-apple-system,'Segoe UI','Noto Sans SC',sans-serif;background:v
 .preview code{background:var(--bg);padding:2px 6px;border-radius:4px;font-family:monospace;font-size:13px}
 .preview pre{background:var(--bg);padding:12px;border-radius:8px;overflow-x:auto;margin:8px 0}
 .preview strong{font-weight:700}
+.preview table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13px}
+.preview th,.preview td{border:1px solid var(--border);padding:6px 10px;text-align:left}
+.preview th{background:rgba(76,175,80,.1);font-weight:600;color:var(--g1)}
+.preview tr:nth-child(even){background:rgba(0,0,0,.02)}
+.preview a{color:var(--g1);text-decoration:underline}
+.preview img{max-width:100%;border-radius:8px;margin:8px 0}
+.preview blockquote{border-left:3px solid var(--g2);padding-left:12px;margin:8px 0;color:var(--muted)}
+.preview hr{border:none;border-top:1px solid var(--border);margin:12px 0}
+.preview h4{font-size:15px;margin:10px 0 4px}
+.preview h5{font-size:14px;margin:8px 0 4px}
+.preview h6{font-size:13px;margin:8px 0 4px;color:var(--muted)}
 .toast{position:fixed;bottom:24px;right:24px;padding:12px 24px;border-radius:10px;color:#fff;font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,.15);display:none;z-index:100}
 .toast.ok{background:var(--g1)}
 .toast.fail{background:var(--err)}
@@ -108,7 +119,7 @@ body{font-family:-apple-system,'Segoe UI','Noto Sans SC',sans-serif;background:v
 <script>
 var REPO='520maodizhang/permaculture-resources',API='https://bskfs7ud-3456.devbridge-s2.hwtunnel.com/api'
 var token='',currentSha=null
-var dirs=[{path:'',label:'根目录'},{path:'00-foundations',label:'基础理论'},{path:'01-core-texts',label:'核心文献'},{path:'06-reference',label:'参考'},{path:'07-learning-paths',label:'学习路径'}]
+var dirs=[{path:'',label:'根目录'},{path:'00-foundations',label:'基础理论'},{path:'01-core-texts',label:'核心文献'},{path:'06-reference',label:'参考资料'},{path:'07-learning-paths',label:'学习路径'},{path:'AI-Powered-Agroforestry-Planning-',label:'AI农林业规划'},{path:'CPlant',label:'CPlant'},{path:'Polyculture-Design-Tool',label:'多样性设计工具'},{path:'awesome-permaculture',label:' awesome-permaculture'},{path:'beacon-food-forest',label:'信标食物森林'},{path:'mollison-1981-pdc',label:'Mollison 1981 PDC'},{path:'permaculture-card-deck-printable',label:'朴门卡片牌组'},{path:'permaculture-climate',label:'朴门气候'},{path:'permaculture-pamphlets',label:'朴门小册子'},{path:'planetary-homestead-manifesto',label:'行星家园宣言'},{path:'powerplant',label:'PowerPlant'},{path:'web-resources',label:'网络资源'}]
 
 // 兼容的 fetch with timeout
 function fetchTO(url,opts,ms){
@@ -265,9 +276,88 @@ async function saveFile(){
 
 function renderPreview(){
   var md=document.getElementById('content').value
-  var html=md.replace(/^### (.+)$/gm,'<h3>$1</h3>').replace(/^## (.+)$/gm,'<h2>$1</h2>').replace(/^# (.+)$/gm,'<h1>$1</h1>').replace(/^> (.+)$/gm,'<blockquote>$1</blockquote>').replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/`([^`]+)`/g,'<code>$1</code>').replace(/^\- (.+)$/gm,'<li>$1</li>').replace(/(<li>[\s\S]*?<\/li>)/g,'<ul>$1</ul>').replace(/\n\n/g,'</p><p>')
-  document.getElementById('preview').innerHTML='<p>'+html+'</p>'
+  var lines=md.split('\n')
+  var html=''
+  var i=0
+  while(i<lines.length){
+    var line=lines[i]
+    // Table detection
+    if(line.trim().startsWith('|')&&i+1<lines.length&&lines[i+1].trim().match(/^\|[\s\-:|]+\|$/)){
+      var headers=line.trim().split('|').filter(function(x,i,a){return i>0&&i<a.length-1}).map(function(x){return x.trim()})
+      i+=2 // skip header and separator
+      html+='<table><thead><tr>'
+      headers.forEach(function(h){html+='<th>'+escMd(h)+'</th>'})
+      html+='</tr></thead><tbody>'
+      while(i<lines.length&&lines[i].trim().startsWith('|')){
+        var cells=lines[i].trim().split('|').filter(function(x,i,a){return i>0&&i<a.length-1}).map(function(x){return x.trim()})
+        html+='<tr>'
+        cells.forEach(function(c){html+='<td>'+escMd(c)+'</td>'})
+        html+='</tr>'
+        i++
+      }
+      html+='</tbody></table>'
+      continue
+    }
+    // Headers
+    if(line.match(/^#{1,6} /)){
+      var lvl=line.match(/^#+/)[0].length
+      var txt=line.replace(/^#+ /,'')
+      html+='<h'+lvl+'>'+escMd(txt)+'</h'+lvl+'>'
+      i++;continue
+    }
+    // Horizontal rule
+    if(line.trim().match(/^(-{3,}|\*{3,}|_{3,})$/)){html+='<hr>';i++;continue}
+    // Blockquote
+    if(line.startsWith('> ')){
+      var bq=''
+      while(i<lines.length&&lines[i].startsWith('> ')){bq+=escMd(lines[i].substring(2))+' ';i++}
+      html+='<blockquote>'+bq.trim()+'</blockquote>'
+      continue
+    }
+    // Unordered list
+    if(line.match(/^[\-\*\+] /)){
+      html+='<ul>'
+      while(i<lines.length&&lines[i].match(/^[\-\*\+] /)){html+='<li>'+escMd(lines[i].replace(/^[\-\*\+] /,''))+'</li>';i++}
+      html+='</ul>'
+      continue
+    }
+    // Ordered list
+    if(line.match(/^\d+\. /)){
+      html+='<ol>'
+      while(i<lines.length&&lines[i].match(/^\d+\. /)){html+='<li>'+escMd(lines[i].replace(/^\d+\. /,''))+'</li>';i++}
+      html+='</ol>'
+      continue
+    }
+    // Code block
+    if(line.trim().startsWith('```')){
+      var code=''
+      i++
+      while(i<lines.length&&!lines[i].trim().startsWith('```')){code+=lines[i]+'\n';i++}
+      i++ // skip closing ```
+      html+='<pre><code>'+escHtml(code)+'</code></pre>'
+      continue
+    }
+    // Empty line
+    if(line.trim()===''){i++;continue}
+    // Normal paragraph
+    var para=''
+    while(i<lines.length&&lines[i].trim()!==''&&!lines[i].match(/^#{1,6} /)&&!lines[i].trim().startsWith('|')&&!lines[i].match(/^[\-\*\+] /)&&!lines[i].match(/^\d+\. /)&&!lines[i].startsWith('> ')&&!lines[i].trim().startsWith('```')&&!lines[i].trim().match(/^(-{3,}|\*{3,}|_{3,})$/)){
+      para+=lines[i]+' ';i++
+    }
+    if(para)html+='<p>'+escMd(para.trim())+'</p>'
+  }
+  document.getElementById('preview').innerHTML=html
 }
+function escMd(s){
+  return s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g,'<em>$1</em>')
+    .replace(/`([^`]+)`/g,'<code>$1</code>')
+    .replace(/!\[([^\]]*)\]\(([^)]+)\)/g,'<img alt="$1" src="$2">')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank">$1</a>')
+}
+function escHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
 
 function showToast(msg,type){
   var t=document.getElementById('toast')
