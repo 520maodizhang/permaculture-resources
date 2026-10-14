@@ -1,0 +1,56 @@
+backend:
+  name: github
+  repo: 520maodizhang/permaculture-resources
+  branch: main
+  auth_type: pkce
+  app_id: Iv1.8a3f5c2b7d6e9a1c
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "foundations"
+    label: "基础理论"
+    folder: "00-foundations"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "排序", name: "order", widget: "number", default: 1 }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  - name: "core-texts"
+    label: "核心文献"
+    folder: "01-core-texts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  - name: "learning-paths"
+    label: "学习路径"
+    folder: "07-learning-paths"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  - name: "reference"
+    label: "参考"
+    folder: "06-reference"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  - name: "pdc-1981"
+    label: "PDC 1981 讲义"
+    folder: "mollison-1981-pdc"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "正文", name: "body", widget: "markdown" }

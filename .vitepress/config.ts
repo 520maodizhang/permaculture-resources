@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: '朴门永续设计',
   description: 'Permaculture Knowledge Base — 系统化朴门永续设计知识体系',
-  lang: "zh-CN",
+  lang: 'zh-CN',
 
   ignoreDeadLinks: true,
 
@@ -25,12 +25,16 @@ export default defineConfig({
     '**/mollison-1981-pdc/**',
     'README.md',
     '**/朴门Permaculture资源汇总.md',
+    '**/permaculture-downloads-index.md',
   ],
 
   head: [
-    ['meta', { name: 'theme-color', content: '#3c8c4c' }],
+    ['meta', { name: 'theme-color', content: '#2d7a3e' }],
     ['meta', { property: 'og:title', content: '朴门永续设计知识库' }],
-    ['meta', { property: 'og:description', content: '系统化朴门永续设计知识体系' }],
+    ['meta', { property: 'og:description', content: '系统化朴门永续设计知识体系 · 33 本经典文献 · 12 设计原则 · 三大伦理' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:image', content: '/logo.svg' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
   ],
 
   themeConfig: {
@@ -50,9 +54,9 @@ export default defineConfig({
       {
         text: '学习路径',
         items: [
-          { text: '入门', link: '/07-learning-paths/beginner' },
-          { text: '进阶', link: '/07-learning-paths/intermediate' },
-          { text: '高级', link: '/07-learning-paths/advanced' },
+          { text: '入门 (0-3 月)', link: '/07-learning-paths/beginner' },
+          { text: '进阶 (3-12 月)', link: '/07-learning-paths/intermediate' },
+          { text: '高级 (12 月+)', link: '/07-learning-paths/advanced' },
         ]
       },
       {
@@ -61,6 +65,7 @@ export default defineConfig({
           { text: '核心文献', link: '/01-core-texts/' },
           { text: '术语词典', link: '/06-reference/glossary' },
           { text: '缺口追踪', link: '/06-reference/gap-tracker' },
+      { text: "管理", link: "/admin/" },
         ]
       },
     ],
@@ -68,7 +73,7 @@ export default defineConfig({
     sidebar: {
       '/00-foundations/': [
         {
-          text: '🏛 基础',
+          text: '基础',
           collapsed: false,
           items: [
             { text: '起源与历史', link: '/00-foundations/01-history-origins' },
@@ -81,7 +86,7 @@ export default defineConfig({
 
       '/01-core-texts/': [
         {
-          text: '📚 核心文献',
+          text: '核心文献',
           collapsed: false,
           items: [
             { text: '文献清单', link: '/01-core-texts/' },
@@ -89,65 +94,9 @@ export default defineConfig({
         }
       ],
 
-      '/02-design-elements/': [
-        {
-          text: '🌿 设计要素',
-          collapsed: false,
-          items: [
-            { text: '分区设计', link: '/02-design-elements/01-zoning' },
-            { text: '水系统', link: '/02-design-elements/02-water' },
-            { text: '土壤', link: '/02-design-elements/03-soil' },
-            { text: '植物与食物森林', link: '/02-design-elements/04-plants-food-forests' },
-            { text: '动物系统', link: '/02-design-elements/05-animals' },
-            { text: '建筑与结构', link: '/02-design-elements/06-structures' },
-            { text: '能源', link: '/02-design-elements/07-energy' },
-            { text: '气候与微气候', link: '/02-design-elements/08-climate-microclimate' },
-          ]
-        }
-      ],
-
-      '/03-design-process/': [
-        {
-          text: '📐 设计流程',
-          collapsed: false,
-          items: [
-            { text: '选址分析', link: '/03-design-process/01-site-analysis' },
-            { text: '逐步设计', link: '/03-design-process/02-step-by-step' },
-            { text: '实施', link: '/03-design-process/03-implementation' },
-            { text: '监测与调整', link: '/03-design-process/04-monitoring' },
-          ]
-        }
-      ],
-
-      '/04-regional-adaptations/': [
-        {
-          text: '🌍 区域适配',
-          collapsed: false,
-          items: [
-            { text: '热带', link: '/04-regional-adaptations/tropical' },
-            { text: '温带', link: '/04-regional-adaptations/temperate' },
-            { text: '干旱', link: '/04-regional-adaptations/arid' },
-            { text: '寒带', link: '/04-regional-adaptations/cold-climate' },
-            { text: '城市', link: '/04-regional-adaptations/urban' },
-          ]
-        }
-      ],
-
-      '/05-community-social/': [
-        {
-          text: '👥 社区与社会',
-          collapsed: false,
-          items: [
-            { text: '社区组织', link: '/05-community-social/community' },
-            { text: '朴门经济', link: '/05-community-social/economics' },
-            { text: '教育与PDC', link: '/05-community-social/education-pdc' },
-          ]
-        }
-      ],
-
       '/06-reference/': [
         {
-          text: '📖 参考资源',
+          text: '参考资源',
           collapsed: false,
           items: [
             { text: '术语词典', link: '/06-reference/glossary' },
@@ -158,22 +107,12 @@ export default defineConfig({
 
       '/07-learning-paths/': [
         {
-          text: '🌱 学习路径',
+          text: '学习路径',
           collapsed: false,
           items: [
             { text: '入门 (0-3月)', link: '/07-learning-paths/beginner' },
             { text: '进阶 (3-12月)', link: '/07-learning-paths/intermediate' },
             { text: '高级 (12月+)', link: '/07-learning-paths/advanced' },
-          ]
-        }
-      ],
-
-      '/08-case-studies/': [
-        {
-          text: '🔍 案例研究',
-          collapsed: false,
-          items: [
-            { text: '案例列表', link: '/08-case-studies/' },
           ]
         }
       ],
@@ -193,7 +132,7 @@ export default defineConfig({
     },
 
     outline: {
-      level: 2,
+      level: [2, 3],
       label: '本页目录',
     },
 
@@ -204,6 +143,11 @@ export default defineConfig({
 
     lastUpdated: {
       text: '最后更新于',
+    },
+
+    editLink: {
+      pattern: 'https://github.com/520maodizhang/permaculture-resources/edit/main/:path',
+      text: '在 GitHub 上编辑此页',
     },
   },
 })

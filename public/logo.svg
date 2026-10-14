@@ -1,13 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Tree trunk -->
-  <rect x="29" y="38" width="6" height="20" fill="#5d4e37" rx="1"/>
-  <!-- Tree canopy - layers representing permaculture stacking -->
-  <circle cx="32" cy="18" r="14" fill="#3c8c4c"/>
-  <circle cx="22" cy="24" r="9" fill="#4ea35e"/>
-  <circle cx="42" cy="24" r="9" fill="#4ea35e"/>
-  <circle cx="32" cy="30" r="8" fill="#5db86e"/>
-  <!-- Sun -->
-  <circle cx="50" cy="10" r="5" fill="#f4a261"/>
-  <!-- Roots -->
-  <path d="M32 58 Q24 60 20 62 M32 58 Q40 60 44 62 M32 58 L32 62" stroke="#5d4e37" stroke-width="2" fill="none" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <linearGradient id="canopy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8bc34a"/>
+      <stop offset="50%" stop-color="#4caf50"/>
+      <stop offset="100%" stop-color="#2d7a3e"/>
+    </linearGradient>
+    <linearGradient id="trunk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#795548"/>
+      <stop offset="100%" stop-color="#4e342e"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd54f"/>
+      <stop offset="100%" stop-color="#ff9800"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8bc34a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#2d7a3e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 地面渐变 -->
+  <rect x="0" y="58" width="80" height="22" fill="url(#ground)" rx="4"/>
+
+  <!-- 太阳 -->
+  <circle cx="62" cy="14" r="7" fill="url(#sun)"/>
+  <g stroke="#ffd54f" stroke-width="1.5" stroke-linecap="round" opacity="0.6">
+    <line x1="62" y1="2" x2="62" y2="5"/>
+    <line x1="74" y1="14" x2="71" y2="14"/>
+    <line x1="70" y1="6" x2="68" y2="8"/>
+    <line x1="54" y1="6" x2="56" y2="8"/>
+    <line x1="70" y1="22" x2="68" y2="20"/>
+  </g>
+
+  <!-- 树干 -->
+  <path d="M36 56 L37 38 L43 38 L44 56 Z" fill="url(#trunk)" rx="1"/>
+
+  <!-- 树冠 — 三层堆叠（朴门层叠原理） -->
+  <circle cx="40" cy="22" r="16" fill="url(#canopy)" opacity="0.9"/>
+  <circle cx="28" cy="30" r="11" fill="url(#canopy)" opacity="0.85"/>
+  <circle cx="52" cy="30" r="11" fill="url(#canopy)" opacity="0.85"/>
+  <circle cx="40" cy="36" r="10" fill="url(#canopy)" opacity="0.8"/>
+
+  <!-- 叶脉高光 -->
+  <circle cx="36" cy="18" r="5" fill="#c8e6c9" opacity="0.4"/>
+  <circle cx="26" cy="27" r="3" fill="#c8e6c9" opacity="0.35"/>
+  <circle cx="50" cy="27" r="3" fill="#c8e6c9" opacity="0.35"/>
+
+  <!-- 根系 -->
+  <g stroke="url(#trunk)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7">
+    <path d="M40 58 Q30 62 24 66"/>
+    <path d="M40 58 Q50 62 56 66"/>
+    <path d="M40 58 L40 68"/>
+    <path d="M40 58 Q34 60 30 64" stroke-width="1.5"/>
+    <path d="M40 58 Q46 60 50 64" stroke-width="1.5"/>
+  </g>
+
+  <!-- 小叶子点缀 -->
+  <ellipse cx="20" cy="52" rx="3" ry="1.5" fill="#4caf50" opacity="0.5" transform="rotate(-20 20 52)"/>
+  <ellipse cx="60" cy="54" rx="3" ry="1.5" fill="#4caf50" opacity="0.5" transform="rotate(20 60 54)"/>
 </svg>
