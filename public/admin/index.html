@@ -6,10 +6,10 @@
 <title>朴门知识库 · 管理</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--g1:#2d7a3e;--g2:#4caf50;--bg:#faf8f1;--card:#fff;--border:#e0ddd5;--text:#2c2416;--muted:#8a8275;--err:#d93025}
+:root{--g1:#2d7a3e;--g2:#4caf50;--bg:#faf8f1;--card:#fff;--border:#e0ddd5;--text:#2c2416;--muted:#8a8275;--err:#d93025;--warn:#f59e0b}
 body{font-family:-apple-system,'Segoe UI','Noto Sans SC',sans-serif;background:var(--bg);color:var(--text)}
 .login{display:flex;align-items:center;justify-content:center;min-height:100vh}
-.login-box{background:var(--card);padding:40px;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.08);max-width:480px;width:90%}
+.login-box{background:var(--card);padding:40px;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.08);max-width:500px;width:90%}
 .login-box h1{font-size:22px;margin-bottom:8px;color:var(--g1)}
 .login-box p{font-size:14px;color:var(--muted);margin-bottom:12px;line-height:1.6}
 .login-box input{width:100%;padding:12px 16px;border:2px solid var(--border);border-radius:10px;font-size:14px;margin-bottom:12px}
@@ -17,10 +17,14 @@ body{font-family:-apple-system,'Segoe UI','Noto Sans SC',sans-serif;background:v
 .login-box button{width:100%;padding:12px;border:none;border-radius:10px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;font-size:15px;font-weight:600;cursor:pointer}
 .login-box button:disabled{opacity:.6;cursor:wait}
 .login-box a{color:var(--g1);font-size:13px}
-.err-msg{color:var(--err);font-size:13px;margin-bottom:12px;display:none;padding:10px 14px;background:#fce8e6;border-radius:8px;line-height:1.5}
+.err-msg{font-size:13px;margin-bottom:12px;display:none;padding:10px 14px;border-radius:8px;line-height:1.5;white-space:pre-line}
+.err-msg.err{color:var(--err);background:#fce8e6}
+.err-msg.ok{color:var(--g1);background:#e6f4ea}
+.err-msg.warn{color:var(--warn);background:#fef3e2}
 .help-box{margin-top:16px;padding:14px;background:rgba(76,175,80,.05);border-radius:10px;font-size:13px;color:var(--muted);line-height:1.7}
 .help-box b{color:var(--g1)}
 .help-box code{background:var(--bg);padding:2px 6px;border-radius:4px;font-family:monospace;font-size:12px}
+.diag-btn{background:var(--card)!important;color:var(--g1)!important;border:2px solid var(--g2)!important;margin-top:8px;font-size:13px!important}
 .app{display:none}
 .topbar{background:var(--card);border-bottom:1px solid var(--border);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
 .topbar h1{font-size:18px;color:var(--g1)}
@@ -68,6 +72,7 @@ body{font-family:-apple-system,'Segoe UI','Noto Sans SC',sans-serif;background:v
     <div class="err-msg" id="loginErr"></div>
     <input type="password" id="tokenInput" placeholder="ghp_xxxxxxxxxxxx（以 ghp_ 开头）" onkeydown="if(event.key==='Enter')doLogin()">
     <button id="loginBtn" onclick="doLogin()">登录</button>
+    <button class="diag-btn" onclick="runDiagnostic()">🔍 诊断网络连接</button>
     <div class="help-box">
       <b>如何创建 Token：</b><br>
       1. 点击下方链接打开 GitHub Token 页面<br>
@@ -102,54 +107,60 @@ body{font-family:-apple-system,'Segoe UI','Noto Sans SC',sans-serif;background:v
 </div>
 <div class="toast" id="toast"></div>
 <script>
-const REPO='520maodizhang/permaculture-resources',API='https://api.github.com'
-let token='',currentSha=null
+const REPO='520maodizhang/permaculture-resources',API_BASE='https://api.github.com'
+const PROXIES=[null,'https://corsproxy.io/?url=','https://api.allorigins.win/raw?url=']
+let useProxy=0,token='',currentSha=null
 const dirs=[{path:'',label:'根目录'},{path:'00-foundations',label:'基础理论'},{path:'01-core-texts',label:'核心文献'},{path:'06-reference',label:'参考'},{path:'07-learning-paths',label:'学习路径'}]
-
+function apiUrl(path){const b=API_BASE+path,p=PROXIES[useProxy];return p?(p+encodeURIComponent(b)):b}
 ;(function(){const s=localStorage.getItem('gh_token');if(s){token=s;validateAndShow()}})()
-
+async function runDiagnostic(){
+  const err=document.getElementById('loginErr')
+  err.style.display='block';err.className='err-msg warn';err.textContent='🔍 正在测试连接 GitHub API...'
+  for(let i=0;i<PROXIES.length;i++){
+    const p=PROXIES[i],label=p?('代理 #'+i):'直连'
+    try{
+      const url=p?(p+encodeURIComponent(API_BASE+'/zen')):(API_BASE+'/zen')
+      const res=await fetch(url,{signal:AbortSignal.timeout(8000)})
+      if(res.ok){const t=await res.text();err.className='err-msg ok';err.textContent='✅ '+label+' 成功！响应: "'+t.substring(0,40)+'"\n将使用此方式连接。';useProxy=i;return}
+      else{err.textContent='❌ '+label+' HTTP '+res.status}
+    }catch(e){err.textContent='❌ '+label+' 失败: '+e.message}
+  }
+  err.className='err-msg err';err.textContent='❌ 所有连接方式都失败。请检查网络是否能访问 github.com。'
+}
 async function doLogin(){
   token=document.getElementById('tokenInput').value.trim()
   if(!token){showErr('请输入 Token');return}
-  if(!token.startsWith('ghp_')&&!token.startsWith('github_pat_')){showErr('Token 格式不对！正确的 Token 以 ghp_ 或 github_pat_ 开头，不是 GitHub 密码。');return}
+  if(!token.startsWith('ghp_')&&!token.startsWith('github_pat_')){showErr('Token 格式不对！正确 Token 以 ghp_ 或 github_pat_ 开头，不是密码。');return}
   await validateAndShow()
 }
-
 async function validateAndShow(){
   const btn=document.getElementById('loginBtn'),err=document.getElementById('loginErr')
   btn.disabled=true;btn.textContent='验证中...';err.style.display='none'
-  try{
-    const res=await fetch(API+'/user',{headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json'}})
-    if(!res.ok){
-      const d=await res.json().catch(()=>({}))
-      if(res.status===401) showErr('Token 无效或已过期。请检查是否复制完整，或重新生成一个。')
-      else if(res.status===403) showErr('Token 权限不足。创建时需要勾选 repo 权限。')
-      else showErr('GitHub 返回错误 '+res.status+': '+(d.message||''))
-      localStorage.removeItem('gh_token')
-      btn.disabled=false;btn.textContent='登录';return
-    }
-    const user=await res.json()
-    localStorage.setItem('gh_token',token)
-    document.getElementById('login').style.display='none'
-    document.getElementById('app').style.display='block'
-    document.getElementById('userInfo').textContent='👤 '+user.login
-    await loadSidebar()
-  }catch(e){
-    showErr('无法连接 GitHub API。可能原因：① 输入的不是 Token 而是密码 ② 网络不通 ③ 浏览器拦截了请求。请确认输入的是 ghp_ 开头的 Token。')
-    localStorage.removeItem('gh_token')
-    btn.disabled=false;btn.textContent='登录'
+  for(let i=0;i<PROXIES.length;i++){
+    useProxy=i;const label=PROXIES[i]?('代理#'+i):'直连'
+    try{
+      const res=await fetch(apiUrl('/user'),{headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json'},signal:AbortSignal.timeout(10000)})
+      if(!res.ok){
+        if(res.status===401){showErr('Token 无效或已过期，请重新生成。('+label+')');localStorage.removeItem('gh_token');btn.disabled=false;btn.textContent='登录';return}
+        if(res.status===403){showErr('Token 权限不足，需勾选 repo 权限。('+label+')');localStorage.removeItem('gh_token');btn.disabled=false;btn.textContent='登录';return}
+        continue
+      }
+      const user=await res.json();localStorage.setItem('gh_token',token)
+      document.getElementById('login').style.display='none';document.getElementById('app').style.display='block'
+      document.getElementById('userInfo').textContent='👤 '+user.login+(PROXIES[i]?' (代理)':'')
+      await loadSidebar();return
+    }catch(e){continue}
   }
+  showErr('❌ 所有连接方式都失败。请先点「诊断网络连接」。\n原因可能是：① 不是 Token 而是密码 ② 网络无法访问 GitHub ③ Token 过期')
+  localStorage.removeItem('gh_token');btn.disabled=false;btn.textContent='登录'
 }
-
-function showErr(m){const e=document.getElementById('loginErr');e.textContent=m;e.style.display='block'}
+function showErr(m){const e=document.getElementById('loginErr');e.textContent=m;e.className='err-msg err';e.style.display='block'}
 function logout(){localStorage.removeItem('gh_token');token='';location.reload()}
-
 async function ghApi(path,method='GET',body=null){
-  const opts={method,headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','Content-Type':'application/json'}}
-  if(body)opts.body=JSON.stringify(body)
-  return await fetch(API+'/repos/'+REPO+'/contents/'+path,opts)
+  const o={method,headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','Content-Type':'application/json'}}
+  if(body)o.body=JSON.stringify(body)
+  return await fetch(apiUrl('/repos/'+REPO+'/contents/'+path),o)
 }
-
 async function loadSidebar(){
   const sb=document.getElementById('sidebar');sb.innerHTML=''
   for(const dir of dirs){
@@ -160,10 +171,9 @@ async function loadSidebar(){
       const items=await res.json()
       if(!Array.isArray(items)){const e=document.createElement('div');e.className='sb-err';e.textContent='非目录';sb.appendChild(e);continue}
       const mds=items.filter(i=>i.type==='file'&&i.name.endsWith('.md'))
-      if(mds.length===0){const e=document.createElement('div');e.style.cssText='font-size:13px;color:#aaa;padding:4px 12px';e.textContent='（空）';sb.appendChild(e)}
+      if(!mds.length){const e=document.createElement('div');e.style.cssText='font-size:13px;color:#aaa;padding:4px 12px';e.textContent='（空）';sb.appendChild(e)}
       for(const f of mds){
-        const el=document.createElement('div');el.className='file-item'
-        el.innerHTML='<span>📄</span> '+f.name.replace('.md','')
+        const el=document.createElement('div');el.className='file-item';el.innerHTML='<span>📄</span> '+f.name.replace('.md','')
         el.onclick=()=>{document.querySelectorAll('.file-item').forEach(x=>x.classList.remove('active'));el.classList.add('active');openFile(f.path,f.sha)}
         sb.appendChild(el)
       }
@@ -171,57 +181,23 @@ async function loadSidebar(){
     }catch(e){const el=document.createElement('div');el.className='sb-err';el.textContent=e.message;sb.appendChild(el)}
   }
 }
-
 async function openFile(path,sha){
-  currentSha=sha
-  document.getElementById('editor').classList.add('show')
-  document.getElementById('filepath').value=path
-  document.getElementById('savebtn').disabled=true
+  currentSha=sha;document.getElementById('editor').classList.add('show')
+  document.getElementById('filepath').value=path;document.getElementById('savebtn').disabled=true
   document.getElementById('content').value='加载中...'
-  try{
-    const res=await ghApi(path)
-    if(res.ok){const d=await res.json();document.getElementById('content').value=decodeURIComponent(escape(atob(d.content.replace(/\n/g,''))));currentSha=d.sha;renderPreview()}
-    else{document.getElementById('content').value='加载失败: '+res.status}
-  }catch(e){document.getElementById('content').value='错误: '+e.message}
+  try{const res=await ghApi(path);if(res.ok){const d=await res.json();document.getElementById('content').value=decodeURIComponent(escape(atob(d.content.replace(/\n/g,''))));currentSha=d.sha;renderPreview()}else{document.getElementById('content').value='加载失败: '+res.status}}catch(e){document.getElementById('content').value='错误: '+e.message}
   document.getElementById('savebtn').disabled=false
 }
-
-function newFile(dir){
-  const name=prompt('文件名（不含.md）:');if(!name)return
-  const path=dir?dir+'/'+name+'.md':name+'.md'
-  currentSha=null;document.getElementById('editor').classList.add('show')
-  document.getElementById('filepath').value=path
-  document.getElementById('content').value='# '+name+'\n\n';renderPreview()
-}
-
+function newFile(dir){const n=prompt('文件名（不含.md）:');if(!n)return;const p=dir?dir+'/'+n+'.md':n+'.md';currentSha=null;document.getElementById('editor').classList.add('show');document.getElementById('filepath').value=p;document.getElementById('content').value='# '+n+'\n\n';renderPreview()}
 async function saveFile(){
   const path=document.getElementById('filepath').value,content=document.getElementById('content').value
   const btn=document.getElementById('savebtn');btn.disabled=true;btn.textContent='保存中...'
-  try{
-    const body={message:'CMS: 更新 '+path,content:btoa(unescape(encodeURIComponent(content)))}
-    if(currentSha)body.sha=currentSha
+  try{const body={message:'CMS: 更新 '+path,content:btoa(unescape(encodeURIComponent(content)))};if(currentSha)body.sha=currentSha
     const res=await ghApi(path,'PUT',body)
-    if(res.ok){const d=await res.json();currentSha=d.content.sha;showToast('✅ 已提交到 GitHub','ok');await loadSidebar()}
-    else{const e=await res.json().catch(()=>({}));showToast('❌ '+(e.message||'失败'),'fail')}
-  }catch(e){showToast('❌ '+e.message,'fail')}
+    if(res.ok){const d=await res.json();currentSha=d.content.sha;showToast('✅ 已提交','ok');await loadSidebar()}else{const e=await res.json().catch(()=>({}));showToast('❌ '+(e.message||'失败'),'fail')}}catch(e){showToast('❌ '+e.message,'fail')}
   btn.disabled=false;btn.textContent='保存'
 }
-
-function renderPreview(){
-  let md=document.getElementById('content').value
-  let html=md
-    .replace(/^### (.+)$/gm,'<h3>$1</h3>')
-    .replace(/^## (.+)$/gm,'<h2>$1</h2>')
-    .replace(/^# (.+)$/gm,'<h1>$1</h1>')
-    .replace(/^> (.+)$/gm,'<blockquote>$1</blockquote>')
-    .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
-    .replace(/`([^`]+)`/g,'<code>$1</code>')
-    .replace(/^\- (.+)$/gm,'<li>$1</li>')
-    .replace(/(<li>[\s\S]*?<\/li>)/g,'<ul>$1</ul>')
-    .replace(/\n\n/g,'</p><p>')
-  document.getElementById('preview').innerHTML='<p>'+html+'</p>'
-}
-
+function renderPreview(){let md=document.getElementById('content').value,html=md.replace(/^### (.+)$/gm,'<h3>$1</h3>').replace(/^## (.+)$/gm,'<h2>$1</h2>').replace(/^# (.+)$/gm,'<h1>$1</h1>').replace(/^> (.+)$/gm,'<blockquote>$1</blockquote>').replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/`([^`]+)`/g,'<code>$1</code>').replace(/^\- (.+)$/gm,'<li>$1</li>').replace(/(<li>[\s\S]*?<\/li>)/g,'<ul>$1</ul>').replace(/\n\n/g,'</p><p>');document.getElementById('preview').innerHTML='<p>'+html+'</p>'}
 function showToast(msg,type){const t=document.getElementById('toast');t.textContent=msg;t.className='toast '+type;t.style.display='block';setTimeout(()=>t.style.display='none',3000)}
 </script>
 </body>

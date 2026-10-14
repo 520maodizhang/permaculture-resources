@@ -5,9 +5,6 @@ hero:
   name: 朴门永续设计
   text: Permaculture Knowledge Base
   tagline: 33 本经典文献 · 72 小时 PDC 讲义 · 12 条设计原则 · 从伦理到实践的完整知识体系
-  image:
-    src: /logo.svg
-    alt: 朴门永续设计
   actions:
     - theme: brand
       text: 开始学习
