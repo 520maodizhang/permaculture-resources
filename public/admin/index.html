@@ -9,15 +9,18 @@
 :root{--g1:#2d7a3e;--g2:#4caf50;--bg:#faf8f1;--card:#fff;--border:#e0ddd5;--text:#2c2416;--muted:#8a8275;--err:#d93025}
 body{font-family:-apple-system,'Segoe UI','Noto Sans SC',sans-serif;background:var(--bg);color:var(--text)}
 .login{display:flex;align-items:center;justify-content:center;min-height:100vh}
-.login-box{background:var(--card);padding:40px;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.08);max-width:440px;width:90%}
+.login-box{background:var(--card);padding:40px;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.08);max-width:480px;width:90%}
 .login-box h1{font-size:22px;margin-bottom:8px;color:var(--g1)}
-.login-box p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.login-box p{font-size:14px;color:var(--muted);margin-bottom:12px;line-height:1.6}
 .login-box input{width:100%;padding:12px 16px;border:2px solid var(--border);border-radius:10px;font-size:14px;margin-bottom:12px}
 .login-box input:focus{outline:none;border-color:var(--g2)}
 .login-box button{width:100%;padding:12px;border:none;border-radius:10px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;font-size:15px;font-weight:600;cursor:pointer}
 .login-box button:disabled{opacity:.6;cursor:wait}
 .login-box a{color:var(--g1);font-size:13px}
-.err-msg{color:var(--err);font-size:13px;margin-bottom:12px;display:none;padding:8px 12px;background:#fce8e6;border-radius:8px}
+.err-msg{color:var(--err);font-size:13px;margin-bottom:12px;display:none;padding:10px 14px;background:#fce8e6;border-radius:8px;line-height:1.5}
+.help-box{margin-top:16px;padding:14px;background:rgba(76,175,80,.05);border-radius:10px;font-size:13px;color:var(--muted);line-height:1.7}
+.help-box b{color:var(--g1)}
+.help-box code{background:var(--bg);padding:2px 6px;border-radius:4px;font-family:monospace;font-size:12px}
 .app{display:none}
 .topbar{background:var(--card);border-bottom:1px solid var(--border);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
 .topbar h1{font-size:18px;color:var(--g1)}
@@ -61,11 +64,18 @@ body{font-family:-apple-system,'Segoe UI','Noto Sans SC',sans-serif;background:v
 <div class="login" id="login">
   <div class="login-box">
     <h1>🌳 朴门知识库管理</h1>
-    <p>输入 GitHub Personal Access Token 登录。<br>Token 只存在浏览器本地。</p>
+    <p>输入 GitHub <b>Personal Access Token</b> 登录。<br>⚠️ 不是 GitHub 密码！是单独生成的 Token。<br>Token 只存在浏览器本地，不上传服务器。</p>
     <div class="err-msg" id="loginErr"></div>
-    <input type="password" id="tokenInput" placeholder="ghp_xxxxxxxxxxxx" onkeydown="if(event.key==='Enter')doLogin()">
+    <input type="password" id="tokenInput" placeholder="ghp_xxxxxxxxxxxx（以 ghp_ 开头）" onkeydown="if(event.key==='Enter')doLogin()">
     <button id="loginBtn" onclick="doLogin()">登录</button>
-    <p style="margin-top:16px"><a href="https://github.com/settings/tokens/new?scopes=repo&description=permaculture-cms" target="_blank">→ 点这里创建 Token（勾选 repo 权限）</a></p>
+    <div class="help-box">
+      <b>如何创建 Token：</b><br>
+      1. 点击下方链接打开 GitHub Token 页面<br>
+      2. 确认勾选了 <code>repo</code> 权限（✅ 已默认勾选）<br>
+      3. 点底部绿色按钮 <code>Generate token</code><br>
+      4. 复制生成的 <code>ghp_...</code> 字符串粘贴到上面<br>
+      <a href="https://github.com/settings/tokens/new?scopes=repo&description=permaculture-cms" target="_blank" style="display:inline-block;margin-top:8px;font-weight:600">→ 点这里创建 Token</a>
+    </div>
   </div>
 </div>
 <div class="app" id="app">
@@ -101,6 +111,7 @@ const dirs=[{path:'',label:'根目录'},{path:'00-foundations',label:'基础理�
 async function doLogin(){
   token=document.getElementById('tokenInput').value.trim()
   if(!token){showErr('请输入 Token');return}
+  if(!token.startsWith('ghp_')&&!token.startsWith('github_pat_')){showErr('Token 格式不对！正确的 Token 以 ghp_ 或 github_pat_ 开头，不是 GitHub 密码。');return}
   await validateAndShow()
 }
 
@@ -109,14 +120,25 @@ async function validateAndShow(){
   btn.disabled=true;btn.textContent='验证中...';err.style.display='none'
   try{
     const res=await fetch(API+'/user',{headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json'}})
-    if(!res.ok){const d=await res.json().catch(()=>({}));showErr('Token 无效: '+(d.message||res.status));btn.disabled=false;btn.textContent='登录';return}
+    if(!res.ok){
+      const d=await res.json().catch(()=>({}))
+      if(res.status===401) showErr('Token 无效或已过期。请检查是否复制完整，或重新生成一个。')
+      else if(res.status===403) showErr('Token 权限不足。创建时需要勾选 repo 权限。')
+      else showErr('GitHub 返回错误 '+res.status+': '+(d.message||''))
+      localStorage.removeItem('gh_token')
+      btn.disabled=false;btn.textContent='登录';return
+    }
     const user=await res.json()
     localStorage.setItem('gh_token',token)
     document.getElementById('login').style.display='none'
     document.getElementById('app').style.display='block'
     document.getElementById('userInfo').textContent='👤 '+user.login
     await loadSidebar()
-  }catch(e){showErr('网络错误: '+e.message);btn.disabled=false;btn.textContent='登录'}
+  }catch(e){
+    showErr('无法连接 GitHub API。可能原因：① 输入的不是 Token 而是密码 ② 网络不通 ③ 浏览器拦截了请求。请确认输入的是 ghp_ 开头的 Token。')
+    localStorage.removeItem('gh_token')
+    btn.disabled=false;btn.textContent='登录'
+  }
 }
 
 function showErr(m){const e=document.getElementById('loginErr');e.textContent=m;e.style.display='block'}
