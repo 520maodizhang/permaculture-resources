@@ -1,9 +1,9 @@
 <template>
-  <button class="lang-toggle" @click="toggle">
+  <a class="lang-toggle" :href="targetUrl" @click.prevent="go">
     <span class="lang-current">{{ current }}</span>
     <span class="lang-sep">/</span>
     <span class="lang-other">{{ other }}</span>
-  </button>
+  </a>
 </template>
 
 <script setup lang="ts">
@@ -11,17 +11,36 @@ import { ref, onMounted } from 'vue'
 
 const current = ref('中')
 const other = ref('EN')
+const targetUrl = ref('/en/')
 
-function toggle() {
-  const tmp = current.value
-  current.value = other.value
-  other.value = tmp
-  document.documentElement.lang = current.value === '中' ? 'zh-CN' : 'en'
-  document.documentElement.classList.toggle('lang-en')
+function detectLang() {
+  const path = window.location.pathname
+  if (path.startsWith('/en')) {
+    current.value = 'EN'
+    other.value = '中'
+    // target: same page but without /en prefix
+    targetUrl.value = path.replace(/^\/en/, '') || '/'
+  } else {
+    current.value = '中'
+    other.value = 'EN'
+    // target: same page but with /en prefix (only works for pages that have en versions)
+    // For the homepage, go to /en/
+    // For other pages, stay on the same page (content is shared)
+    if (path === '/' || path === '') {
+      targetUrl.value = '/en/'
+    } else {
+      // Content pages are shared — just toggle the locale root
+      targetUrl.value = '/en/'
+    }
+  }
+}
+
+function go() {
+  window.location.href = targetUrl.value
 }
 
 onMounted(() => {
-  document.documentElement.lang = 'zh-CN'
+  detectLang()
 })
 </script>
 
@@ -40,6 +59,8 @@ onMounted(() => {
   color: var(--vp-c-text-2);
   transition: all 0.2s;
   font-family: 'Inter', monospace;
+  text-decoration: none;
+  margin-left: 8px;
 }
 .lang-toggle:hover {
   border-color: var(--vp-c-brand-2);
