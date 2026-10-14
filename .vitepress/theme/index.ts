@@ -1,17 +1,26 @@
 import DefaultTheme from 'vitepress/theme'
-import { h } from 'vue'
+import { h, defineComponent } from 'vue'
+import { useRoute } from 'vitepress'
 import './style/index.css'
-import DownloadSection from './components/DownloadSection.vue'
-import HeroScene from './components/HeroScene.vue'
+import './style/var.css'
+import CustomHome from './components/CustomHome.vue'
 import LangToggle from './components/LangToggle.vue'
+
+const LayoutWrapper = defineComponent({
+  setup() {
+    const route = useRoute()
+    return () => {
+      if (route.path === '/') {
+        return h(CustomHome)
+      }
+      return h(DefaultTheme.Layout, null, {
+        'nav-bar-title-after': () => h(LangToggle),
+      })
+    }
+  }
+})
 
 export default {
   extends: DefaultTheme,
-  Layout() {
-    return h(DefaultTheme.Layout, null, {
-      'home-hero-before': () => h(HeroScene),
-      'home-features-after': () => h(DownloadSection),
-      'nav-bar-title-after': () => h(LangToggle),
-    })
-  }
+  Layout: LayoutWrapper,
 }

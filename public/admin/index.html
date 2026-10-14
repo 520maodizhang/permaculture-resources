@@ -1,17 +1,242 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex" />
-  <title>朴门知识库 · 内容管理</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif; }
-    #nc-root { height: 100vh; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>朴门知识库 · 管理</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root { --g1: #2d7a3e; --g2: #4caf50; --g3: #8bc34a; --g4: #c9d836; --bg: #faf8f1; --card: #fff; --border: #e0ddd5; --text: #2c2416; --muted: #8a8275; }
+body { font-family: -apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif; background: var(--bg); color: var(--text); }
+.login { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+.login-box { background: var(--card); padding: 40px; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.08); max-width: 420px; width: 90%; }
+.login-box h1 { font-size: 22px; margin-bottom: 8px; color: var(--g1); }
+.login-box p { font-size: 14px; color: var(--muted); margin-bottom: 24px; line-height: 1.6; }
+.login-box input { width: 100%; padding: 12px 16px; border: 2px solid var(--border); border-radius: 10px; font-size: 14px; margin-bottom: 16px; transition: border 0.2s; }
+.login-box input:focus { outline: none; border-color: var(--g2); }
+.login-box button { width: 100%; padding: 12px; border: none; border-radius: 10px; background: linear-gradient(135deg, var(--g1), var(--g2)); color: #fff; font-size: 15px; font-weight: 600; cursor: pointer; transition: transform 0.2s; }
+.login-box button:hover { transform: translateY(-2px); }
+.login-box a { color: var(--g1); font-size: 13px; }
+.app { display: none; }
+.topbar { background: var(--card); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; }
+.topbar h1 { font-size: 18px; color: var(--g1); }
+.topbar button { padding: 6px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); cursor: pointer; font-size: 13px; }
+.topbar button:hover { border-color: var(--g2); color: var(--g1); }
+.main { display: flex; height: calc(100vh - 52px); }
+.sidebar { width: 280px; border-right: 1px solid var(--border); overflow-y: auto; padding: 16px; background: var(--card); }
+.sidebar h3 { font-size: 13px; color: var(--muted); margin: 16px 0 8px; text-transform: uppercase; letter-spacing: 1px; }
+.file-item { padding: 8px 12px; border-radius: 8px; cursor: pointer; font-size: 14px; transition: background 0.15s; display: flex; align-items: center; gap: 8px; }
+.file-item:hover { background: rgba(76,175,80,0.08); }
+.file-item.active { background: rgba(76,175,80,0.15); color: var(--g1); font-weight: 600; }
+.file-item .icon { font-size: 16px; }
+.editor { flex: 1; display: flex; flex-direction: column; padding: 24px; overflow: hidden; }
+.editor-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.editor-header input { flex: 1; padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; margin-right: 12px; }
+.btn-save { padding: 8px 20px; border: none; border-radius: 8px; background: linear-gradient(135deg, var(--g1), var(--g2)); color: #fff; font-weight: 600; cursor: pointer; font-size: 14px; }
+.btn-save:disabled { opacity: 0.5; cursor: not-allowed; }
+.editor-body { flex: 1; display: flex; gap: 16px; overflow: hidden; }
+.editor-body textarea { flex: 1; padding: 16px; border: 1px solid var(--border); border-radius: 10px; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 14px; line-height: 1.6; resize: none; overflow-y: auto; }
+.editor-body textarea:focus { outline: none; border-color: var(--g2); }
+.preview { flex: 1; padding: 16px; border: 1px solid var(--border); border-radius: 10px; overflow-y: auto; background: var(--card); }
+.preview h1 { font-size: 22px; margin: 16px 0 8px; color: var(--g1); }
+.preview h2 { font-size: 18px; margin: 14px 0 6px; }
+.preview p { margin: 8px 0; line-height: 1.7; }
+.preview ul, .preview ol { margin: 8px 0; padding-left: 24px; }
+.preview li { margin: 4px 0; }
+.preview code { background: var(--bg); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 13px; }
+.preview pre { background: var(--bg); padding: 12px; border-radius: 8px; overflow-x: auto; margin: 8px 0; }
+.toast { position: fixed; bottom: 24px; right: 24px; padding: 12px 24px; border-radius: 10px; background: var(--g1); color: #fff; font-size: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.15); display: none; z-index: 100; }
+.new-file { padding: 8px 12px; border-radius: 8px; cursor: pointer; font-size: 13px; color: var(--g1); border: 1px dashed var(--g2); margin-top: 8px; text-align: center; }
+.new-file:hover { background: rgba(76,175,80,0.08); }
+</style>
 </head>
 <body>
-  <div id="nc-root"></div>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+<div class="login" id="login">
+  <div class="login-box">
+    <h1>🌳 朴门知识库管理</h1>
+    <p>输入你的 GitHub Personal Access Token 来管理内容。<br>Token 只存在你浏览器里，不上传任何地方。</p>
+    <input type="password" id="token" placeholder="ghp_xxxxxxxxxxxx">
+    <button onclick="doLogin()">登录</button>
+    <p style="margin-top:16px"><a href="https://github.com/settings/tokens/new?scopes=repo&description=permaculture-cms" target="_blank">→ 没有 Token？点这里创建（勾选 repo 权限）</a></p>
+  </div>
+</div>
+
+<div class="app" id="app">
+  <div class="topbar">
+    <h1>🌳 朴门知识库管理</h1>
+    <button onclick="logout()">退出</button>
+  </div>
+  <div class="main">
+    <div class="sidebar" id="sidebar">
+      <h3>加载中...</h3>
+    </div>
+    <div class="editor" id="editor" style="display:none">
+      <div class="editor-header">
+        <input id="filepath" placeholder="文件路径">
+        <button class="btn-save" id="savebtn" onclick="saveFile()">保存</button>
+      </div>
+      <div class="editor-body">
+        <textarea id="content" oninput="renderPreview()" placeholder="Markdown 内容..."></textarea>
+        <div class="preview" id="preview"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const REPO = '520maodizhang/permaculture-resources'
+const API = 'https://api.github.com'
+let token = localStorage.getItem('gh_token')
+let currentFile = null
+let fileSha = null
+let dirCache = {}
+
+const dirs = [
+  { path: '', label: '根目录' },
+  { path: '00-foundations', label: '基础理论' },
+  { path: '01-core-texts', label: '核心文献' },
+  { path: '06-reference', label: '参考' },
+  { path: '07-learning-paths', label: '学习路径' },
+]
+
+if (token) showApp()
+
+function doLogin() {
+  token = document.getElementById('token').value.trim()
+  if (!token) return
+  localStorage.setItem('gh_token', token)
+  showApp()
+}
+
+function logout() {
+  localStorage.removeItem('gh_token')
+  token = null
+  location.reload()
+}
+
+async function showApp() {
+  document.getElementById('login').style.display = 'none'
+  document.getElementById('app').style.display = 'block'
+  await loadSidebar()
+}
+
+async function api(path, method = 'GET', body = null) {
+  const opts = { method, headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json' } }
+  if (body) opts.body = JSON.stringify(body)
+  const res = await fetch(`${API}/repos/${REPO}/contents/${path}`, opts)
+  return res
+}
+
+async function loadSidebar() {
+  const sb = document.getElementById('sidebar')
+  sb.innerHTML = ''
+  for (const dir of dirs) {
+    const h = document.createElement('h3')
+    h.textContent = dir.label
+    sb.appendChild(h)
+    try {
+      const res = await api(dir.path)
+      if (!res.ok) continue
+      const items = await res.json()
+      const mdFiles = items.filter(i => i.name.endsWith('.md'))
+      for (const f of mdFiles) {
+        const el = document.createElement('div')
+        el.className = 'file-item'
+        el.innerHTML = `<span class="icon">📄</span> ${f.name.replace('.md','')}`
+        el.onclick = () => openFile(f.path, f.sha)
+        sb.appendChild(el)
+      }
+      const nf = document.createElement('div')
+      nf.className = 'new-file'
+      nf.textContent = '+ 新建'
+      nf.onclick = () => newFile(dir.path)
+      sb.appendChild(nf)
+    } catch(e) {}
+  }
+}
+
+async function openFile(path, sha) {
+  currentFile = path
+  fileSha = sha
+  document.querySelectorAll('.file-item').forEach(e => e.classList.remove('active'))
+  event.currentTarget.classList.add('active')
+  document.getElementById('editor').style.display = 'flex'
+  document.getElementById('filepath').value = path
+  document.getElementById('savebtn').disabled = true
+  const res = await api(path)
+  if (res.ok) {
+    const data = await res.json()
+    const content = atob(data.content.replace(/\n/g, ''))
+    document.getElementById('content').value = content
+    fileSha = data.sha
+    renderPreview()
+  }
+  document.getElementById('savebtn').disabled = false
+}
+
+function newFile(dir) {
+  const name = prompt('文件名（不含.md后缀）:')
+  if (!name) return
+  const path = dir ? `${dir}/${name}.md` : `${name}.md`
+  currentFile = path
+  fileSha = null
+  document.getElementById('editor').style.display = 'flex'
+  document.getElementById('filepath').value = path
+  document.getElementById('content').value = `# ${name}\n\n`
+  renderPreview()
+  document.getElementById('savebtn').disabled = false
+}
+
+async function saveFile() {
+  const path = document.getElementById('filepath').value
+  const content = document.getElementById('content').value
+  const btn = document.getElementById('savebtn')
+  btn.disabled = true
+  btn.textContent = '保存中...'
+  try {
+    const body = { message: `更新 ${path}`, content: btoa(unescape(encodeURIComponent(content))) }
+    if (fileSha) body.sha = fileSha
+    const res = await api(path, 'PUT', body)
+    if (res.ok) {
+      const data = await res.json()
+      fileSha = data.content.sha
+      showToast('✅ 保存成功！已提交到 GitHub')
+      await loadSidebar()
+    } else {
+      const err = await res.json()
+      showToast('❌ 保存失败: ' + (err.message || '未知错误'))
+    }
+  } catch(e) {
+    showToast('❌ 网络错误')
+  }
+  btn.disabled = false
+  btn.textContent = '保存'
+}
+
+function renderPreview() {
+  let md = document.getElementById('content').value
+  let html = md
+    .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/`(.+?)`/g, '<code>$1</code>')
+    .replace(/^\- (.+)$/gm, '<li>$1</li>')
+    .replace(/(<li>.+<\/li>)/s, '<ul>$1</ul>')
+    .replace(/\n\n/g, '</p><p>')
+  html = '<p>' + html + '</p>'
+  document.getElementById('preview').innerHTML = html
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast')
+  t.textContent = msg
+  t.style.display = 'block'
+  setTimeout(() => t.style.display = 'none', 3000)
+}
+</script>
 </body>
 </html>
