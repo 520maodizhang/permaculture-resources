@@ -1,67 +1,51 @@
-#PERMACULTURE ON GRANITIC LANDSCAPES
+# 花岗岩地貌上的朴门 (Permaculture on Granitic Landscapes)
 
-##BY BILL MOLLISON
+## 作者：比尔·莫里森 (Bill Mollison)
 
-###Pamphlet VI in the Permaculture Design Course Series
+### 朴门设计课程系列 · 第 VI 册
 
-**PUBLISHED BY YANKEE PERMACULTURE**
+**本讲义可自由复制传播，鼓励广泛分发 (Public Domain)**
 
-**Publisher and Distributor of Permaculture Publications**
-
-**Barking Frogs Permaculture Center**
-
-**P.O. Box 69, Sparr FL 32192-0069 USA**
-
-Email: <mailto:YankeePerm@aol.com>
-
-<http://www.barkingfrogspermaculture.org>
-
-**Edited from the Transcript of the Permaculture Design Course**
-
-**The Rural Education Center, Wilton, NH USA 1981**
-
-**Reproduction of this Pamphlet Is Free and Encouraged**
-
-**Re-edited for Markdown and Ebooks by [Nathan Luedtke](mailto:luedtke@gmail.com) in 2014**
+> 1981 年比尔·莫里森在美国新罕布什尔州乡村教育中心所授朴门设计课程实录。
 
 ***
 
-###PERMACULTURE ON GRANITIC LANDSCAPES
+### 花岗岩地貌上的朴门
 
-Granitic landscapes are somewhat like the residual desert -- slab landscapes with a lot of rocks. This landscape presents peculiar problems. Typically, there may be a hundred feet of permeable sand. Your chances of any significant storage of water anywhere in that landscape is very slight.
+花岗岩地貌有点像残余沙漠——板状景观，大量岩石。这种景观呈现出特殊的问题。典型情况下，可能有 100 英尺的透水沙。你在这片景观中任何地方进行有效储水的可能性很小。
 
-Yet millions of people live on those landscapes. The entire Perth plain of Australia is of this nature. It has about a two hundred foot depth of clean sand. You can't keep water on it. You may water it forever and the water just goes down and down. You can mulch it and the mulch is gone. A thick mulch is gone in six months. It just gets washed down into the sand. There is nothing to stop it. Mulch just breaks down into little particles and acids and flows on down between sand. It washes right down to wherever the water table happens to be at the time. All organic materials are washed down.
+然而数百万人生活在这些景观上。澳大利亚整个珀斯平原就是这种性质。它有约 200 英尺深的干净沙。你无法在上面保持水分。你可以永远浇水，水就是一直往下渗。你可以覆盖，覆盖物很快就没了。厚覆盖物六个月就消失。它就是被冲入沙中。没有任何东西阻止它。覆盖物分解成小颗粒和酸，在沙粒间流下去。它直接冲到当时地下水位所在的位置。所有有机材料都被冲下。
 
-Near ancient rivers you will find people living on these plains -- plains extending out from large granitic areas, not subject to glaciation, and along major rivers that have receded, drying up a bit.
+在古老河流附近你会发现人们生活在这些平原上——从大片花岗岩区域延伸出来的平原，未经冰川作用，沿着已退移、逐渐干涸的主要河流。
 
-The water source is often bored wells. But that water is finite, and the usual story applies. Once you might have needed to bore to a depth of 20 feet. Now it is necessary to make a 2,000-foot bore, while the water is getting saltier and saltier the further you go down, because there is a natural stratification. There are different salt layers that have hard alkali.The ground water, the fresh water is flowing over the top of saltier water. As the fresh water is pumped off, the bore must go ever deeper and the water gets more expensive and saltier.
+水源往往是钻井。但那水是有限的，通常的故事适用。曾经你可能只需钻 20 英尺深。现在需要钻 2,000 英尺，而水越往下越咸，因为存在自然分层。有不同的盐层，含有硬碱。地下水——淡水——流在更咸的水之上。随着淡水被抽走，井必须越钻越深，水越来越贵、越来越咸。
 
-So small gley ponds, tanks, and very modest bore water use are requirements for the survival situation. Your garden area should probably be completely lined with plastic sheeting. You then can mulch, and humic acid at least will reach the roots of your plants. Your garden will then be sort of an underground tank.
+因此，小型胶泥塘 (gley pond)、水箱和非常适度的井水使用是生存情境的要求。你的花园区域可能应该完全用塑料薄膜衬底。然后你可以覆盖，至少腐殖酸能到达植物根部。你的花园就变成了某种地下 tank。
 
-It is necessary to treat the granitic landscape very much like the desert situation, even though the area may be reasonably humid.
+对待花岗岩景观必须非常像对待沙漠情境，即使该区域可能相当湿润。
 
-Trees do well in this landscape, though I don't quite know why. So place a big accent on tree crop as a replacement for annual crop.
+树木在这种景观中长得很好，虽然我不太清楚为什么。所以重点放在树木作物上，作为一年生作物的替代。
 
-There can be no lawns. Lawns are total disasters. It takes 90 inches of water a year to maintain a lawn on siliceous sands. You may put on eight feet of water to keep your lawn alive, but there will be huge evaporative loss of water.
+不能有草坪。草坪是彻底的灾难。在硅质沙上维持一块草坪一年需要 90 英寸的水。你可能浇八英尺深的水来保持草坪存活，但会有巨大的蒸发损失。
 
-Around these rocks and dunes there may be numerous microclimates. You may be able to go from dates to strawberries.
+在这些岩石和沙丘周围可能有众多微气候 (microclimate)。你可能能够从枣椰种到草莓。
 
-Because of the reflectivity of granite, there are light and heat benefits. Incorporating the mass of these granite rocks into buildings is good strategy. It can be either under glass, or just incorporated under shade houses and used as evaporative cooling systems. It is sometimes possible to dig a rock out and incorporate that rock in the house.
+由于花岗岩的反射性，有光照和热量上的好处。将这些花岗岩石的质量纳入建筑是好的策略。可以在玻璃下，或只是纳入遮荫棚下用作蒸发冷却系统。有时可能挖出一块岩石并纳入房屋中。
 
-There was a woman in Sydney who got sick of builders, and she set about designing her own house -- typical woman. So she headed for the rocks. What she has is nice rocks coming out in the bedroom, rock coming up through the walls into the living room. She has good evaporating cooling systems, little keylines running all over, covered with moss and ferns -- good permaculture design. It is a good idea, you see, to accept these natural features as part of the house. Glassed in, rocks are amazingly efficient heat stores, very cheap.
+悉尼有位女士厌倦了建筑商，开始自己设计房子——典型的女性。于是她朝岩石走去。她有的是漂亮的岩石从卧室里伸出来，岩石从墙壁向上穿过进入客厅。她有良好的蒸发冷却系统，小 keyline 遍布，覆盖着苔藓和蕨类——好的朴门设计。你看，接受这些自然特征作为房屋的一部分是个好主意。玻璃围合的岩石是惊人高效的热储存，非常便宜。
 
-![drawing of a tree growing in a mulch pocket between large rocks](pdcimages/6-fig1.bmp "You can mulch right on top of rocks.")
+![drawing of a tree growing in a mulch pocket between large rocks](pdcimages/6-fig1.bmp "你可以直接在岩石上覆盖。")
 
-Working your way around this rocky landscape, you come upon all kinds of run-offs. You can put little blocks on the shelving areas and mulch there, right on the rock. You can mulch right on top of rocks and right beside the rock below, and get good little run-off systems going into those pockets. In the crevices, granite flakes off, and you find large sheets of that which you can lay out with a bit of assistance from a crowbar, and you can fill that area with mulch and make a growing area there.
+在这个岩石景观中走动，你会遇到各种径流。你可以在架状区域放小块挡水，在那里覆盖，直接在岩石上。你可以直接在岩石上面和岩石下方旁边覆盖，建立好的小径流系统流入那些坑洼。在裂缝中，花岗岩剥落，你会发现大片岩片可以用撬棍稍加辅助铺开，然后你可以用覆盖物填充那个区域，在那里造一个种植区。
 
-You can grow on both sides of your rock in the shade, and in the semi-shade, in the morning sun and in the afternoon sun. Morning sun is the sun for the production of leaf; afternoon sun ripens. These are really interestingly detailed habitats, and you can almost sense what plants will grow in any of these pockets of mulch on rock, just by moving around in the system.
+你可以在岩石两侧种植——在阴面、在半阴面、在晨阳中、在午后阳中。晨阳是生产叶片的阳光；午后阳光催熟。这些是非常有趣的细节化栖息地，你几乎可以感觉到哪些植物会在这些岩石上覆盖坑洼中生长，只需在系统中走动即可。
 
-I have a friend who had about four acres of this granitic soil and four acres of dirt that he started to play with. His granitic area is slowly becoming far more productive than the other four acres of promising agricultural soil. He was using the stones for ripening and all sorts of things.
+我有个朋友有约四英亩这种花岗岩土壤和四英亩他开始摆弄的泥土。他的花岗岩区域正慢慢变得比另外四英亩有前途的农业土壤生产力高得多。他用石头来催熟和各种用途。
 
-By playing around in there, you can have a lot of fun, and create a really attractive environment. You see a pile of rocks down here, a lot of niches in there, good tomato and cucumber spots, places for vines to grow and climb on rock instead of fencing. There are banks and little shaded areas for strawberries, and on and on and on and on.
+在那里玩弄，你可以获得很多乐趣，并创造一个真正有吸引力的环境。你看这里一堆岩石，里面有很多生态位，好的番茄和黄瓜位置，藤蔓可以在岩石上攀爬而不是用栅栏。有河岸和小的遮荫区域种草莓，如此等等。
 
-But it is hard to deal with that area out where there is no rock base. A modest gley pond, run-off tanks, bores, windmills. Deep siliceous sands are hard to deal with, and shouldn't be crowded up and settled. Tree crops are a vital factor in sustaining agriculture on siliceous sands. Nearly all the palms, many of the fruits, figs, grapes -- all those do quite well there with minimal work.
+但是难以处理那片没有岩石基底的区域。适度的胶泥塘、径流水箱、钻井、风车。深硅质沙难以处理，不应该拥挤定居。树木作物是在硅质沙上维持农业的关键因素。几乎所有棕榈、许多水果、无花果、葡萄——所有那些在那里都能以最少的工作做得相当好。
 
-I have often wondered about the potential of a below-garden gley system. Dig off the earth, put a green mat layer in, and then return the earth. I don't know whether it would work. It might.
+我经常想一个地下花园胶泥系统的潜力。挖掉土，铺一层绿 mat 层，然后把土放回去。我不知道是否可行。也许可以。
 
-I'm not saying exactly what you can do around a situation of this sort. When you walk in there, you should be able to work out quite a lot that you can do. I would stick in little olives and date palms and grapes and raspberries and strawberries and marigolds all around in amongst these rocks, and direct little runnels to places -- lots of detail work. Nice! There is nothing like an old rocky river bed or a pile of stones to work in! A pile of logs is great -- big logs, I mean, a huge amount of niches, and a great potential. Just start people cleaning up the country.
+我不是在确切说你在这种情境周围能做什么。当你走进去，你应该能想出很多你能做的。我会在这些岩石间到处插小橄榄、枣椰、葡萄、树莓、草莓和金盏花，引导小水渠到各处——大量细节工作。美好！没有什么比在古老岩石河床或一堆石头中工作更好的了！一堆原木也很棒——大原木，我是说，大量生态位，巨大潜力。让人们开始清理乡村就好。

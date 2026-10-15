@@ -1,365 +1,299 @@
-#INTRODUCTION TO PERMACULTURE
+# 朴门导论 (Introduction to Permaculture)
 
-##BY BILL MOLLISON
+## 作者：比尔·莫里森 (Bill Mollison)
 
-###Pamphlet I in the Permaculture Design Course Series
+### 朴门设计课程系列 · 第 I 册
 
-**PUBLISHED BY YANKEE PERMACULTURE**
+**本讲义可自由复制传播，鼓励广泛分发 (Public Domain)**
 
-**Publisher and Distributor of Permaculture Publications**
-
-**Barking Frogs Permaculture Center**
-
-**P.O. Box 69, Sparr FL 32192-0069 USA**
-
-Email: <mailto:YankeePerm@aol.com>
-
-<http://www.barkingfrogspermaculture.org>
-
-![Cover Image](pdcimages/1-cover.bmp)
-
-**Edited from the Transcript of the Permaculture Design Course**
-
-**The Rural Education Center, Wilton, NH USA 1981**
-
-**Reproduction of this Pamphlet Is Free and Encouraged**
-
-**Re-edited for Markdown and Ebooks by [Nathan Luedtke](mailto:luedtke@gmail.com) in 2014**
+> 1981 年比尔·莫里森在美国新罕布什尔州乡村教育中心所授朴门设计课程实录。由 Elizabeth Beyor 转录，Dan Hemenway 编辑出版，置于公共领域。2014 年由 Nathan Luedtke 重新编辑为 Markdown 格式。
 
 ***
 
-###AN INTRODUCTION TO PERMACULTURE
+### 引言
 
-This is the first in a series of 15 pamphlets based on the 1981 Permaculture Design Course given by Bill Mollison at The Rural Education Center, Wilton, New Hampshire, USA. Elizabeth Beyor, without compensation, transcribed tape recordings of the course and subsequently edited them into the 15 pamphlets. Thelma Snell typed all 15 pamphlets and laid-out most of them. Lisa Barnes contributed illustrations to pamphlets II, IX, and XI. Bill Mollison edited the pamphlets for accuracy and style, as did I, their publisher, Dan Hemenway. I also performed computer typesetting for this edition. After about 10 years of using Thelma’s typescript, we were able to offer a typeset version, which is at once more compact, saving trees and money, and more readable. Now we also offer the pamphlets in electronic form, so that they may be read directly by computer without use of any paper, saving more trees. This edition has been slightly reedited to make it more readable, accurate, and up-to-date.
+**Andrew Jeeves 撰，1981**
 
-In deference to the monumental tasks of love in this work, often painstaking, always careful and caring, and with Bill Mollison's consent, I have placed these pamphlets in the public domain. Their reproduction is free to all and encouraged. Credit, above all to Bill Mollison and secondly to Yankee Permaculture, is proper and appreciated.
+朴门 (Permaculture) 作为一种公众兴趣始于 1975 或 1976 年，当时比尔正在跟一个朋友谈论它，那个朋友认识一位在墨尔本国家政府电台工作的访谈主持人。比尔被问到是否愿意做一档听众来电节目。他做了。结果那是他们有史以来最有趣的来电节目。
 
-We have rough Spanish translations of a few Permaculture Design Course Pamphlets, some French translations, and some German translations. To obtain the latest list of translations we have available, order Permaculture Paper #27 from the Yankee Permaculture order form. This is our list of special order documents. Volunteer translators are needed, particularly for Spanish versions. Since these pamphlets are in the public domain, we expect that there are translations of which we have not heard. If you encounter any, please let us know.
+那天的电话板一整天都在亮着。人们询问这是关于什么的，在哪里可以获取更多信息。比尔当时有一份一直在写的手稿，只是一些想法。他觉得现在是出版一些东西的时候了，因为有太多人需要信息。他至少收到了三千封信，问"在哪里可以了解更多？"
 
-Through the efforts of volunteers, we have placed this survey of permaculture in the public domain, supplementing the copyrighted material that is available. Just as we encourage you to reproduce these pamphlets, we urge you to respect the copyright of other permaculture books and publications. Always request permission to reproduce copyrighted material. Always abide by the decision of the copyright holder.
+当时，大卫·洪姆格伦 (David Holmgren) 正在大学写一篇关于朴门的论文，由比尔指导他的研究。他们把论文整理在一起，比尔补充了更多内容，然后匆忙合出了一本书，这就是《朴门之一》(*Permaculture One*)。印了 25,000 册。三年内就售罄了。
 
-Volunteers are still greatly needed in all phases of our permaculture work. We hope that these pamphlets encourage you to join the champions of Earth, our mother, whether you call your work permaculture, something else, or no particular name at all. And if you wish to pursue permaculture, please note that we offer a large selection of permaculture publications, a journal, a correspondence Permaculture Design Course, and that we are also available to deliver lectures, lead workshops, and teach Permaculture Design Courses anywhere in the world.
+由此出现了一群想聚在一起讨论朴门的人。他们决定成立一个协会。《季刊》后来约有 3,000 名直接订阅者。区域性的朴门小组开始形成。人们每月或每两周聚一次讨论朴门，交换植物，测绘灌木中坚果产量高的树种，运营种子交换站等等。头四年里澳大利亚就出现了 36 个这样的小组。我们每在一个地方办工作坊，通常会形成一个小组并开始做事。
 
-To purchase any of these pamphlets on computer disk, please consult our order form.
+大约两年前，比尔决定该出《朴门之二》了，因为有更多信息需要传递，同时需要将重点从理论转向更实用的内容。印了 30,000 册，现已重印。
 
-For our Mother, the Earth,
+去年比尔来到美国，到处讲座，带着几本书卖，凑钱去下一个地方。在加州花 700 美元买了辆面包车横穿大陆。那是在那个酷热的夏天，面包车抛锚了。比尔困在荒郊野外，车死了，心想这一切到底值不值？
 
-Dan Hemenway. Sparr, Florida, USA, January 2001.
+然后他去了多伦多的未来会议。大约有 1500 人在场。他们给了他一个小时段，他做了一个关于朴门的演讲。有人问他是否愿意再讲一次。下一次有 700 人来。又被邀请再讲，人更多了。比尔是最后压轴的主讲人之一。当气氛似乎低落、没人知道接下来该往哪里走时，比尔站起来开始说话，所有人都在惊叹："哇！听这个人说！"
 
-Ninth edition.
+***
+## 朴门导论
+
+### 比尔·莫里森，1981
+
+
+#### 大地上的可怕时刻
+
+我认为没有人总结过地球表面正在发生什么。
+
+为了改变我们的行为方式，我们似乎需要先吓唬自己，预想海啸和灾难。这些事也许真的会发生，圣安德烈亚斯断层也许会位移。但我们对此无能为力。真正正在发生的事情，是我们人类个人负有责任的。它非常普遍。我们说的几乎一切都适用于任何地方。
+
+真正开始崩溃的系统是土壤、森林、大气和营养循环。对此负责的是我们。在西方（我怀疑其他地方也一样，除了部落地区），我们从未演化出任何可持续的农业或林业系统。我们没有系统。让我们来看看正在发生什么。
+
+#### 森林
+
+森林在氧气循环中的重要性远超我们过去的认知。我们曾以为海洋是最重要的因素。并非如此。海洋不仅不太重要——对大气循环的贡献可能不到 8%——而且许多海洋正在开始消耗氧气。如果我们向海洋释放更多汞，海洋将变为耗氧的。平衡正在改变。因此，主要依靠森林来保护我们免于陷入无序状态。
+
+在森林中，有些是至关重要的，比如常绿林，有两个广大的系统。一个是赤道多物种常绿林；另一个是俄罗斯冻原和南方常绿林的寒带常绿林。雨林在氧气循环和大气稳定中至关重要。
+
+森林还为我们提供了大量的降水。当你砍掉山脊上的森林，你会观察到降雨量本身下降 10% 到 30%，这也许还能忍受。你看不到的是，总降水量可能下降超过 86%，降雨只是总降水的一小部分。在安静、晴朗、无云的夜晚，任何雨量计都记录不到降雨，但森林系统中却可能发生大量降水。这在海洋性气候中尤其明显，但也适用于所有气候。因此，仅仅砍掉山脊上的树木就能非常迅速地制造半沙漠条件。这正在以极快的速度发生。
+
+森林的特性是调节一切。森林调节极端寒冷和酷热、极端径流、极端污染。森林被移除后，无序的极端就来了。当然，森林也是土壤的创造者。森林是极少数能创造土壤的系统之一。
+
+森林正在发生什么？我们以非常短暂的方式使用大量森林产品——纸张，尤其是新闻纸。需求已经过度。目前，我们每年砍伐超过种植 100 万公顷。但任何一个月内，这都可能迅速改变。比如上个月，由于密西西比河底土地的森林被清理来种大豆，这个数字翻了一番。
+
+在我们曾经拥有的所有森林中，欧洲仅存约 2%。我不认为欧洲有一棵树不是因为人类的容忍或由人类种植而存在的。不存在所谓的原始欧洲森林。南美洲仅存约 8%。其他地区 15% 我想是一个普遍数字。所以我们已经摧毁了大部分森林，正在处理一个相当小的残余。砍伐率因管理方式而异。但总的来说，即使在管理最好的森林中，我们也以 4% 的恒定速率流失，意味着还剩 25 年。但事实上，我们在整个西南亚、南美、整个第三世界，以及跨国公司能在西方世界获得森林所有权的任何地方，观察到的是约 100% 的流失。这是一个"砍了就跑" (cut and run) 的系统。
+
+我们长久以来被一种虚假的安全感麻痹，被告知伐木公司每砍一棵树就种八棵。我们真正关心的是生物量 (biomass)。当你从森林中取走超过 150 吨的东西，然后放回不超过 10 盎司的东西，你绝没有在保护生物量。
+
+我们把森林用于什么？主要用途是新闻纸和包装材料。即使仅存的原始森林也在为此被砍伐。从未见过人类足迹的森林正在被砍伐做成新闻纸。那些森林中的树木可能 200 英尺高才到第一个枝杈，巨大的教堂般的建筑。它们正在被切片。塔斯马尼亚有比你们红杉还高得多的树。这些正在被砍伐并作为木片运出。所以，在大多数情况下，我们正在将原始森林贬低到最低级的用途。
+
+这在系统的另一端产生了影响。森林的废弃产物正在杀死大片海域。波罗的海、地中海和纽约沿海成为耗氧区的主要原因是我们在海底铺满了森林产品。广义地说，森林死亡每年释放约 12,000 亿吨二氧化碳。我们依赖森林来锁定二氧化碳。在摧毁森林的同时，我们正在摧毁本应帮助我们的系统。正在被侵蚀的正是最后的残余。
+
+#### 气候
+
+这对世界气候的影响正在大气成分和大气缓冲变化的能力两方面变得明显。任何一个月现在，我们都将以某种方式打破世界气象记录。在我的家乡，我们非常孤立，被海洋和森林缓冲。但我们连续经历了两百年来记录中最风、最干和最湿的月份。所以世界气候真正发生的不是趋向温室效应；不是趋向冰河时代；而是开始如此剧烈地波动，以至于完全无法预测你将突破哪个热屏障。但当你突破时，你将在一个极端突破，而且非常突然。这将是一个突变。在那之前，我们将经历气候的巨大波动。这就是正在发生的事。
+
+我们就这样继续砍伐，也许再过十二年就不会有任何森林了。
+
+还有另一个因素。如果只是我们的砍伐在杀死森林，那已经够糟了。但自 1920 年代起，频率越来越高，我们一直在看到森林物种因一连串病原体而消失。从栗树枯萎病开始。栗树曾占其所在森林的 80%。所以单一物种的消失可能代表巨大的生物量、巨大的生物储备和非常重要的树种。Richard St. Barbe Baker 指出，正在消失的是那些单位叶面积最大的树种。先是栗树，每棵可能有 60 英亩的叶面积。然后是榆树，约 40。现在山毛榉在消失，橡树在消失，澳大利亚和塔斯马尼亚的桉树在消失。甚至日本的针叶林也在衰亡。日本针叶林正以惊人的速度消失。加拿大的地盾森林和俄罗斯森林也是如此。
+
+#### 叶虫阴谋 (The Phasmid Conspiracy)
+
+现在我们来到一个叫做**叶虫阴谋**的东西。每个国家的森林各有不同，其榆树、栗树、杨树、冷杉都受到特定病原体的攻击。昆虫正在采取某种烧灼式的措施。美国人的反应是喷药；英国人的反应是砍倒烧毁；而在澳大利亚，反应是："啊，管它呢！明年就没了，随它去吧！"
+
+真的是这些疾病吗？疾病是什么？叶虫 (phasmids) 导致桉树死亡。有肉桂真菌。榆树是荷兰榆病。杨树是锈病。冷杉也是锈病。你认为这些疾病正在杀死森林吗？
+
+我认为我们看到的是一具尸体。森林是一个垂死的系统，分解者正在开始进食。如果你非常了解森林，你知道你可以今天早上出去用斧头砍一棵树。就这样。或者用推土机边缘碰一下，或者用车撞一下。然后，如果你耐心地坐在那棵树旁，三天内你会看到也许二十种昆虫和其他分解者及"害虫"来访伤口。树已经注定要死了。吸引它们的是垂死之树的气味。我们在澳大利亚注意到了这一点。故意伤害树木看会发生什么。叶虫来了。叶虫探测到这个气味。树成了它的食物树，它来进食了。
+
+所以昆虫不是森林死亡的**原因**。森林死亡的原因是多重伤害。我们指着某个虫子说："那个虫子干的。"如果你能怪罪别人就好多了。你们都知道这一点。所以我们怪罪虫子。这其实是个阴谋，怪罪虫子。但树木衰亡的真正原因是透光量、污染物和酸雨沉降的深刻变化。是人，不是虫子，在杀死森林。
+
+#### 土壤
+
+据我们所知，到 1950 年我们已失去了曾有土壤的 50%。自 1950 年起我们测量得相当好。我们又失去了剩余土壤的 30%。第三世界和西方世界同样如此。
+
+土壤的生成速率约为每年每英亩 4 吨——干旱地区少得多。土壤由降雨和植物作用生成。速率各异。沙漠中生成速率低得多。但在这些湿润气候中，约每英亩 4 吨。如果你每英亩每年流失不超过 4 吨土壤，你就持平了。
+
+但让我们看看通常的情况。在澳大利亚，我们每耕作英亩每年流失约 27 吨土壤。美国的情况好一些。种玉米的地方，每英亩每年可流失多达 400 吨。平均可能是 20，但可高达 400 或 500 吨。所以我们做得不太好。在加拿大，他们在测量腐殖质流失，大约一样。那里，腐殖质快用完了。在大草原，他们起初有良好的腐殖质土壤，现在已降到了矿物质土壤基底。
+
+这里有一件应该让我们每个人都感兴趣的事。每一口人——无论你是美国人还是东印度人——如果你吃谷物，现在每年约耗费 12 吨土壤。所有这些流失都是耕作 (tillage) 的结果。只要你耕作，你就在流失。以我们流失土壤的速率，我们看不到十年内还会有农业土壤。
+
+除了耕作直接流失的土壤外，我们还在向所谓的沙漠化 (desertification) 流失大量土壤。在澳大利亚维多利亚州，今年我们因盐碱化失去 80 万英亩。这意味着不仅流失了耕作的土壤，还流失了不耕作的土壤。
+
+#### 森林砍伐导致土壤流失
+
+土壤消失的主要原因是砍伐森林。而且几乎总是，森林砍伐远离土壤流失的地方。也就是说，如果你的土壤开始变咸，你无能为力，因为原因在上游很远的地方，也许一千英里外。我们现在在澳大利亚的湿润气候中也开始出现土壤盐碱化。它成为一种"错位的因素"。不再只发生在沙漠中。它发生在相当湿润的冬季多雨气候中。这是怎么发生的？
+
+这不是一个简单的过程，但很容易理解。雨水落在山上并渗入森林，有一个净向下传输。如果我们移除森林，就有了净蒸发损失。森林向下传输清洁的水，也向大气释放清洁的水。这种净向下传输携带着盐分，这是每英亩 4 吨土壤中不可避免的部分——由岩石分解产生。这些盐分通常沿深层水道排出。它们不是地表系统。淡水从地表流入并下渗。即使在湿润气候中，深层水也比地表水咸得多。这是因为树木充当水泵，保持深层水道低位。
+
+如果我们砍掉树木，深层水道以可测量的速率上升，而且它们在美国、非洲和澳大利亚的广大区域可测量地上升。当它们升到地表以下约三英尺时，树木开始死于"叶虫"。当升到约 18 英寸以下时，其他作物开始死亡。当到达地表时，水蒸发，土壤明显变咸。然后澳大利亚政府开始向农民提供免费水泵，他们开始抽咸水。抽出来的水排到哪里？大问题！
+
+下一步是运来混凝土，于是从河流 diverted 的水渗入土壤，同时他们把咸水抽到海里。而且他们必须永远这样做。你现在需要成千上万的水泵。在政府向农民供水泵的同时，它还在向跨国公司发放额外的木片采伐许可证，它们做得很好。一手卖水泵，一手卖木片。对某些人来说这是个愉快的局面，但对地球来说是灾难。
+
+然而，大多数人过得并不好。我们正以令人恐惧的速率流失土壤和扩大沙漠。而这还没有算上任何农业耕作。你问跨国公司的分析师是否意识到这些问题？不，他们的学位是经济学和工商管理以及各种不相关的领域。
+
+采矿也是局部盐碱化的一个主要因素，仅此一项就导致了西澳大利亚部分地区整片硬木森林的消失，其他地方无疑也是如此。采矿带出大量残余物，在地表蒸发。
+
+#### 公路、城市和水井
+
+在英国导致土壤流失的最大单一因素是公路建设。在美国也是主要因素。在英国，我想每平方英里地表就有一英里公路。而公路正在迅速扩展，基于你永远不需要那些土壤的假设。公路导致土壤永久流失，城市亦然。
+
+城市位于地球上 11% 的极优质土壤上。加拿大是一个有趣的例子，城市可能在这十年内自行抹去最优质的土壤，让农业者不得不转移到可持续性更低的情况。同时，我们要求至少维持产量，在某些情况下还要求增产——在剩余的土壤上。由于农业土壤的流失主要是能源过度应用的结果——机械能和化学能——我们试图在剩余土壤上维持生产力这一事实意味着流失速率必然增加，因为我们在越来越少的表面上使用越来越多的能源。
+
+其他因素也在导致土壤流失。在美国西南干旱地区，有一种"砍了就跑"的农业：钻一口井，抽半咸水种一年生作物。这样搞四年。到那时地表高度矿化，你必须另寻他处再钻一口井，导致一种地毯式的破坏。有两三个好年景，然后回报降到经济水平以下。土壤通常被碳酸盐粘结，它们会崩溃。pH 每年上升约两个点。你可能从 pH 8 开始，迅速到 pH 11。那时你就撤了。
+
+现在看风蚀。这导致了美国内陆土壤的失败。有土壤被吹到洛杉矶，作为红雨落下。澳大利亚中部边缘地区的土壤以微细稀释泥浆的形式落在城市上，可测量为每天每英亩 12 吨。风是土壤流失的一个主要因素。越干，风就越成为我们关注的因素。
+
+我们不需要看比土壤更远，或比森林更远，就能看到一个有限的世界。我可以有信心地说，世界上没有任何地方有可持续的农业，或可持续的林业。
+
+#### 水
+
+现在转到水。甚至在十年前，就有人说水将成为世界上最稀有的矿物。各地地下水位现在都在快速下降。这些是我们正在摆弄的非常古老的系统。许多经过了 40,000 年的演化。不再有任何方式可以获得廉价的地表水。一个主要因素是我们在城市和城镇把一切都封死。我们得不到任何土壤水的补给。我们用公路封死大片区域。我们根本不把水归还地下水位。水一进河流或溪流就没了。它在去海的路上，或者在沙漠盐盘上蒸发。流动的河流其实不是很有用的东西。它在流失中。
+
+有两个非常关键的水区域。一个在城市内。另一个在沙漠边缘。两者都遇到了真正的麻烦。扩张的沙漠正在非洲杀死数百万人。从空中可以看到牧群和人群撤离撒哈拉的迁徙。
+
+一个危险是原子废料在深水中的长期处置。其中一些开始渗入萨克拉门托谷。你最好开始计数缅因、新泽西和加州地下水位中的放射性，我估计还有很多其他地方。
+
+工业简单地用深井将危险废料注入地下水位，导致大片地下水位不可饮用。我想波士顿已停止使用地下水。而且你永远无法再使用它。永远无法清洁那些恶臭的水。
+
+在许多城镇，现在水的溶解盐浓度达 700 ppm，大约在人肾耐受极限。到 1100 ppm，你会晕厥、组织积液、各种问题。由此导致的死亡大多发生在城市——澳大利亚的珀斯和阿德莱德，洛杉矶。在所有这些地区，也许我们不应该用这些水饮用。洗澡还行，虽然在亚特兰大，仅氯气就几乎让你洗澡时窒息。PCB 是不育的一个原因。我想约 20% 的美国男性到 20 岁时已不育。
+
+水正在成为稀缺资源这一事实显然荒谬，因为大约 50 万加仑的水每年落在这个屋顶上。但除非你建水箱或地表储水来接水，否则你很快就会缺水。
+
+当然，树木的流失对循环中水的日益稀缺有显著影响。水没有在循环。我们在流失地表水。我认为 97% 的水始终锁住，只有 3% 参与任何循环。我们正在非常迅速地减少这个比例。
+
+还有其他因素。工业污染。对能源的疯狂争夺——无论是木材、煤、石油还是原子能。这些对总体生命系统来说都是非常危险的东西。我们正在走向真正的麻烦。危险主要在最终结果——从过程中排出什么，烟囱里冒出什么。但对于木材来说，还有你摧毁了一棵树这一事实。
+
+化学品。你能说什么？大多数大规模化学品释放都有不可预见和长期的结果。这些化学品包括 DDT、PCB、二恶英和氯。
+
+#### 绝望的未来
+
+至少，我们有一个绝望的未来。我们的孩子可能永远不会相信我们曾有过剩余食物。这主要是因为极其荒谬的事情。美国原子能的全部产出恰好等于烘干机的需求。
+
+我真的无法忍受在美国公路上。对我来说几乎就像在疯人监狱里。我能忍受背景；但我无法忍受加拿大或这里的公路。像疯子一样开车。他们去哪里？为什么那么多人朝那个方向去？他们都在逃离什么。我想问问那些飞驰而过的卡车里装的是什么。是完全没用的东西？还是目的地本来就有的东西？我经常看到卡车，显然装着相同的货物，朝相反方向开，来回运。司机告诉我他们在运小零件。
+
+现在所有这些，包括能源问题，都是我们必须立即处理的。可以做到。是可能的。做出补救是可能的。我们不妨试着做点什么，而不是不做。如果我们不做任何事，永远到不了任何地方。巨大的诱惑——学术界完全躲在其中——是收集更多证据。我是说，我们还需要更多证据吗？还是到了停止收集证据、开始基于已有证据采取补救行动的时候了？1950 年，就该停止收集证据开始补救行动了。但诱惑总是收集更多证据。太多人浪费生命收集证据。而且，随着我们获得更多证据，我们看到情况比表面看起来更糟。
 
 ***
 
-###Introduction
+### 矫正行动的设计
 
-**by Andrew Jeeves, 1981**
+当我们为永恒而设计时，我们通常走向森林、永久牧场、湖泊和池塘，以及免耕农业。这就是我们的业务。在获得更多可持续性线索之前，这就是我们要操弄的。
 
-Permaculture started in 1975 or 1976 as a public interest when Bill was talking about it to a friend who had a friend who was a radio interviewer on the national, government run, radio station in Melbourne. Bill was asked whether he wanted to do a talk-back program at this radio station. So he did. It turned out to be the most interesting talk-back program they had ever had.
+工业用水可以从屋顶供应。居民点可以使用那些水。美国简直就是水箱。现在有不同类型的水箱。一种是放在屋檐落水管下面的那种。另一种是廉价水箱——土 tank。绝对没问题。总有足够的水满足我们所有用途——淡水，我们目前让它流进海里的那种。
 
-The board was just lit up for the rest of the day. People were asking what it was about and where could they get more information. Bill, at that time, had a manuscript that he had been working on, just ideas. He thought now was the time to publish something because there was so much information needed. He had at least three thousand letters coming to him saying, "Where can I get more about this?"
+我们有三种储水方式。可以储在土壤中；可以储在地表土 tank 中；可以储在密封集水区中。农业情况下，我们用土壤。家庭情况下，我们用土 tank。它们便宜得多。每 5,000 加仑混凝土 tank 的成本，我们可以用同样成本存 250,000 加仑土 tank。
 
-At that time, David Holmgren was writing a thesis at the University about permaculture, working together with Bill who was directing his research. So they got the thesis together, Bill added some more, and they rushed together a book which turned into *Permaculture One*. Twenty-five thousand copies were printed. Within three years they were out of print.
+我们有法律和金融策略。我们可以在地方层面转化为更自给的生物区域。正在这样做的人在给房子加温室、自己种菜。一场巨大的转型正在进行。这就是我们开始的地方，从一英亩着手。
 
-Out of that came a group of people wanting to get together to talk about permaculture. They decided to set up an association. The *Quarterly* now has about three thousand direct subscribers. [Now known as *The International Permaculture Journal*, it has ceased publication, at least temporarily. However, there are quite a few active permaculture publications around the world. - -ED]
+现在我们忽略了的——不仅置之不理而且常常逃避的——是将高层投资资本转化为这些低能源系统。有一整套策略来做到这一点，我们正在将其汇编为一项"地球银行"服务。其中一些策略也将有益于我们的社会幸福。
 
-Regional permaculture groups started. People get together once a month or every two weeks to talk about permaculture. Maybe they get something going politically or set up a bioregional association to let each other know what is going on regionally. They are swapping plants, and mapping species of trees in the bush which are good bearers of nuts, and operating a seed exchange, that sort of thing. Thirty-six of those groups in Australia arose in the first four years. Everywhere we hold a workshop, a group usually forms and starts doing something. Every one of those groups seems to be performing a different function.
+唯一能快速做事的方法是以最快时间做最少的动作，并非常迅速地将工作委托给人们。如果我们保守秘密，不可能在五年内完成。因此，我来这里是为了打破美国精英对替代方案的垄断。我们必须让专家到地面上去放手干。我们需要成百上千的专家。我们不想在任何时候为任何东西申请专利或对任何人保密，甚至不把我们的工作据为己有。那个时代过去了。我们参与的是一个合作的、而非竞争的系统。在我们这一端运作的人非常少，因此我们必须以非常高效的方式行动，以在最短时间内创造最大量的变化。
 
-About two years ago, Bill decided that *Permaculture Two* needed to come out because there was more information. There was also a need to update a lot of the material in *Permaculture One* and change the emphasis from theory to something more practical. We got the manuscript together that Bill had written. It was pretty haphazard. I went to stay with the editor of the *Quarterly* and we put it together and edited it some more. Then we had thirty thousand of those printed. This book is now reprinted.
+我认为我们有一条伦理准则：**停止崇拜有钱人**。必须有一个巨大的伦理转变。这是一个有趣的时代。我们必须做出的巨大转向是远离我们的教育系统。我们使用的所有方法和原则都源于对自然系统的观察，以**被动**的方式陈述。创造朴门所需的思想扭转是意识到你可以掌握它并**去做**。我们必须让知识**主动**。我们必须从被动思维层次转向主动思维层次。
 
-Bill came over here to America last year, just lecturing and going from place to place with a few books and selling them, and scraping the money together so he could get to the next place, not really having much money, buying a van in California for $700 to get across here. It was during that really hot summer and the van died. Bill was stuck out in the middle of nowhere, dead van, and wondering whether this was all worth it?
+#### "农业是一个破坏性系统。"
 
-Then he went to the Futures Conference in Toronto. There were probably 1500 people there. They gave him a little spot, and he gave a talk about permaculture. Someone asked him whether he would like to talk again. He said, "Yeah, ok." There were 700 people at the next meeting. And he was asked to talk again, and there was a bigger crowd. Bill was one of the main finishing lecturers. When things seem to fall down a bit, and no one knew where to go on from there, Bill got up and started talking, and everyone was going, "Wow! Listen to this guy!"
+我们不需要农业的策略是什么？农业是一个破坏性系统。我们需要更多的**园丁**。园丁是最具生产力的、最亲力亲为的农业者。一直以来都是。这从未有过争议。当你把农场变大，你只是接受突然降低的生产力和产量，但更少的人得到它。这就是为什么它在经济上"高效"。当你谈论这种规模的高效农业时，你谈论的是**美元**。当你缩小拥有的土地面积——只要不缩到四分之一英亩以下——农业生产力就会上升。你会听到很多论据说将大农场分成五英亩地块不经济。五英亩地块确实不经济。一到四分之一英亩的地块则不然。它们高度高产。
 
-After Bill's trip across the USA, a few groups of people decided that they wanted to hold some more workshops. One of these was The Rural Education Center. And here we are. It probably depends on you as much as it does on us, now.
+现在看**园丁**……美国有多少园丁？53% 的家庭现在从事园艺。他们平均只种 600 平方英尺。他们每平方英尺赚约 1.50 美元。这些家庭菜园生产了美国 18% 的食物，价值几乎等于全部农业。
+
+再看俄罗斯。农民在半英亩到一英亩的土地上生产约 84% 的食物。国营农场占据了大部分农业用地，生产其余的。但国营农场没有做好工作。它们有 6% 的赤字，从加拿大或美国进口。光鲜亮丽的农业——大规模、广规模农业——不是生产食物的农业。
+
+我们现在降到了约 20 种基本食物。大豆的日子大概到了。你几乎可以用大豆做任何东西。
+
+#### 种子控制
+
+我认为世界上不隶属于不超过 10 个公司联盟的种子公司已经很少了。在澳大利亚确实如此。种子现在为跨国公司种植和分销。你能在美国买到非杂交玉米吗？这里那里可以。在澳大利亚，不行。但我们确实有一家种子公司。叫 Self-Reliance Seed Company，在塔斯马尼亚斯坦利。也许我们有两家。
+
+大型种子种植联盟的下一步行动本应是种子专利立法。到这时，很多人开始有点怀疑了。生物材料的专利化是一个有点可疑的举动。然后世界教会理事会调查了情况并发布了报告。猫出了袋子。于是出现了一场基层的反抗，反对接管基本资源。Kent Whealy 的 Seed Savers Exchange 只是这些行动之一。
+
+但这可能教会了一件事：你无法逃离系统。在新英格兰森林里躲到两英亩地上不会让你脱离系统，除非你从事种子种植操作且确切知道自己在做什么。大多数人不是。如果你在训练自己成为一个好园丁，仍然有某些领域你还没进入，种子种植就是其中之一。在塔斯马尼亚的一个山谷里，一群嬉皮士中，你可能会找到 50 个博士。他们大多坐在家里织毛衣或编篮子或到处采黑莓，把事情留给真正冷酷的人去做。我们必须调动所有技能来组织生命力量，而不仅仅是少数。
+
+在朴门花园中，我们必须处理元素如何放置的问题。其中一些元素是其他元素的肥料或能量交换系统；其他是保护性元素，以各种方式保护其他植物；还有一些充当其他植物的棚架系统或提供遮荫。因此涉及物理关系，还有整套规则 govern 为什么某些元素放在一起。我们理解其中一些规则。很多相当明显。
+
+#### 多样性
+
+**多样性**与其说涉及系统中元素的**数量**，不如说涉及这些元素之间**功能性连接**的数量。多样性不是事物的数量，而是事物协同运作的方式数量。这确实是朴门思考的方向。我曾坐了一个晚上，研究仅将两个元素——温室和鸡舍——放在一起能产生多少连接。我想我数出了 129 种有益连接。所以我们真正谈论的不是在一片地上搞 3,000 个物种的宏大复杂化。
+
+在 30 个物种或 30 个元素之间建立 3,000 个**连接**，那些连接定义为有益或无益，这才好。你可以看到数百个例子，特别是在社会群体中，多元利益不一定有益。多样性本身不给你任何稳定性或优势。
+
+所以我们正在建立的是一种**共生组合 (guild)**——和谐协作的事物组合。有规则要遵循在区域内的放置。有涉及朝向、分区 (zonation) 和交互的规则。有整套原则 govern 为什么我们把东西放在一起以及为什么东西能运作。
+
+农业部门定义了农业用地。他们的意思是可耕作的土地。但我不认为**任何**景观是非农业的。景观有一个完整的生产力层级，全部可用于生产。所以农业中有两个策略供我们考虑。一是找出我们可以将农业实践降低到的最低水平，并着手去做。另一个是找出我们可以将被称为非农业的土地用于农业产品增加使用的水平。有各种新游戏可以玩。我真的很惊讶美国这些森林作为森林被用于持续生产用途的程度之低。
+
+#### 原则
+
+让我们看看 govern 这些系统的原则集。这些原则、规则和指令基于对自然系统的研究。公理 (axiom) 是已确立的原则或自明之理。原则 (principle) 是基本真理、行为准则、前进方式。定律 (law) 是由一组已被证明正确或站得住脚的假设支持的事实陈述。论题和假设是提出以供证明或讨论的想法。还有一些被定下的规则和定律既非规则也非定律。它们不太注意定义自己是如何到达那里的。现在我演化了一套指令，说的是："这是一种好的前进方式。"它与定律或规则无关，只是原则。
+
+#### 能量、源与汇
+
+我们处理地球，它从宇宙其他部分有相当恒定的能量输入。我们处理的是有可更新源——太阳——的能量。在源 (source) 和汇 (sink) 之间是我们干预的地方。我们能够将能量导向的越有用的储存，我们作为设计师就越好。所以我们要做的是建立一套对人类有用的有效储存。其中一些储存可能在创造其他储存时有用。我们能在这个流中构建的复杂程度，我们能导向可用储存以在开始使用前留住能量的数量，这就是设计师的技能所在。此外，许多在机械意义上不可用的能量在生物学意义上是可用的。所以我们需要生物储存和机械储存。
+
+能量可以从一种形式转换为另一种，但不能消失或被摧毁或创造。所以我们可以选择允许通过系统的流的类型。我们可以决定它是储存还是让它离开。
+
+这就是我们对水、对降雨的选择。我们可以储存它，也可以让它离开；如果我们让它离开，它就对我们不可用了。
+
+如果要回收，需要大量工作才能再次使其可用。工程师下到山谷，因为每个人都能看到山谷里有水。他们在山谷里堵一道，水在后面涨起来，你就有水了——一个大湖在山谷里，最没用的地方。水来自山上。如果工程师把水储存在它来源的地方，就可以让它在流入山谷之前经过各种系统。越接近源我们能干预，我们能建立的网络就越有用。所以我们靠近源开始干预流。重要的不是降雨量，而是我们诱导水执行的职责数量。
+
+进入系统的能量并非都是高效的。每当我们改变能量线路，都会损失一点。无论设计多好，总会损失一些。
+
+全球生物化学循环中基本元素——特别是碳、氮、氧、硫和磷——的维持至关重要。我们担心其中一些循环。
+
+物种灭绝的概率在密度非常高或非常低时最大。存在密度依赖。高密度对物种是危险的事，因为关键元素耗尽导致瘟疫非常快速传播。低密度也是临界情况则更难看到。数量因素是大多数公社或社区忽略的因素。
+
+我不知道有任何其延续取决于自身基因健康的人类社会能在人口低于 300 的情况下存在，即使达到那个数字也需要非常严格的基因控制。我们在几个区域正在为灭绝而繁育。高密度种群通常也开始包含极大范围的基因灾难或突变。
+
+可以对一般系统做出小变化，以带来系统元素更高存活机会或系统内高产量。有一个可怕的陈述叫做过冲论题 (over-run thesis)："我们改变地球表面的能力增长速率超过我们预见该变化后果的能力。"
+
+还有生命伦理论题：生命有机体和生命系统不仅是**手段**也是**目的**。除了它们对人类的价值、对人类的工具价值外，它们有我们不允许它们拥有的内在价值。一棵树本身就是有价值的东西，即使它对我们没有价值——这个概念对我们来说相当陌生。它是活的、在运作的，这才是重要的。
+
+#### 资源
+
+资源是你能投入系统并增加其生产力或产量或有用储存数量的东西。但如果你继续超过那个生产力点，系统本身就崩溃了。这归结为：任何整合系统只能接受它能有效使用的能量。所以你可以过度施肥任何东西，过度加热任何东西，过度耕作任何东西。无论我们谈论的是钱还是粪肥，你都可以放太多。然后发生的是首先你开始得到越来越少的产量增加，然后越来越多地增加一个致死因素。你不能继续灌入更多同样的东西并得到持续的产量增加。
+
+一个朋友去了香港。他对城市做了一个能源预算，非常关注农业。他告诉我，较老的中国农业（手工除草）在非常集约的条件下，使用天然肥料，产生的能量约为其消耗的三倍。然后他们现代化了，使用小型拖拉机、人工肥料，用小火焰喷射除草。我想他说他们多投入了 800% 的能量，产量增加了 15%。然后随着他们继续灌入更多能量，产量下降了。到现在他们和我们一样——只拿回 4% 到 6% 的能量。
+
+所以农业从产能系统变成了耗能系统，就像海洋从产氧变成了耗氧，都是因为我们投入了太多营养。你可以很快在一个池塘做到，在一个国家或大陆则慢一些。
+
+还有完全不同类别的资源。有些资源不受使用影响。你可以整天看一个美景，它真的不影响景色。信息就是这样的资源。[但信息因使用而保存。——DH]
+
+还有一类有趣的东西，你使用它们时它们**增加**。越用越多。某些类型的嫩枝叶属于这一类。某些动植物通过交互互相增加，某些其他类别的资源也是如此。还有一些资源，特别是快速周转的资源，如果不使用就简单减少。一年生草是一个好例子。如果不使用，系统中一年生草的数量减少。在火灾易发情况下，薪柴在一定程度上也是如此。它积累为野火燃料，当所有一次性消耗时。
+
+但大多数资源属于需要**管理**以维持的类别。使用即减少。我们称之为有限资源。
+
+还有一类资源，使用时减少其他一切。铀或钚是一个好例子。使用中的钚倾向于荒废其他资源，其中一些用途是恐怖的。像二恶英，如果用作资源，开始减少总体资源。
+
+所以资源有一种管理层级和有益或无益的层级。大多数让我们快乐的东西要么非常可管理，要么数量充足。有一些我们以为需要但让我们痛苦的东西。
+
+我认为我们可以用时间污染，我预期也可以用多样性。仅仅把很多东西放在一起，我们可能达到仅凭多样性就污染系统的阶段。
+
+汽油是一种在西方社会制造了无序的资源。我想不出上次有人有效使用一加仑汽油是什么时候。几乎所有都是非生产性使用。我曾用了一两品脱摧毁一个我过敏的蚁巢。就我而言，那是有效的。我也不知道拖拉机经济中有哪台机器产生的能量超过它使用的。你必须从地下采油，炼油，运输。你说汽油为我坐飞机来这里提供了燃料。对。但我来这里只是为了让你不用去那里。汽油确实有一些当前用途——我称之为补偿性用途。但总的来说，汽油的使用导致了可怕的无序。它直透社会结构。
+
+混沌其实是和谐的对立面。它是冲突性竞争和个人主义。当一切都在混沌中时，如果有两三个人朝一个方向走，你必须完胜，因为其他一切都在分崩离析。所以也许我们会赢；也许我们正在抓住一个历史性机遇。
+
+当我们设计时，我不断回到我们**做什么**。我们有两重任务：推荐只有那些生产性的、无害的能量，并试图将和谐构建到功能性组织中，捡起碎片，建立和谐秩序。
+
+我们不应混淆秩序和整洁。整洁是前脑损伤时发生的事。你变得非常整洁。整洁是脑损伤的症状。另一方面，创造力是相当完整大脑的症状，通常是一件无序的事。对无序的容忍是生命中极少数健康标志之一。如果你能容忍无序，你可能是健康的。创造力很少是整洁的。
+
+整洁就像那个笔直站立的美国人用叉子和他笔直的行事的画。英国花园是非凡整洁和功能性无序的标志。你可以轻松测量它，但它产量不多。我们要的是创造性无序。我重复，重要的不是系统中元素的数量，而是这些元素的功能性组织程度——有益功能。
+
+**产量 (yield)** 是有用能量储存的总和。它是系统中保守和生成的能量之和。它从来不只是**产品**产量——不是番茄的磅数、鱼的磅数或橡子的磅数——这是人们通常测量产量的方式——而是有用储存中能量的总和。产量是设计的函数，理论上是不受限的。也就是说，我还没见过一个我们不能通过更好的设计来增加产量的系统。
+
+由于设计本身是我们对系统理解的函数，产量也取决于我们理解事物的程度。是智力决定所有这些事情，而不是任何外在因素。我不太确定智力是什么。我将其定义为我们理解的能力，这可能不是智力的而是共情的。
+
+在源和汇之间，多样性增加：能量储存可能增加，组织复杂性可能增加。我们的工作是将某些类别流中的那些暂停转化为有益资源。是系统中生态位的数量允许一定数量的物种和品种共存。它是森林中啄木鸟的树洞。
+
+再次，系统中生态位的数量取决于系统的设计。所以我们来到了主动的情况。在应该被物种和产量饱和的情况下，我们可以通过看到在哪里创造更多空间来产生巨大差异——通常通过非常小的动作。[首先看到未填充的生态位、空空间在哪里，然后填充它们。温带生态系统尤其往往是不完整的。——DH] 一对鸽子在悬崖上繁殖的数量取决于岩架的数量。增加岩架很容易。通常，压低产量的不是食物这个基本因素。事实上，食物天花板是非常罕见的东西。是某个与食物完全无关的其他因素。这个环境[新罕布什尔州威尔顿]周围有数吨食物[橡子]，没有东西吃它们。
+
+我们必须做的是看事物如何运作，不同的事物如何运作。
+
+部落传说规定一个人只应执行必要的行为，非必要行为往往非常破坏性。其余随之而来。因此，一个人为不得不做的事道歉并去做。但你不会看到人们做不必要的行为。
+
+大约 1952 年，我在灌木丛中有一栋房子，我想，作为一件好奇的事来做，我不会砍倒一棵树除非我不得不。我从来不需要。但我们也可以住在灌木丛中砍树。不幸的是，如果你有钱，很难不砍。你总是在做某事因为你必须花掉那些钱。就像汽油。
+
+在我看来，部落神话是一种教导关爱环境的方式。我相信我们参与的是一个比我们以前想象的更复杂的游戏。
+
+如果你把鱼和一组藻类放进池塘，其中一种藻类特别美味，鱼会大嚼美味藻类直到没有剩下。从而不利它们。然后其他对鱼不可口的藻类增加，从而控制鱼，把鱼饿死。鱼吃藻类；藻类摧毁鱼。
+
+我们让牛在景观上走，景观做出回应。牛不利它们喜欢的植物，从而产生一个它们不喜欢的植物系统。这就把景观对牛关闭了。其中一些植物对牛有毒。一次又一次又一次，这是我们观察到的：景观做出回应。
+
+景观对有害事物有一种回应。我不知道它如何对那些咀嚼地球的煤炭机器起作用，但它可能有一个长期回应，也许是酸雨。所以，你不要推什么东西而不被推回来。我们陷入所有这些机械物理，说每个作用力有等大反向的反作用力。但中国人说："不，那不对。"如果你踢一个生命系统，它踢回来更重。它的反应往往是不公平地压迫性的。你可能只是把某人推出门。那个人带着草叉重新进来，不只是推回来，而是准备戳你几个洞。
+
+现在有不同种类的行为。有必要行为和有害行为。但也有有益行为。这给了我们另一个假设——你可能会得到比你设计的更多的好处。这似乎也是真的。从有意识设计的系统一开始可能发生的是，当我们把三个元素放在一起使它们相当和谐时，其他有益的结果出来了，是我们**没有**设计的。这几乎无例外地发生了。
+
+这是一件没有被教的东西：一旦我们正确地做了一件事，它会继续自行做很多其他事。这似乎正在发生。所以看起来那里有某种东西在起作用，而它很难分析。有时，你做一个单一的动作，简单而正确，你意图是有益的，然后你发现，如果你退后观察它并让它自己运行，它会继续给你也许 10 个你没有预期的好处。然后，如果你仔细看，虽然你把它放在一起是出于单一原因——你已经推理出来了——你看到一旦你做了那件事，有 12 或 15 个其他原因说明你本应该做它。我想我们都知道这样的例子。
+
+当有人把温室夹在房子前面而不是放在外面太阳下时，他可能是出于单一原因——也许是为了给房子供暖，或者只是更容易打理。但然后很多其他好事从那出来了。
+
+我们不太确定他们在做什么，但原住民群体到处用小仪式打磨他们的乡村。他们对自己做什么相当保密，但肯定在做一些乡间调整。他们必须做一个小仪式来保持某些山腰的泉水流淌。我们笑他们。我们知道那些泉水不管他们有没有仪式都会流。但如果我们拿走他们的宗教，泉水会停止流淌。你不要跟白痴谈高级概念。反正，他们不会告诉我们多少他们知道的。我想他们会担心我们会用那些信息做什么。
+
+所以这里有另一种整个思考事物的方式，我认为我们会发现非常有成效，因为它是一种可用的方式来总结很多东西。如果我们喜欢，可以从中提炼原则。**"一切皆有两面"** 是其中之一。**"如果你做对了一件事，它会自己做对更多事"** 是另一个。
+
+现在我们争论是从原则到真实世界，还是——如我尝试前进的——从真实世界到原则。我们是看真正在发生什么然后坐在树下想："嗯，类似那样的事正在这里发生"？还是进入自然试图理解正在发生什么然后去花园？我们争论你走哪条路：从哲学到花园还是从花园到哲学。我认为有人在两个方向旅行，有人从抽象到花园，有人从花园到抽象。我们大多数人从花园上来朝哲学走去。少数人已经上到了神殿正在下到花园。
+
+我认为，在我们的通识教育中，尤其是小学教育中，我们被灌输了大量静态现象和横截面现象。但我们没有被教交互过程，也没有被教事物的共振。我们生活的真实世界处于恒常流变中。事物一直在去往某处的路上。不存在自然现象的静止画面。一切都在去往其他阶段。然而我们教东西仿佛是僵硬的真理。我们在文化上被阻塞。这是因为这是一个科学文化；我们试图测量一切。有不同的方式接近事物。我处理不了符号；有些人处理不了数字；有些人处理不了维度。这就是为什么以小组结社是有益的，只是试图用不同的光照亮相同的真理，试图理解现实的不同阴影。这种动态在教育中是缺失的。
+
+有一件事我们应该坐在地板上多谈谈。存在这样一种和谐，如果我们能掌握它，会给我们大量理解、大量对事件的控制。我们的工作是把东西放在正确的地方然后让它们自行发展。**但要把一个东西放在正确的地方，我们必须有大量关于它的信息。** 我们试图放置的任何东西——无论是一栋建筑、一棵树、一只动物、一条路、一个结构或一个人——我们必须知道关于它的这些事情。我们必须知道它的内在功能，它自然倾向做什么，它仅仅因为做自己、活着就忍不住做的事。有些动植物必须繁衍，它们以不同方式做到。然后有我们可以归类为产量的东西，我们可能感兴趣。这些可能有两三个层次或性质。有我们可能称之为直接产量的。鸡下蛋。然后也许有衍生的、次级的或加工的产量。鸡粪产生沼气。我们必须知道不同的产量是什么。
+
+还值得知道元素如何运作。它们有行为，它们做的事。它们走来走去或摇来摇去。它们有**属性**。它们会或不会反射光。它们因为自己是什么而有属性。它们有颜色。它们有行为。它们有一整套交互和刺激-反应行为。行为有短期的和长期的。我们太频繁地评论事物的短期行为，这不是它们长期的行为方式。我们的科学，尤其是心理学，因不看长期行为而大受其苦。
+
+如果我们知道得够多，如果我们有足够信息，那么这些事情中的很多可以为系统中每个元素、每个实体列出。然后我们可以利用它做大量设计。但它们不是被列为关于实体知识的东西。你可以获得关于一棵树的几乎任何方面的知识，除了这些。倒霉！关于树的属性所知甚少。至于产量，可能几乎不可知。我曾试图找出人们如何使用核桃树。我发现有一个民族将整个文化建立在核桃上；其他人可能将文化建立在竹子上。或者你也可以只取核桃本身。由你决定。
+
+如果你对关于某事物的已知有一个大致概念，那么你就能够放置它使它能运作，使其内在功能对它成为可能。然后它将给出其产量，其次级产量可以被利用，它将以友好的方式行事，因为我们把它放在了对它有益的东西附近。
+
+我们做朴门设计的方式与农学者做设计的方式之间存在巨大差异。真的，我们要做的是让事物以自然方式运作。
 
 ***
-##INTRODUCTION TO PERMACULTURE
-
-###by Bill Mollison, 1981
-
-
-####THE TERRIBLE TIME OF DAY
-
-I don’t think anybody has summarized what is happening on the face of the Earth.
-
-In order to change our ways, we seem to need to terrify ourselves, anticipating tidal waves and catastrophes. Now those things may come off, and the San Andreas fault may shift. But we can’t do much about that. What is really happening is something for which we, as human beings, are personally responsible. It is very general. Almost everything we say applies everywhere.
-
-The real systems that are beginning to fail are the soils, forests, the atmosphere, and nutrient cycles. It is we who are responsible for that. We haven’t evolved anywhere in the west (and I doubt very much elsewhere except in tribal areas) any sustainable systems in agriculture or forestry. We don’t have a system. Let’s look at what is happening.
-
-####Forests 
-
-Forests have been found to be far more important in the oxygen cycle than we ever suspected. We used to think oceans were the most important element. They are not. Not only are they not very important, contributing probably less than 8% of the oxygen in atmospheric recycling, but many are beginning to be oxygen-consuming. If we release much more mercury into the seas, the ocean will be oxygen-consuming. The balance is changing. Therefore, it is mainly the forests that we depend on to preserve us from anarchic condition.
-
-Of the forests, some are critically important, like the evergreen forests, of which there are two extensive systems. One is equatorial, multispecies; and the other, cool evergreen forests of the Russian tundra and the southern evergreen forests. Rain forests are critically important in the oxygen cycle, and in atmospheric stability.
-
-The forests also provide a very large amount of our precipitation. When you cut the forest from ridges, you can observe the rainfall itself fall between 10% and 30%, which you could probably tolerate. What you don't see happen is that precipitation may fall over 86%, the rainfall being only a small fraction of the total precipitation. It is quite possible on quiet, clear nights with no cloud, no rainfall recorded anywhere on any gauges, to have a major precipitation in forest systems. It is particularly true of maritime climates. But it is also true of all climates. Therefore it is possible to very rapidly produce semi-desert conditions simply by clearing trees from ridge top. This is being done at a great rate.
-
-It is the character of forests to moderate everything. Forests moderate excessive cold and heat, excessive run-off, excessive pollution. As forests are removed, immoderate extremes arrive. And of course, it is the forests that create soils. Forests are one of very few soil-creating systems.
-
-What is happening to forests? We use a great many forest products in a very temporary way - paper and particularly newspaper. The demand has become excessive. At present, we are cutting one million hectares per annum in excess of planting. But in any one month, that can rapidly change. Last month, for instance, that doubled because of clearing of the Mississippi bottom land forests for soy beans.
-
-Of all the forests that we ever had, as little as 2% remain in Europe. I don’t think there is a tree in Europe that doesn’t exist because of the tolerance of man or that hasn’t been planted by man. There is no such thing as a primeval European forests. As little as 8% remain in South America. And 15%, I think, is a general figure in other areas. So we have already destroyed the majority of forests, and we are working on a rather minor remnant. Cutting rates vary, depending on the management practices. But in general, even in the best managed forests, we have a constant loss of 4%, giving 25 more years to go. But in fact, what we observe throughout Southwest Asia and in South America, and throughout the Third World, and wherever multinationals can obtain ownership of forests in the Western world, is about 100% loss. It is a "cut and run" system.
-
-We have long been lulled into a very false sense of security by reassurances that the logging companies are planting eight trees for a tree cut. What we are really interested in is biomass. When you take something out of the forest in excess of 150 tons and put something back which doesn’t weigh much more than 10 ounces, you are not in any way preserving biomass.
-
-What are the uses to which we put forests? The major uses are as newsprint and packaging material. Even the few remaining primeval forests are being cut for this. Forests that had never seen the footsteps of man, that had never experienced any human interference, are being cut for newsprint. Those are forests in which the trees may be 200 feet to the first branch, gigantic cathedrals. They are being chipped. There are trees in Tasmania much taller than your redwoods. These are being cut and shipped out as chips. So, for the most part, we are degrading the primeval forests to the lowest possible use.
-
-That has effects at the other end of the system. Waste products from forests are killing large areas of the sea. The main reason why the Baltic and Mediterranean and the coast off New York have become oxygen-consuming is that we are carpeting the sea bottom with forest products. There are, broadly speaking, about 12,000 billion tons of carbon dioxide being released annually by the death of forests. We are dependent on the forests to lock up the carbon dioxide. In destroying forests, we are destroying the system which should be helping us. We are working on a remnant of the system. It is the last remnant which is being eroded. 
-
-####Climate
-
-The effects of this on world climate are becoming apparent both in the composition of the atmosphere and in the inability of the atmosphere to buffer changes. In any month now, we will break the world weather records in some way. In my home town, we are very isolated and buffered by ocean and forest. But we had in succession the windiest, the driest, and the wettest month in history, in two hundred years of recording. So really what’s happening in the world climate is not that it is tending toward the greenhouse effect; it is not that it is tending toward the ice age; it is starting now to fluctuate so wildly that it is totally unpredictable as to which heat barrier you will crack. But when you crack it, you will crack it an an extreme and you will crack it very suddenly. It will be a sudden change. Until then, we will experience immense variability in climate. That is what is happening.
-
-We can just go cutting along, and in maybe twelve more years we won’t have any forests.
-
-There is still another factor. It would be bad enough if it were just our cutting that is killing forests. But since the 1920’s, and with increasing frequency, we have been loosing species from forest to a whole succession of pathogens. It started with things like chestnut blight. Chestnuts were 80% of the forests that they occupied. So a single species dropping out may represent enormous biomass, enormous biological reserve, and a very important tree. Richard St. Barbe Baker pointed out that the trees that are going are those with the greatest leaf area per unit. First chestnuts, with maybe sixty acres of leaf area per tree. Then the elms, running at about forty. Now the beeches are going, and the oaks, the eucalypts in Australia and Tasmania. Even the needle leaf trees in Japan are failing. The Japanese coniferous forests are going at a fantastic rate. So are the Canadian shield forests and the Russian forests.
-
-####The Phasmid Conspiracy
-
-Now we come to a thing called **the phasmid conspiracy**. Each forest varies in each country in that its elms, its chestnuts, its poplars, its firs, are subject to attack by specific pathogens. Insects are taking some sort of cauterizing measures. The American reaction would be to spray; the British reaction would be to fell and burn; and in Australia, the reaction is to say: "Aah, what the Hell! It’s going to be gone next year; let it go!"
-
-Really, is it these diseases? What are the diseases? Phasmids are responsible for the death of eucalypts. There is the cinnamon fungus. In elms, it’s the Dutch elm disease. In the poplars, it’s the rust. And in the firs, it’s also rust. Do you think that any of these diseases are killing the forest?
-
-What I think we are looking at is a carcass. The forest is a dying system on which the decomposers are beginning to feed. If you know forests very well, you know that you can go out this morning and strike a tree with an ax. That’s it. Or touch it with the edge of a bulldozer, or bump it with your car. Then, if you sit patiently by that tree, within three days you will see that maybe twenty insects and other decomposers and "pests" have visited the injury. The tree is already doomed. What attracts them is the smell from the dying tree. We have noticed that in Australia. Just injure trees to see what happens. The phasmids come. The phasmid detects the smell of this. The tree has become its food tree, and it comes to feed.
-
-So insects are not the **cause** of the death of forests. The cause of the death of forests is multiple insult. We point to some bug and say: "That bug did it." It is much better if you can blame somebody else. You all know that. So we blame the bug. It is a conspiracy, really, to blame the bugs. But the real reason the trees are failing is that there have been profound changes in the amount of light penetrating the forest, in pollutants, and in acid rain fallout. People, not bugs, are killing the forests.
-
-####Soils
-
-As far as we can make out, we have lost 50% of the soils we have ever had before 1950. We have been measuring pretty well since 1950. And we have lost another 30% of the soils that remain. Now this is as true of the Third World as it is in the Western World.
-
-The rate at which soils are created is at about four tons per annum per acre - much less in dry areas. Soils are created by the fall of rain and the action of plants. The rate varies. In the desert, they are being created at a much lesser rate. But in these humid climates, at about four tons per acre. If you don’t loose any more than four tons of soil per acre per annum, you are on a break-even.
-
-But let us look at the usual thing. In Australia, we lose about 27 tons of soil per cultivated acre per annum. You do a lot better than that in America, however. Where you grow corn, you can loose as much as 400 tons per acre per annum. While the average may be twenty, it will go as high as 400 or 500 tons. So we are not doing too well. In Canada, they are measuring the humus loss, and that is about the same. There, they are running out of humus. In the prairies, where they started with good humic soils, they are now down to a mineral soil base.
-
-Here is something that should be of interest to each of us. For every head of population - whether you are an American or an East Indian - if you are a grain eater, it now costs about 12 tons of soil per person per year for us to eat grain. All this loss is a result of tillage. As long as you are tilling, you are losing. At the rate at which we are losing soils, we don’t see that we will have agricultural soils within a decade.
-
-Apart from the soils that we lose directly by tillage, we are losing enormous quantities of soils to what is called desertification. In the state of Victoria, in Australia, we lose 800,000 acres this year to salt. That means not only a loss of soils which are tilled, but also a loss of the soils that we don’t till.
-
-####Deforestation Causes Soil Loss
-
-Now the main reason for disappearance of soils is the cutting of forest. And almost always the cutting of the forest is remote from where the soil is lost. That is, you can do nothing if your soil starts to turn salty here, because the reason lies way up the watershed, maybe a thousand miles away. We are now starting to get soil salting in humid climates in Australia. It is becoming a "factor out of place." It is no longer only occurring in deserts. It occurs in quite humid, winter-wet climates. How did this happen?
-
-It is not a simple process, but it is easily understood. The rain, as it falls on hills and penetrates forests, has a net downward transfer. If we remove forests, we now have a net evaporation loss. Forests transmit clean water downward, and they release clean water into the atmosphere. This net downward transfer carries with it the salts which are an inevitable part of that additional four tons of soil per acre which is produced from breakdown of rocks. These salts normally travel on out in deep leads. They are not surface systems. Fresh water runs from the surface and soaks down. Even in humid climates, we have much saltier water at depth than we have on the surface. This is because the trees act as pumps to keep the leads low.
-
-If we cut the trees down, the deep leads rise at a measurable rate, and they are rising measurably across enormous areas in America, Africa and Australia. When they are up to about three feet below the surface, the trees start to die of "phasmids." And when they are up to about 18 inches below the surface, other crops start to die. When they reach the surface, they evaporate and the soil visibly goes to salt. Then the Australian government starts providing free pumps to farmers and they start pumping out the salt water. Where can they discard the water they pump out? Big problem!
-
-The next step is to have concrete delivered, so now water diverted from the rivers soaks into the soil while they are pumping the salt water off to the sea. And they have to be doing that forever. You now want a thousand thousand pumps. At the same time that the government is supplying pumps to farmers, it is leasing additional wood-chipping licenses to the multinationals, who are doing very well. They are selling pumps on one hand and wood chips on the other. It is a happy circumstance for some people, but a catastrophe for the Earth.
-
-Most people, however, aren’t doing very well at all. So we are losing soils and increasing desert at a simply terrifying rate. And that is without any plowing for agriculture. You ask if the analysts of the multinational firms are aware of these problems? No, they have degrees in economics and business management and all sorts of irrelevant areas.
-
-Mining is also a major factor in salting on a local basis, and has accounted on its own for the loss of whole hardwood forests in areas of Western Australia and no doubt elsewhere. Mining brings up a lot of residues which are evaporated on the surface.
-
-####Highways, Cities and Wells
-
-The largest single factor in Britain causing loss of soils is the construction of highways. It is also a major factor in America. In Britain, I think that there is a mile of highway for every square mile of surface. And highways are being rapidly extended on the supposition that you will never need the soil and that highways will enable you to increase energy use. Highways account for the permanent loss of soils, as do cities.
-
-Cities are located on the 11% of very good soils of the Earth. Canada is an interesting example, where cities are liable to obliterate the top quality soils, without any other factor, and in this decade, leaving agriculturalists to move on to less sustainable situations. At the same time, we are calling for at least sustained production, and in some cases an increase of production, on the soils that remain. As the loss of agricultural soils is largely due to the excess application of energy - mechanical energy and also chemical energy - then the fact that we are attempting to sustain productivity on the remaining soils means that the rate of loss must increase due to the fact that we use more and more energy on less and less surface.
-
-Other factors work for loss of soils. In the arid southwest of this country, there is a sort of cut and run agriculture in which you sink a bore [drill a well] and pump up semi-saline water to annual cultivated crop. You keep this up for four years. By then the surface is heavily mineralized and you must seek another area and sink another bore, which results in a sort of carpeting destruction. You can see it. There are two or three good years, then returns fall below economic level. The soils are usually glued together with carbonates and they give up. pH rises by about two points per annum. You might start at pH 8 and rapidly go to pH 11. It is then that you pull out.
-
-We look now at wind deflection of soils. This has brought about failure of the inland soils in America. There are soils blowing out to Los Angeles and falling as red rain. Soils from Central Australia marginal areas fall on the cities as a sort of finely diluted mud, measurable at 12 tons per acre per day. Wind is a major factor in soil loss. The drier it gets, the more wind becomes the factor that we look to.
-
-We don’t have to look any further than the soil, or any further than the forest, to see a finite world. I think we can say with confidence that we don’t have a sustainable agriculture anywhere in the world, or a sustainable forestry.
-
-####Water
-
-Let us move now to water. Even a decade ago, somebody said that water would become the world’s rarest mineral. The water table everywhere is now falling rapidly. These are very ancient systems we are playing with. Many of them are about 40,000 years in evolution. No longer is there any way you can get cheap surface water. If you could, Los Angeles would buy it and use it. A major factor in this is the way we seal everything over in cities and towns. We don’t get any recharge of soil water. We seal over huge areas with highways. We don’t return water to the water table at all. As soon as water is in a river or creek it is gone. It is on its way to the sea, or it is evaporated on the desert salt pan. The flowing river is not really a very useful thing. It is on the way out.
-
-There are two very critical areas for water. One is within cities. The other is on the edge of deserts. Both are running into real trouble. Encroaching deserts are killing some millions of people now in Africa. It is visible from the air as migrations of herds and people out of the Sahara.
-
-One of the dangers has been the long term disposal of atomic waste in the deep waters. Some of these are beginning to seep through the Sacramento Valley. You had better start counting the radioactivity coming in the water table in Maine, New Jersey and California, and, I have an idea, in lots of other places as well.
-
-Industry has simply used deep bores to put dangerous wastes into the water table with the result that large areas of this water table have become unpotable. I think Boston has ceased to use its ground water. And you’ll never be able to use it again. There will be no way you will ever clean that foul water.
-
-In many towns and cities now, water is running at 700 parts per million dissolved salts, which is at about the limit of the tolerance of the human kidney. At 1100 parts per million, you would experience fainting, accumulation of water in the tissues, all sorts of problems. Most deaths from that commonly occur in the cities, in Perth and Adelaide in Australia, in Los Angeles. In all these areas, perhaps, we shouldn’t be using water for drinking. It’s OK to shower in, although in Atlanta, the chlorine alone almost asphyxiates you when you shower. PCBs are a cause of sterility. I think about 20% of American males are now sterile by age 20.
-
-The fact that water is becoming a scarce resource is manifestly ridiculous, because roughly half a million gallons fall on this roof right here annually. But you could be very short of water here soon unless you build tanks or surface storages to catch the water.
-
-Now, of course the loss of trees has a pronounced effect on this increased scarcity of water in cycle. The water is not cycling. We are losing water on the surface of the Earth. I think that 97% of water is locked up at all times and only 3% goes into any cycling at all. We are reducing that very rapidly.
-
-There are yet other factors. There is industrial pollution. There is a desperate scramble for energy sources, whether they are wood, coal, oil or atomic power. These are all really dangerous things to use in terms of the general life system. We are going toward real trouble. The danger is mainly in the end result - what comes out of the process, what goes up the chimneys. But in the case of wood, it is also the fact that you destroy a tree.
-
-Chemicals. What can you say about them? Most every broad-scale release of chemicals has unforeseen and long term results. These chemicals include DDT, PCB’s, dioxin and chlorine.
-
-####A Desperate Future
-
-At the very least, we have a desperate future. Our children may never believe that we had surplus food. It is mainly because of utterly ridiculous things. The entire output of atomic power in the United States is exactly equivalent to the requirements of the clothes-drying machines.
-
-I literally can’t stand being on the American highway. To me it is almost like being in a prison of madness. I can stand the background; but I can’t stand the highways in Canada or here. Driving like crazy people. Where are they going? And why are so many of them going in that direction? They are all fleeing something. I would like to inquire what is in those trucks that are tearing down the road. Is it something of no use at all? Or something which is present where it is going? And often I have seen trucks, apparently carrying identical cargo, going in opposite directions, carting it here and there. The drivers tell me that they are carrying widgets.
-
-Now all of this, including the energy problem, is what we have to tackle at once. It can be done. It is possible. It is possible to make restitution. We might as well be trying to do something about it as not. We will never get anywhere if we don’t do anything. The great temptation, and one in which the academic takes total refuge, is to gather more evidence. I mean, do we need any more evidence? Or is it time to cease taking evidence and to start remedial action on the evidence already in? In 1950, it was time to stop taking evidence and start remedial action. But the temptation is always to gather more evidence. Too many people waste their lives gathering evidence. Moreover, as we get more evidence, we see that things are worse than they had appeared to be.
-
-***
-
-###THE INTERNATIONAL PERMACULTURE SOLUTIONS JOURNAL
-
-####P.O. Box 69, Sparr FL 32192-0069 USA
-
-#####DAN HEMENWAY, EDITOR & PUBLISHER
-
-#####CYNTHIA BAXTER HEMENWAY ASSOCIATE EDITOR
-
-Many of us are painfully aware of the severity of catastrophic ecological decline worldwide. **The International Permaculture Solutions Journal** delivers information, ideas and discussion to provide Earth-healing tools or to promote their development. Information that is practical, detailed and hard to find elsewhere often turns up on "TIPS" pages.
-
-*Who Writes for TIPS?*
-
-Many TIPS writers are tops in the movement: Bill Mollison, Jim Duke, Bill McLarney, and our editor Dan Hemenway, for example. Others are people who have been quietly working on their own. They all have something important to say.
-
-*What Does TIPS Cover?*
-
-TIPS issues often follow a specific theme. Presently we have a series of issues on aspects of developing sustainable food systems. After that will be a series on "Permaculture Design: The Process and the Product," and then a series on appropriate technology in permaculture. And of course each issue contains articles outside the theme as well--matters too important to wait. Eclectic book reviews, fascinating letters to the editor, informative illustrations, & easy-to-use format are hallmarks of our publication.
-
-***
-
-###DESIGN FOR REMEDIAL ACTION
-
-When we design for permanence, we go generally toward forests, permanent pastures, lakes and ponds, and non-tillage agriculture. That is our business. Until we get more clues as to what will be sustainable, that is what we have to play with.
-
-Industrial water can be supplied from roofs. Settlements can use that water. America is simply sort of tanks. Now there are different sorts of tanks. One is the kind you put under the downspout from the roof of your house. Tanks of another sort are the cheap tanks - earth tanks. Absolutely no problem. Always enough water for all our uses - fresh water, which we presently let go into the sea.
-
-We have three ways of water storage. We can store it in the soils; we can store it in surface earth tanks, and we can store it in sealed catchments. For an agricultural situation, we will use the soils. For domestic situations, we will use earth tanks. They are very much cheaper. For every 5,000 gallons we can store in concrete tanks, we can store 250,000 in Earth tanks at the same cost.
-
-We have legal and financial strategies. We can convert locally into far more self-reliant bioregions. The people who are doing that are adding greenhouses to their houses and doing their own gardening. There is an immense conversion going on. That’s where we start, dealing with an acre.
-
-Now the thing that we have ignored, not only turned our backs on but often fled from, is conversion of high level investment capital to these low energy systems. There are a whole set of strategies to do so that we are assembling as an "Earth banks" service. Some of these strategies will benefit our social happiness as well.
-
-The only way we can do things fast is by making the least number of moves in the fastest possible time, and by very rapid delegation of work to people. There is no hope that we can get this done in the next five years if we keep it to ourselves. Therefore, I have come here to break the monopoly of the elite alternative in America. We have got to let experts loose on the ground. We need hundreds and hundreds of them. We don’t want at any time to patent anything or to keep any information to ourselves, not even keep our jobs to ourselves. The time for that is gone. What we are involved in is a cooperative, not a competitive, system. There are a very few of us operating at this end of the system, therefore we have to act in a very efficient way in order to create the greatest amount of change in the shortest period of time.
-
-I think we have an ethic here: **to stop admiring the people who have money**. There has to be a big ethical change. It is an interesting time to be living in. The big twist we have to make is away from our educational system. All the methodologies and principles we use arose as a result of observation of natural systems, and are stated in a **passive** way. The mind twist that has to be made to create permaculture is to realize that you can get hold of that and **do** it. We have to make our knowledge **active**. We have to move from a passive to an active thought level.
-
-####"Agriculture is a destructive system."
-
-What are the strategies by which we don’t need agriculture? Agriculture is a destructive system. Well, we need a lot more **gardeners**. Gardeners are the most productive, most hands-on sort of agriculturists. They always have been. There never has been any debate about it. When you make a farm big, you just accept a suddenly lower productivity and yield, but less people get it. That is why it is economically "efficient." When you talk about efficient farming of this order, you are talking about **dollars**. When you reduce the size of the owned landscape, providing you don’t reduce the lots to less than a quarter of an acre, the agricultural productivity goes up. You get a lot of arguments to the effect that breaking up large farms into five acre blocks is uneconomic. Five acre blocks are. One to one-quarter acre blocks are not. They are highly productive.
-
-Now **gardeners**...How many gardeners are there in the United States? Fifty-three percent of households now garden. They garden only 600 square feet on the average. They make something like $1.50 a square foot. These household gardens are producing 18% of the food in the United States, at a value almost equivalent to total agriculture.
-
-Now let’s look at Russia. The peasant farmer, on a half-acre to an acre, is producing some 84% of the food. The state farms, which occupy most of the agricultural land, produce the remainder. But the state farms are not doing their job. They have a 6% deficit, which is shipped in from Canada or the United States. The glamorous agriculture, the large scale, broad scale agriculture, is not the agriculture that is producing the food.
-
-We are now down to about 20 basic foods. The day of soybeans is probably arriving. You can make just about anything out of soybeans.
-
-####Control of Seeds
-
-I don’t think that there are very many seed companies left in the world that don’t belong to a consortium of not more than 10 companies. It is certainly true in Australia. The seed is now being grown for and distributed by the multi-nationals. Can you buy a non-hybrid corn in the United States? Here and there. In Australia, we can’t. But we do have one seed company. It is called Self-Reliance Seed Company in Stanley, Tasmania. Maybe we have two.
-
-[Self-Reliant Seeds is now defunct, but it was replaced by Phoenix seeds, also of Tasmania. Ed.]
-
-The next move of the large seed-growing consortiums was to have been seed-patenting legislation. At this point, a lot of people started to get a bit suspicious. The patenting of biological materials was a slightly suspicious move. Then the World Council of Churches looked into the situation and produced. The cat was out of the bag. So there has been a general ground-level revolt against takeover of a basic resource. Kent Whealy’s Seed Savers Exchange is just one of these moves.
-
-But one thing this may have taught is that you can’t run away from systems. Holing up in two acres out in the New England forests isn’t going to get you out of the system unless you are into a seed-growing operation and know exactly what you’re doing. Most people do not. If you are training yourself to be a good gardener, there are still certain areas you just haven’t got into, and seed growing is one of them. In one valley in Tasmania, among a group of hippies living there, you might find 50 Ph.D.s. Most of them are sitting home knitting or weaving or running around getting blackberries, just leaving it to the really ruthless people to get on with what they are doing. We must involve all our skills to organize life forces, not just a few.
-
-In the permaculture garden, we must deal with the question of ways in which elements are to be placed. Some of these elements are manurial or energy-exchange systems for other elements; others are defensive elements that protect other plants in a whole set of ways; and some act as trellis systems for others or provide shade. So there are physical relationships involved and there are whole sets of rules that govern why certain elements are put together. And we understand some of these rules. A lot of them are quite obvious.
-
-####Diversity
-
-**Diversity** isn’t involved so much with the **number** of elements in a system as it is with the number of **functional connections** between these elements. Diversity is not the number of things, but the number of ways in which things work. This really is the direction in which permaculture thinking is headed. I was sitting up one evening, studying how many connections are made by putting just two elements together, a greenhouse and a chicken coop. I think I came up with 129 sorts of beneficial connections. So what we are really talking about is not some grandiose complication of 3,000 species on a site.
-
-It would be nice to make 3,000 **connections** between 30 species or 30 elements, with those connections defined as being beneficial or non-beneficial. You can see hundreds of examples, particularly in social groups, where diverse interests are not necessarily beneficial. Diversity of itself doesn’t give you any stability or advantage.
-
-So what we are setting up is a sort of **guild** of things that work harmoniously together. There are rules to follow on placement within the area. There are rules that have to do with orientation, with zonation, and with the interactions. There are whole sets of principles which govern why we put things together and why things work.
-
-The agriculture departments have defined agricultural land. What they mean is land which can be tilled. But I don’t see **any** landscape as being non-agricultural. There is a whole hierarchy of productivity in landscape, and it all can be used for production. So there are really two strategies for our consideration in agriculture. One is to find out what is the minimum level to which we can reduce agricultural practice, and to go about that. Another is to find the level at which we can increase the use of land termed non-agricultural for agricultural products. There are all sorts of new games to be played. I am literally amazed how little these forests in America are used for sustained productive purposes, as forests.
-
-####Principles
-
-Let us look at the sets of principles that govern these systems. These principles, rules and directives are based on the study of natural systems. Axioms are established principles or self-evident truths. A principle is a basic truth, a rule of conduct, a way to proceed. A law is a statement of fact backed up by a set of hypotheses which have proved to be correct or tenable. Theses and hypotheses are ideas offered up for proof or discussion. There are also rules and laws laid down which are neither rules or laws. They do not pay much attention to defining how they got there. Now I have evolved a set of directives which say: "Here is a good way to proceed." It doesn’t have anything to do with laws or rules, just principles.
-
-####Energy, Source, and Sink
-
-We deal with the Earth, which has a fairly constant energy input from other parts of the universe. We are dealing with energy which has a renewable source, the sun. [Not true--the sun is using itself up. However it will expand and consume the Earth before it ceases to be a source of the shorter wavelengths. - DH] Between the source and the sink is where we intervene. The more useful storages to which we can direct energy between the source and the sink, the better we are as designers. So what we are up to is making an efficient set of storages that are useful to man [sic.]. Some of these storages may be useful in the creation of other storages. The amount of complexity we can build into that flow, the amount that we can direct to usable storages in order to hold back energy until we start to use it, that’s where the skill of the designer lies. Furthermore, a lot of energies unusable in a mechanical sense are usable in the biological sense. So we need biological as well as mechanical storages.
-
-Energy can be transferred from one form to another, but it cannot disappear or be destroyed or created. So we have a choice in the type of flow that we allow through the system. We can determine whether it is stored or whether we let it leave.
-
-That is the choice we have with water, with rainfall. We can store it or we can let it leave; and if we let it leave, it becomes unavailable to us.
-
-If we would recover it, there is a lot of work to making it available again. Engineers go down to the valley, because everybody can see there is water down in the valley. So they put a block in the valley and the water backs up behind it and you have water, a big lake down in the valley where it is least useful. Where it came from was up on the hills. Had the engineers stored the water where it came from, then they could have run it through all sorts of systems before they let it escape into the valley. The closer to the source that we can intervene, the greater use is the network that we can set up. So we edge up close to the source to start to intervene in the flow. It’s not the amount of rainfall that counts, it is the number of duties we induce that water to perform that counts.
-
-Not all energy that goes into the system is efficient. Whenever we change the line of energy, we lose a little. No matter how well we design, we must always lose a bit.
-
-A lot depends on the maintenance of the global biological-chemical cycle of essential elements, particularly carbon, nitrogen, oxygen, sulphur and phosphorous. We are worried about some of these cycles.
-
-The probability of the extinction of a species is greatest when the density is very high or very low. There is a density dependence. You can see how high density is a dangerous thing for species because of very rapid transmission of plague resulting from the exhaustion of critical elements upon which the species depends. It is more difficult to see how very low densities are also critical situations. The factor of number is a factor ignored by most communes or communities.
-
-I don’t think we know of any society of man whose continuance depends on their own genetic health that can exist below 300 in population, and not even at that number without very rigorous genetic control. We are breeding for extinction in several areas. High density populations often also start to include an enormous range of genetic disasters or mutations.
-
-It is possible to make small changes in a general system to bring about a higher chance of survival of the elements of the system, or high yield within the system. There is an horrific statement called the over-run thesis which says: "Our ability to change the face of the Earth increases at a faster rate than our ability to foresee the consequences of that change."
-
-And there is the life-ethic thesis, which says that living organisms and living systems are not only **means** but **ends**. In addition to their value to man, or their instrumental value to human beings, they have an intrinsic worth which we don’t allow them. That a tree is something of value **in itself**, even if it has no value to us, that notion is a pretty foreign sort of thought to us. That it is alive and functioning is what is important.
-
-####Resources
-
-Resources are something you can feed into a system and increase its productivity, or its yield, or the number of useful storages. But if you continue beyond that point of productivity, then the system itself collapses. And that comes down to the statement that any integrated system can only accept that amount of energy that it can productively use. So you can over-manure anything, over-heat anything; you can over-plow anything. Whether we are talking about money or manure, you can put too much of it in. What then happens is first you start to get less and less increase in yield and then more and more increase in a lethal factor. You can’t continue to pour in more of the same thing and get a continued increase in yield.
-
-A friend of mine went to Hong Kong. He ran a sort of energy budget on the city, paying a lot of attention to agriculture. He told me that the older Chinese agriculture (weeding by hand) produced, under very intensive conditions, using natural manures, about three times as much energy as it consumed. Then they modernized, utilizing small tractors, artificial fertilizer, and weeded by little hot jet flames. I think he said that they put 800% more energy in and got a 15% increase in yield. And then as they continued to pour in more energy, the yield decreased. By now they are into the same kick that we have. They only get 4% to 6% of that energy out again.
-
-So agriculture went from an energy productive to an energy consuming system, just as the sea has gone from being oxygen producing to oxygen consuming, all because we are putting too much nutrient into it. You can do it to a pond very quickly and to a nation or a continent more slowly.
-
-Then there are categories of resources that are of a totally different sort. There are resources which are unaffected by use. You can look at a beautiful view all day and it really doesn’t affect the view. Information is such a resource. [But information is *preserved* by use. -DH]
-
-There is another category of things that is interesting in that they **increase** if you use them. The more you use them, the more that they increase. Some forms of browse fall into that category. Some categories of animals and plants increase each other by interaction, and some other categories of resource also do that. And some resources, particularly quick turnover resources, simply decrease if you don’t use them. Annual grass is a good example. If not used, the amount of annual grass in the system decreases. To some extent, so does firewood in a fire-prone situation. It accumulates as a fuel for wildfire when all of it is consumed at once.
-
-But most resources lie in the category of resources that need to be **managed** to maintain them. They are those which decrease if used. We will call them finite resources.
-
-There is still another category made up of resources that, if you use them, decrease everything else. We have a good example of that in uranium or plutonium. Plutonium in use tends to lay waste to other resources and some of those uses are horrific. Things like dioxins, if used as a resource, start to decrease the general resource.
-
-So resources have a sort of hierarchy of management and a hierarchy of being beneficial or not beneficial. Most of the things that make us happy either are very manageable or there are plenty of them. There a few things which we think we need, but which make us miserable.
-
-I think we can pollute with time, and I expect that we can, also, with diversity. Just by putting a lot of things together, we might reach the stage where we pollute the system simply with diversity.
-
-Petrol (gasoline) is a resource which has created disorder in Western society. I can’t think when someone last productively used a gallon of gasoline. Nearly all of it is used nonproductively. I used a pint or two once to destroy a nest of bull ants to which I am allergic. As far as I was concerned, that was productive. I also do not know of a case in tractor economy where a machine produces more energy than it uses. You have to take the oil out of the ground, you have to refine it, you have to ship it. You argue that petrol fueled the jet upon which I traveled when I came over here. Right. But I came over here just so that you wouldn’t have to go over there. It is true that petrol has some present uses - what I call restitutional uses. But generally speaking, the use of gasoline has resulted in terrible disorder. It reaches right into the social structure.
-
-Chaos is really the opposite of harmony. It is conflicting competition and individualism. When everything is in chaos, if there are two or three of you going in one direction, you have to win, hands down, for everything else is really falling to pieces. So maybe we will win; maybe we are seizing an historic opportunity.
-
-When we design, I keep coming back to what we **do**. We have a two-fold job: to recommend only the energies that are productive, energies that are not harmful, and to attempt to build harmony into functional organization, to pickup the pieces and make harmonious order.
-
-We should not confuse order and tidiness. Tidiness is something that happens when you have frontal brain damage. You get very tidy. Tidiness is symptomatic of brain damage. Creativity, on the other hand, is symptomatic of a fairly whole brain, and is usually a disordered affair. The tolerance for disorder is one of the very few healthy signs in life. If you can tolerate disorder, you are probably healthy. Creativity is seldom tidy.
-
-Tidiness is like the painting of that straight up and down American with his fork and his straight rows. The British garden is a sign of extraordinary tidiness and functional disorder. You can measure it easily, but it doesn’t yield much. What we want is creative disorder. I repeat, it is not the number of elements in a system that is important, but the degree of functional organization of those elements - beneficial functions.
-
-**Yield** is the sum of useful energy stores. It is the sum of energy conserved and generated in systems. It is never just **product** yield, not the number of pounds of tomatoes, or pounds of fish, or of acorns - which is the normal way people have of measuring yield - but it is the sum of the energy in useful storages. Yield is a function of design, and it is theoretically unlimited. That is, I haven’t seen a system where we can’t, by better design, increase the yield.
-
-As the design itself is a function of our understanding of the system, so does the yield also depend upon the degree to which we understand things. It is the intellect that decides all these things, rather than any extrinsic factors. I am not quite sure what the intellect is. I have put it as our ability to understand, which may not be intellectual but empathetical.
-
-Between the source and the sink, diversity increases: energy stores may increase and organizational complexity may increase. Our job is to convert those pauses in the flux of some of those categories into beneficial resources. It is the number of niches in a system that will allow a number of species and varieties to co-survive. It is the woodpecker’s hole within the forest.
-
-Now, again, the number of niches in a system depends on the design of the system. So now we have come to the active case. In situations which should be saturated with species, and with yield, we can make a vast difference by seeing where we can create more space, often by very small movements. [After first seeing where the unfilled niches, the empty spaces, exist, and filling them. Temperate ecosystems, in particular, often are incomplete.-DH] The numbers of pairs of pigeons breeding on a cliff depends on the number of ledges. It is easy to increase the ledges. Often, what is holding down a yield isn’t the basic factor of food. In fact, food ceilings are very rare things to bump. It is some other factor totally unrelated to food. There are tons of food [acorns] around this environment [Wilton, New Hampshire], with nothing eating them.
-
-What we must do is to see how things work, how different things work.
-
-Tribal lore prescribes that one should only carry out necessitous acts, that non-necessitous behavior tends to be very destructive. The rest follows. Therefore, one apologizes for whatever one has to do and does it. But you don’t see people doing unnecessary acts.
-
-Some time around 1952, I had a house in the bush, and I thought, as a curious thing to do, I wouldn’t cut down a tree unless I had to. I never had to. But we could also live in the bush and cut trees down. Unfortunately, if you have money, it is hard not to. You are always doing something because you have to get rid of that money. Like petrol.
-
-As I see it, tribal myth was a way to teach care of the environment. I believe that we are involved in a more complicated game than we had previously thought.
-
-If you put fish and a set of algae in a pond, and one of those algae is particularly delicious, the fish chomp on the delicious algae until there are none of those left. Thus they disfavor them. Then the other algae, not palatable to the fish, increase, thereby controlling the fish, starving the fish out. Fish eats algae; algae destroys fish.
-
-We let cattle go on landscapes, and the landscapes respond. The cattle disfavor plants that they like and thereby produce a system of plants that they don’t like. That closes the landscape off to cattle. Some of those plants are poisonous to cattle. Time and time and time again, this is what we observe, that the landscape responds.
-
-There is a response within the landscape against damaging things. I don’t know how it works against one of these coal machines that chew up the Earth, but it probably has a long-term response, which may be acid rain. So, you don’t push something without it sort of pushes back. We are into all this mechanical physics, which says that every action has an equal and opposite reaction. But the Chinese say, "No, that’s not true." If you kick a living system, it kicks back harder. Its reaction is often unfairly oppressive. You might simply push someone out the door. That person re-enters with a pitch fork, not just pushing back in, but ready to poke holes in you.
-
-Now there are different sorts of acts. There are necessitous acts and harmful acts. But there are also beneficial acts. And that gives us another hypothesis - that you probably will get more good back than you design. And this seems also to be true. What has probably been happening from the beginning of a consciously designed system is that when we put three elements in conjunction so that they are pretty harmonious, other beneficial results come out that we **didn’t** design. Now that has happened almost without exception.
-
-This is something that isn’t being taught: that once we have done one thing correctly it goes on and it proceeds to do a lot of other things by itself. This seems to be happening. So it looks like there is something going on there, and it is very hard to analyze. Sometimes, you make a single move, simple and right, which you intend to be beneficial, and you discover, if you stand back and observe it and leave it alone, that it goes on and gives you maybe another 10 benefits which you didn’t count on. Then, if you look into it closely, although you put it together for a single reason - you had reasoned it out - you see that once you did that, there were 12 or 15 other reasons why you should have done it. I think we all know examples of this.
-
-When somebody clamped the greenhouse onto the front of the house instead of standing it out there in the sun, he may have done it for a single reason, to heat the house, perhaps, or simply to make it easier to tend it. But then lots of other good things came out of that.
-
-We are not quite sure what they are doing, but the aboriginal groups go around polishing up their country with little ceremonies. They are fairly secretive about what they do, but certainly they are doing a little countryside adjustment. They have to do a little ceremony to keep the springs flowing along certain a mountainside. We laugh at them. We know those springs will flow whether they have a ceremony there or not. But if we take their religions away, the springs will stop flowing. You don’t talk to idiots about advanced concepts. Anyway, they won’t tell us much about what they know. I suppose they would worry about what we would do with the information.
-
-So here is another whole way of thinking about things which I think we would find very productive, because it is a usable way to summarize a lot of things. We can make principles out of it, if we like. **"Everything works both ways"** is one of them. **"If you do something right, it will do a lot more right itself"** is another.
-
-Now we have arguments as to whether we start from principles and to the real world, or - as I try to proceed - we go to the real world and get to principles. Do we look at what is really happening and sit down under a tree and think: "Well something like that is going on out here."? Or do we start going into nature and try to understand what is happening and then go to the garden? We have this argument about which way you proceed: Philosophy to garden or garden to philosophy. I think that there are people traveling both ways, people coming from the abstract to the garden and people coming from the garden to the abstract. Most of us are coming up out of the garden and heading towards the philosophy. A few have been up to the temple and are coming down to the garden.
-
-I think, again, in our general education, and particularly in our primary education, that we get an awful lot of static phenomena taught to us, and cross sectional phenomena. But we are not taught interactive processes, and we are not taught much about the resonance of things. The real world that we live in is in constant flux. Things are on their way somewhere all the time. There isn’t such a thing as a quiet picture of a natural phenomenon. Everything is on its way to other phases. Yet we teach things as sort of rigid truths. We are culturally blocked. It is because it is a scientific culture; we try to measure everything. There are different ways of coming at things. I can’t handle symbols; some people cannot handle numbers; some cannot handle dimension. This is why it is beneficial to associate in small groups, just to try to bring different lights on the same truths, trying to comprehend the different shadows of reality. This dynamic is lacking in education.
-
-There is something we ought to be sitting on the floor and talking about a lot. There is this harmonic that, if we could get hold of it, would give us a lot of understanding, a lot of control over events. Our job is to put things in the right place and then let them rip. **But to get one in the right place, we have to have a lot of information about it.** Anything we are trying to place, whether it is a building or a tree or an animal or a road or a structure or a person, we have to know these things about it. We have to know its intrinsic functions, what is natural for it to do, the things it can’t help doing by virtue of just being itself, being alive. Some animals and plants must spawn and they do that in different ways. Then there are things that we can categorize as yield, which we might be interested in. These may be of two or three levels or natures. There are what we might call direct yields. Chickens lay eggs. Then perhaps there are yields which are derived, secondary, or processed yields. Chicken manure will yield methane. And we have to know what the different yields are. 
-
-It also pays to know how elements function. They have behaviors, things that they do. They walk around or they sway about. They have **properties**. They will or will not reflect light. They have properties by reason of what they are. They have a color. They behave. They have a whole set of interactions and stimulus- response behaviors. Behaviors are short -term and longterm, too. Too often we comment on the short-term behavior of things, which isn’t how they behave in the long term. Our science, and particularly psychology, suffers a great deal by not looking at the long-term behavior.
-
-Now if we knew enough, if we had enough information, then a lot of these things could be listed for each element in the system, each entity. And then we could make a tremendous amount of design use of it. But they are not the things that are being listed as knowledge about the entities. You can obtain knowledge of almost anything about a tree except these things. Bad luck! Very little is known about the properties of a tree. As to the yield, it may be almost unknowable. I once tried to find out how people have used walnut trees. I found out that there is a people who base their whole culture on the walnut; other people may base their culture on bamboo. Or you can just take the walnuts by themselves. It is up to you.
-
-If you have a fair idea of what is known about something, then you are able to place it so that it can function, so that its intrinsic function is possible to it. Then it will give its yields and its secondary yields can be taken advantage of, and it will behave in a friendly way because we put it near to things that are beneficial to it.
-
-There is an enormous difference between the way we make a design in permaculture and the way an agriculturist would make it. Really, what we are up to is trying to let things function in a natural way. 
-
-*** 
