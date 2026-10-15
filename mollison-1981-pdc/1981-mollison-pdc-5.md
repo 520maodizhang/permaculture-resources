@@ -1,129 +1,73 @@
-#PERMACULTURE ON HIGH ISLANDS
+# 高岛上的朴门 (Permaculture on High Islands)
 
-##BY BILL MOLLISON
+## 作者：比尔·莫里森 (Bill Mollison)
 
-###Pamphlet V in the Permaculture Design Course Series
+### 朴门设计课程系列 · 第 V 册
 
-**PUBLISHED BY YANKEE PERMACULTURE**
+**本讲义可自由复制传播，鼓励广泛分发 (Public Domain)**
 
-**Publisher and Distributor of Permaculture Publications**
-
-**Barking Frogs Permaculture Center**
-
-**P.O. Box 69, Sparr FL 32192-0069 USA**
-
-Email: <mailto:YankeePerm@aol.com>
-
-<http://www.barkingfrogspermaculture.org>
-
-**Edited from the Transcript of the Permaculture Design Course**
-
-**The Rural Education Center, Wilton, NH USA 1981**
-
-**Reproduction of this Pamphlet Is Free and Encouraged**
-
-**Re-edited for Markdown and Ebooks by [Nathan Luedtke](mailto:luedtke@gmail.com) in 2014**
+> 1981 年比尔·莫里森在美国新罕布什尔州乡村教育中心所授朴门设计课程实录。
 
 ***
 
-###PERMACULTURE ON HIGH ISLANDS
+### 高岛上的朴门
 
-![Drawing of clouds forming as wind blows over a high island's peak](pdcimages/5-fig1.bmp "High islands have a wet slope and a dry slope.")
+![Drawing of clouds forming as wind blows over a high island's peak](pdcimages/5-fig1.bmp "高岛有湿坡和干坡。")
 
-Islands, whether or not they are volcanic, if they are over a thousand feet high, often have clouds. They will have a very humid top on them, and sub-humid slopes. There will be a wet slope and a dry slope, because seasonally you get winds -- summer winds and winter winds.
+岛屿，无论是否火山形成，如果超过一千英尺高，通常会有云。它们顶部非常湿润，山坡亚湿润。会有一个湿坡和一个干坡，因为季节性地有风——夏季风和冬季风。
 
-If the island is more than five degrees off the equator, it will have a dry and a wet side. The wet side will be pretty wet, so that the humid area comes down slope on one side, while the dry side may be quite dry. The water table is high; the catchment potentially good.
+如果岛屿偏离赤道五度以上，就会有干面和湿面。湿面相当湿润，所以湿润区域沿一面山坡下降，而干面可能相当干燥。地下水位高；集水潜力好。
 
-Fresh water often travels out beyond the island and bubbles up in the sea. Typically, around the island and off the coasts, there are fresh water springs below sea level. They are quite visible; they look like sort of shimmer in the water as it bubbles out of crevices, and you can drink from these springs. They are known to the peoples who do much diving.
+淡水经常流到岛外并在海中冒出。典型地，在岛屿周围和近海，有海平面以下的淡水泉。它们相当可见；看起来像水中的微光，从裂缝中冒出，你可以从这些泉中饮水。常做潜水的人知道它们。
 
-We will take a look now at a high island in Hawaii. This island is half volcano. The other half blew up. Because of the high humidity of the air passing across all islands, there is quite a heavy rainfall over this area where winds rise, peak and fall. As the winds pass across and come down the opposite side of the island, they assist in the drying-out of that side. The winds, lose moisture as they entered the wet side of the island, heat up as they descend, and then have greater evaporative power. They are also working on a lower pressure system.
+现在我们看夏威夷的一座高岛。这座岛一半是火山。另一半炸掉了。由于高湿度空气越过所有岛屿，在风升起、达峰、降落的地方有相当大的降雨。当风越过并沿岛屿另一面下降时，它们帮助那一面干燥。风在进入岛屿湿面时失去水分，下降时升温，然后有更大的蒸发力。它们也在较低气压系统上工作。
 
-Back to the wet side, this is a wet area, and will be rain forest. If we do not intervene, the rain forest will slowly extend down, and so will the clouds, to lower and lower levels, in some cases, extend to the water line, even on the dry side. The whole island then becomes totally wet. What really happens is the wetness descends in the trees at ground level.
+回到湿面，这是一个湿润区域，将是雨林。如果我们不干预，雨林会慢慢向下扩展，云也是如此，到越来越低的高度，在某些情况下，延伸到水线，甚至在干面。整个岛然后变得完全湿润。真正发生的是湿度在地面高度的树木中下降。
 
-I have a little book, given to me by someone as I left Hawaii, called "Memories of Molokai", written by one of the descendants of the missionaries. This man grew up there. He says that fields that were dry grasslands when he was a boy are now wet and marshy forested areas. People now alive can remember the descent of the mists as the forest has extended. They remember when the mist was one thousand feet high, higher than it is today. You really observe a positive, fast response when forests take over. The amount of water generated on high islands is relevant to the amount of forest on those islands. Historically, springs have either dried up, or recommenced to flow, depending on whether the forest is extending, or being removed.
+我有一本小书，离开夏威夷时有人给我的，叫《莫洛凯之忆》，由一位传教士后代所写。这个人在那里长大。他说他小时候是干草地的田野现在成了湿润沼泽林地。现在活着的人能记得雾的下降随着森林扩展。他们记得雾曾经有一千英尺高，比今天高。当森林接管时你确实观察到积极的快速响应。高岛上产生的水量与那些岛上的森林量相关。历史上，泉要么干涸，要么重新流淌，取决于森林是扩展还是被移除。
 
-You can play around with the water, play around with forests, on these high islands. High islands lend to high-ridge storage of water, following the model we studied in the keyline system. We can direct water from catchment to catchment to catchment.
+你可以在这些高岛上玩水，玩森林。高岛有利于高脊储水，遵循我们在 keyline 系统中研究的模型。我们可以将水从一个集水区导向另一个再到另一个。
 
-High islands are also good sources of wind and sun and water power. The ancient Hawaiians applied these principles.
+高岛也是风、太阳和水力的好来源。古代夏威夷人应用了这些原则。
 
-Now we will look at the ancient Hawaiian land division. As we look down on the island, we can see that there are natural volcanic run-off patterns, and river systems. The Hawaiian land subdivision followed the ridges between the valleys. It followed the natural division of the island, which was from the mountain ridge to the surrounding reef, including the section of lagoon between the shoreline and the river, and, in fact, extending over the reef. This was the Ohana division of the islands. It was a good division, arrived at, no doubt, after a whole series of extinctions and reinvasions, over some thousands of years. These very logical districts imparted control of the entire watershed from its origins to its discharge into the sea and beyond.
+现在我们看古代夏威夷土地划分。从岛上俯瞰，我们可以看到有天然火山径流模式和河流系统。夏威夷土地细分沿山谷之间的山脊走。它遵循岛屿的自然划分，从山脊到周围礁石，包括海岸线和河流之间的潟湖部分，实际上延伸到礁石之外。这是岛屿的 Ohana 划分。这是一个好的划分，无疑是在数千年间经过一系列灭绝和重新入侵后达成的。这些非常合乎逻辑的区域赋予了从源头到排入大海及更远处的整个流域控制权。
 
-The Hawaiians independently invented the keyline system. They put a massive stonewall at the keyline and led the water from the upper valleys out to the ridges. They took it back to the valleys and out to the ridges at a lower level, then back to the valleys, and that was their taro lands. These keyline systems still exist. You can walk out the keyline and examine those terraces, sometimes cyclopean, built of enormous stones.
+夏威夷人独立发明了 keyline 系统。他们在 keyline 处建了一道巨大的石墙，将上谷的水引到山脊。他们把它带回山谷，再以更低水位引到山脊，再回山谷，那就是他们的芋头地。这些 keyline 系统至今存在。你可以沿着 keyline 走，检查那些梯田，有时是巨石砌成的。
 
-They are forested from keyline up, and they confined foot traffic to the ridge tops -- very sensible people.
+从 keyline 往上都是森林，他们将步行交通限制在山脊顶部——非常明智的人。
 
-Forests were taboo areas, because they were the source of water. They were used very carefully for essential purposes. Where the human and forest nutrient eventually reached the sea, they enclosed the area with rock wall. Within this enclosure, in three days' time, the sea will grab all nutrients and somehow fix them. In that case, it is the form of algae. In those enclosed ponds they raised millions of pounds of mullet. So they turned run-off nutrients into fish and ate the fish. Then, back up on the hillside, in the paddy field, the process started all over again. Real good. That quite stable ecology supported many thousands of people.
+森林是禁忌区域，因为它们是水源。它们被非常谨慎地用于必要目的。在人类和森林营养最终到达大海的地方，他们用石墙围起区域。在这个围栏内，三天内大海会抓住所有营养并以某种方式固定它们。在这种情况下，是藻类的形式。在这些围起来的池塘里他们养了数百万磅的鲻鱼。所以他们把径流营养转化为鱼然后吃鱼。然后，回到山坡上的稻田里，过程重新开始。真正好。那个相当稳定的生态支持了数千人。
 
-Well, we soon fixed that. A few missionaries and a few cattle, a touch of disease -- we set it all to rights, cutting up the system, building condominiums. The whole nutrient flow now goes into the sea. All the fish traps filled and became solid earth systems. There may be fewer people living on the islands now, and the islands themselves are far less able to afford them a living. Production is starting to decline rapidly. Righteous, but not smart.
+嗯，我们很快就"修好"了那个。几个传教士、几头牛、一点疾病——我们把一切摆正，切碎系统，建公寓。整个营养流现在都流入大海。所有鱼阱填满变成了坚实的土系统。现在岛上可能住的人更少了，岛屿本身远不如以前能养活他们。生产正在快速下降。正义的，但不聪明。
 
-We could re-institute the Ohana division, except that Ohana is a word in which the people are an integral part of the division. If you belonged to an Ohana, you belonged to a valley and a set of fields and a fish pond and a reef section. They guarded right out to the reef and over the reef by building underwater structures. Thus they created reef structures for additional fish shelter. The people were an integral part of this whole system. The Ohana is a totality. I think it to be a nice concept. Its watershed, its people, its nutrient flow, its animals, everything, is a single, indivisible unit. Perhaps we could seize the headwaters here and start Ohanaing downhill.
+我们可以重新建立 Ohana 划分，只是 Ohana 这个词中人是划分的组成部分。如果你属于一个 Ohana，你就属于一个山谷、一组田地、一个鱼塘和一段礁石。他们守卫到礁石和礁石之外，通过建造水下结构。从而他们创造了礁石结构为鱼提供额外庇护。人民是这个整体系统的组成部分。Ohana 是一个整体。我认为这是一个好的概念。它的流域、它的人民、它的营养流、它的动物，一切，是一个单一的不可分割单元。也许我们可以在这里抓住源头开始向山下做 Ohana。
 
-That is a very nice system. You can go and examine what remains of it. Amazingly, there are those taro patches right on the nose of the ridges because they keylined right out to there. They keylined a little steeper than we do, because they did it by hand, and their little gutters were often stone lined. These gutters run out to quite amazingly steep ridges, right out to the points of the ridges where it was flatter. They grew taro in the paddy fields on those ridge points. You really can't better their system. You might change the elements of it. Taro is not for all of us. Poi is not an ideal food. It is pink and gluey, and tastes frankly of acid. But I have friends who dearly love it.
+那是一个非常好的系统。你可以去检查它的遗迹。令人惊奇的是，那些芋头田就在山脊的鼻尖上，因为他们 keyline 引水一直到了那里。他们 keyline 比我们稍陡，因为他们用手做，他们的小沟渠常常用石衬。这些沟渠延伸到惊人陡的山脊，一直到山脊尖端较平处。他们在那些山脊尖端的稻田里种芋头。你真的无法超越他们的系统。你可以改变其中的元素。芋头不是适合我们所有人的。Poi 不是理想食物。它是粉红色的、粘糊糊的，坦率地说有酸味。但我有朋友非常喜欢它。
 
-They did extraordinarily well in establishing the integrity and the nutrient flow in that system. It is all there, just waiting to be revived. On very exposed dry sites, they used tiny rock walls, little rock mulch walls in amazingly intricate cross-wind patterns, sometimes only ten feet apart. Behind those they grew dryland crop, like sweet potato. They also grew a dryland fern out there for mulch.
+他们在建立那个系统的完整性和营养流方面做得异常好。一切都在那里，只等复兴。在非常暴露的干燥地点，他们用小石墙，小岩石覆盖墙，以惊人复杂的交叉风图案，有时只隔十英尺。在那些墙后面他们种旱地作物，如甘薯。他们还在那里种了一种旱地蕨类作覆盖。
 
-You can do no better than to study the ancient technology of the Hawaiian gardener. For what limited species he had at his command, he was a superb technician and an excellent designer. I wonder at and admire his works, which are totally ignored by the current population. This patterning is all over the landscape. When you look at it with a permaculture eye, it doesn't take you long to work out what they are up to.
+你最好去研究夏威夷园丁的古老技术。以他掌握的有限物种，他是一位卓越的技术家和优秀的设计师。我惊叹和钦佩他的作品，而当前人口完全忽视了它们。这种图案遍布整个景观。当你用朴门的眼光看它，不需要很久就能弄清楚他们在做什么。
 
-Not that the modern Hawaiian can reinterpret that. While some of the old Hawaiians still use it, they are very old. If we could have really looked at the culture before we converted it, we could have learned a lot. There is only one bit of hope. The Hawaiians are buying back the islands. I think they might win if we keep marijuana illegal.
+不是说现代夏威夷人能重新解释那个。虽然一些老夏威夷人仍在使用，但他们非常老了。如果我们能在改造文化之前真正研究它，我们可以学到很多。只有一线希望。夏威夷人正在买回岛屿。如果我们保持大麻非法，他们可能会赢。
 
-Now this is your technique in the high islands. Keep your upland slopes forested. Your island dictates the sort of forest. If your island is high enough -- two thousand feet high -- you have gained (in latitude) maybe seven to twelve degrees. So you can descend from plum and deciduous species, which have sufficient chilling up there, to ultra-tropical, equatorial species at sea level. You can play all sorts of climate games downhill. Low light tolerance trees go up here, too, because they are almost always mists around the higher area.
+现在这是你在高岛上的技术。保持你的上坡森林化。你的岛屿决定了森林的类型。如果你的岛够高——两千英尺高——你已获得（在纬度上）大约七到十二度。所以你可以从李子和落叶物种（在高处有足够寒冷）下降到海平面的超热带赤道物种。你可以在下坡玩各种气候游戏。低光耐受树木也上到这里，因为高处几乎总是有雾。
 
-Mist often curiously reproduces the whole shape of the island in the air above it. This is typical of all islands. Often, coming from the sea, you can see the cloud that belongs to your island; you can recognize that cloud straight-away. That is the island you are approaching. After a while, you come upon its solid counterpart. The Maori described New Zealand as the land of the long white cloud. It is a long island.
+雾常常奇妙地在岛上空再现整个岛的形状。这是所有岛屿的典型。常常，从海上过来，你能看到属于你岛屿的云；你可以立刻认出那片云。那就是你正在接近的岛。过一会儿，你遇到它的坚实对应物。毛利人将新西兰描述为长白云之乡。它是一座长岛。
 
-In certain of the Hawaiian Islands, and many other high islands, it is quite typical to find valleys that have no sunlight all day. Those valleys are in eternal shadow. There is no solar evaporation in there, only transpiration by plants. The vegetation on that side, away from the sun, steeply descends to sea level as a rain forest. It is not much good fighting that. You might as well turn it into the sort of rain forest that you approve of. The rain forest works its way down the hillside by means of soil storage of water. It creates really wet soil conditions. As the forest comes down, it creates additional precipitation. The forest really sends its own water down at ground level, regardless of transpiration. The forest condensation and its protection of the soil from evaporation win over transpiration. Given that we have constant humidity, the forest always beats rainfall in terms of water storage.
+在某些夏威夷岛屿和许多其他高岛上，找到全天没有阳光的山谷是相当典型的。那些山谷处于永恒阴影中。那里没有太阳蒸发，只有植物的蒸腾。背阳那一面的植被陡峭地以雨林形式下降到海平面。与之抗争没什么用。你还不如把它变成你认可的那种雨林。雨林通过土壤储水沿山坡向下扩展。它创造真正湿润的土壤条件。随着森林下降，它创造额外的降水。森林真正在地面高度送出自己的水，不管蒸腾如何。森林凝结和对土壤蒸发的保护胜过蒸腾。鉴于我们有恒定湿度，在储水方面森林总是胜过降雨。
 
-But when the loggers headed into these forests for sandalwood, when the graziers came and burned up to the ridges, the clouds were pushed right up those ridges. Then they attacked the growth on the ridges for charcoal, and the ridges are drying up. They further propose to attack the higher levels, to clear the area off for their electric generators!
+但当伐木者进入这些森林找檀香木，当牧民来烧到山脊，云被推到了那些山脊之上。然后他们攻击山脊上的植被做木炭，山脊正在干涸。他们进一步提议攻击更高水平，清理区域为他们的发电机！
 
-There are special problems related to the placement of housing on islands. These problems are currently, but temporarily, overlooked by the new island people. Opposite to streams, on tropical islands, fringing coral reefs will disappear, because the coral won't stand fresh water. Therefore, these openings in the fringing reef are normal entries for vessels into the harbors. They occur naturally. Or you can blast some out, if you feel brave enough to see what happens after that.
+岛屿上房屋选址有特殊问题。这些问题目前被新岛民暂时忽视。在热带岛屿上，与溪流对面，边缘珊瑚礁会消失，因为珊瑚受不了淡水。因此，边缘礁中的这些开口是船只进入港口的正常入口。它们自然发生。或者你可以炸开一些，如果你够勇敢想看看之后会发生什么。
 
-Oceanic islands, inevitably, at some period in their history, experience tidal waves. If the tidal wave doesn't slow up on the reef, the valley with no reef offshore acts as a funnel, and the tidal wave sweeps into it with ever-increasing velocity and ever increasing bore. These are particularly dangerous valleys for settlement in the lower parts of the valley, and the Hawaiians treated them as not even cultivation areas. They grew tree crop in them, mainly coconut. The coconut trees did a lot to decrease the wave velocity up the valley. So you must keep your client out of there.
+大洋岛屿在历史某个时期不可避免地经历海啸。如果海啸在礁石上不减速，没有近海礁石的山谷就像漏斗，海啸以越来越快的速度和越来越大的浪涌入。这些是山谷下部定居特别危险的山谷，夏威夷人甚至不把它们当作耕作区。他们在里面种树木作物，主要是椰子。椰子树大大降低了波浪沿山谷上升的速度。所以你必须让你的客户远离那里。
 
-Unfortunately, Sheraton Hotels and a few other people don't know about that. They are sitting right there. The periodicity of tidal waves is about twelve to fifteen years. So we will see a lot of disappearance of white America on the Hawaiian Islands before too long.
+不幸的是，喜来登酒店和其他一些人不知道这些。他们就坐在那里。海啸的周期大约是十二到十五年。所以不久我们将在夏威夷群岛上看到很多白人美国人的消失。
 
-Going inland from the shoreline, you are safe enough at the first elevation, if you have a sub-ridge within the major valley. It is usual for a tidal wave to penetrate more than a half mile inshore. The Hawaiians also perch themselves up off the valley floor, on the sides of the valleys in case of reawakening volcanism. Volcanism is always accompanied by torrential rains and enormous and very rapid mud flows. People don't want to be in the path of that flow, which may descend with a speed of four hundred miles an hour. So they build their homes up here off the valley floor, and in from the valley mouth. Where there is a fringing reef, you can creep closer to the coast. You just might get a twelve foot wave instead of a hundred foot wave. Europeans settled tightly on the coast. They are just in between two tidal wave episodes. One happened not long back, and very probably there will be another one soon.
+从海岸线向内陆走，如果你在大山谷内有一个子山脊，在第一个高程你是足够安全的。海啸通常渗透内陆超过半英里。夏威夷人也把自己安在山谷侧面，以防火山重新活动。火山活动总是伴随暴雨和巨大且非常快速的泥流。人们不想在那条流的路径上，它可能以每小时四百英里的速度下降。所以他们把家建在这里，离开谷底，远离谷口。在有边缘礁的地方，你可以更靠近海岸。你可能只遇到十二英尺的浪而不是一百英尺的浪。欧洲人紧紧定居在海岸上。他们正好在两次海啸事件之间。一次不久前发生，很可能很快会有另一次。
 
-Ash flows, mud flows, flows down wadis, landslides, which come down these volcanic hillsides, dictate that you get on a point of a lower ridge. While this is a nice place in any locality, it is almost dictated by necessity on oceanic islands.
+火山灰流、泥流、干谷流、滑坡，从这些火山山坡下来的，决定了你要到一个较低山脊的点上。虽然这在任何地方都是好位置，但在大洋岛屿上几乎是由必要性决定的。
 
-The other factor to be considered on oceanic islands is the cyclone. Therefore wind shelter becomes important, and particular attention must be paid to house construction. Earthquakes and mud slides, but particularly earthquakes, dictate that you reduce the mass of your house to the minimal. It would be best, particularly in tropical islands, if the house were made out of paper or light matting.
+大洋岛屿上要考虑的另一个因素是气旋。因此防风变得重要，必须特别注意房屋建造。地震和泥滑，但特别是地震，决定了你将房屋质量减到最小。最好，特别是在热带岛屿上，如果房子是用纸或轻 matting 做的。
 
-As a designer, the last thing you check out before you leave is to be certain that you haven't left some unfortunate client to a certain death. The paths of mud flows, the paths of tidal waves, the paths of cyclone damage, are all known if you make local inquiries. Look for traces and effects that show you where not to be when these events occur. So, having done all the rest of your planning, you had best be sure that you have put your client where he will have a maximum chance of getting out of any of these situations.
-
-Permaculture on Granitic Landscapes - VI
-
-Granitic landscapes are somewhat like the residual desert -- slab landscapes with a lot of rocks. This landscape presents peculiar problems. Typically, there may be a hundred feet of permeable sand. Your chances of any significant storage of water anywhere in that landscape is very slight.
-
-Yet millions of people live on those landscapes. The entire Perth plain of Australia is of this nature. It has about a two hundred foot depth of clean sand. You can't keep water on it. You may water it forever and the water just goes down and down. You can mulch it and the mulch is gone. A thick mulch is gone in six months. It just gets washed down into the sand. There is nothing to stop it. Mulch just breaks down into little particles and acids and flows on down between sand. It washes right down to wherever the water table happens to be at the time. All organic materials are washed down.
-
-Near ancient rivers you will find people living on these plains -- plains extending out from large granitic areas, not subject to glaciation, and along major rivers that have receded, drying up a bit.
-
-The water source is often bored wells. But that water is finite, and the usual story applies. Once you might have needed to bore to a depth of 20 feet. Now it is necessary to make a 2,000-foot bore, while the water is getting saltier and saltier the further you go down, because there is a natural stratification. There are different salt layers that have hard alkali.The ground water, the fresh water is flowing over the top of saltier water. As the fresh water is pumped off, the bore must go ever deeper and the water gets more expensive and saltier.
-
-So small gley ponds, tanks, and very modest bore water use are requirements for the survival situation. Your garden area should probably be completely lined with plastic sheeting. You then can mulch, and humic acid at least will reach the roots of your plants. Your garden will then be sort of an underground tank.
-
-It is necessary to treat the granitic landscape very much like the desert situation, even though the area may be reasonably humid.
-
-Trees do well in this landscape, though I don't quite know why. So place a big accent on tree crop as a replacement for annual crop.
-
-There can be no lawns. Lawns are total disasters. It takes 90 inches of water a year to maintain a lawn on siliceous sands. You may put on eight feet of water to keep your lawn alive, but there will be huge evaporative loss of water.
-
-Around these rocks and dunes there may be numerous microclimates. You may be able to go from dates to strawberries.
-
-Because of the reflectivity of granite, there are light and heat benefits. Incorporating the mass of these granite rocks into buildings is good strategy. It can be either under glass, or just incorporated under shade houses and used as evaporative cooling systems. It is sometimes possible to dig a rock out and incorporate that rock in the house.
-
-There was a woman in Sydney who got sick of builders, and she set about designing her own house -- typical woman. So she headed for the rocks. What she has is nice rocks coming out in the bedroom, rock coming up through the walls into the living room. She has good evaporating cooling systems, little keylines running all over, covered with moss and ferns -- good permaculture design. It is a good idea, you see, to accept these natural features as part of the house. Glassed in, rocks are amazingly efficient heat stores, very cheap.
-
-FIG "You can mulch right on top of rocks."
-
-Working your way around this rocky landscape, you come upon all kinds of run-offs. You can put little blocks on the shelving areas and mulch there, right on the rock. You can mulch right on top of rocks and right beside the rock below, and get good little run-off systems going into those pockets. In the crevices, granite flakes off, and you find large sheets of that which you can lay out with a bit of assistance from a crowbar, and you can fill that area with mulch and make a growing area there.
-
-You can grow on both sides of your rock in the shade, and in the semi-shade, in the morning sun and in the afternoon sun. Morning sun is the sun for the production of leaf; afternoon sun ripens. These are really interestingly detailed habitats, and you can almost sense what plants will grow in any of these pockets of mulch on rock, just by moving around in the system.
-
-I have a friend who had about four acres of this granitic soil and four acres of dirt that he started to play with. His granitic area is slowly becoming far more productive than the other four acres of promising agricultural soil. He was using the stones for ripening and all sorts of things.
-
-By playing around in there, you can have a lot of fun, and create a really attractive environment. You see a pile of rocks down here, a lot of niches in there, good tomato and cucumber spots, places for vines to grow and climb on rock instead of fencing. There are banks and little shaded areas for strawberries, and on and on and on and on.
-
-But it is hard to deal with that area out where there is no rock base. A modest gley pond, run-off tanks, bores, windmills. Deep siliceous sands are hard to deal with, and shouldn't be crowded up and settled. Tree crops are a vital factor in sustaining agriculture on siliceous sands. Nearly all the palms, many of the fruits, figs, grapes -- all those do quite well there with minimal work.
-
-I have often wondered about the potential of a below-garden gley system. Dig off the earth, put a green mat layer in, and then return the earth. I don't know whether it would work. It might.
-
-I'm not saying exactly what you can do around a situation of this sort. When you walk in there, you should be able to work out quite a lot that you can do. I would stick in little olives and date palms and grapes and raspberries and strawberries and marigolds all around in amongst these rocks, and direct little runnels to places -- lots of detail work. Nice! There is nothing like an old rocky river bed or a pile of stones to work in! A pile of logs is great -- big logs, I mean, a huge amount of niches, and a great potential. Just start people cleaning up the country.
+作为设计师，你离开前最后检查的是确保你没有把某个不幸的客户置于必死之地。泥流的路径、海啸的路径、气旋破坏的路径，如果你做当地询问都是已知的。寻找痕迹和效果，告诉你这些事件发生时不要在哪里。所以，在完成所有其余规划后，你最好确定你已把客户放在他能最大程度逃离所有这些情况的位置。

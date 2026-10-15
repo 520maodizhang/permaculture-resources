@@ -1,153 +1,137 @@
-#PERMACULTURE ON LOW ISLANDS
+# 低岛上的朴门 (Permaculture on Low Islands)
 
-##BY BILL MOLLISON
+## 作者：比尔·莫里森 (Bill Mollison)
 
-###Pamphlet IV in the Permaculture Design Course Series
+### 朴门设计课程系列 · 第 IV 册
 
-**PUBLISHED BY YANKEE PERMACULTURE**
+**本讲义可自由复制传播，鼓励广泛分发 (Public Domain)**
 
-**Publisher and Distributor of Permaculture Publications**
-
-**Barking Frogs Permaculture Center**
-
-**P.O. Box 69, Sparr FL 32192-0069 USA**
-
-Email: <mailto:YankeePerm@aol.com>
-
-<http://www.barkingfrogspermaculture.org>
-
-**Edited from the Transcript of the Permaculture Design Course**
-
-**The Rural Education Center, Wilton, NH USA 1981**
-
-**Reproduction of this Pamphlet Is Free and Encouraged**
-
-**Re-edited for Markdown and Ebooks by [Nathan Luedtke](mailto:luedtke@gmail.com) in 2014**
+> 1981 年比尔·莫里森在美国新罕布什尔州乡村教育中心所授朴门设计课程实录。
 
 ***
 
-###PERMACULTURE ON LOW ISLANDS
+### 低岛上的朴门
 
-A special arid condition exists on low islands. This is because islands, small islands in particular, even the islands in Boston Harbor, have very little water catchment and finite water storage. Of course, all water storage is finite, but some storages are more limited than others.
+低岛存在一种特殊的干旱条件。这是因为岛屿，特别是小岛，甚至波士顿港的岛屿，集水很少且储水有限。当然，所有储水都是有限的，但有些储水比其他更有限。
 
-There are two classes of islands. These are low islands and high islands. Their origins are totally different. The low islands are residual islands. The high islands are volcanic islands or they are granitic islands, either resulting from recent volcanic activity or from folding of the ocean bed, bringing up granites.
+岛屿有两类：低岛和高岛。它们的起源完全不同。低岛是残余岛。高岛是火山岛或花岗岩岛，要么由近期火山活动形成，要么由洋床褶皱带出花岗岩。
 
-All islands are in process of development and change. Often volcanoes come up, making new islands, islands marching off down the slopes and back into the sea again. Islands are appearing and disappearing in those volcanic areas. Many people have actually seen islands appear and disappear. It has happened in recent times Islands are temporary events, and for a variety of reasons. But some islands have more permanence than others.
+所有岛屿都在发展和变化中。火山常常升起，造新岛，岛屿沿斜坡行进再回到海中。岛屿在那些火山区出现和消失。许多人亲眼见过岛屿出现和消失。这在近代发生过。岛屿是临时事件，原因多种多样。但有些岛比其他更持久。
 
-Inasmuch as islands have a limited catchment, what really happens in the low islands is that the fresh water sits on top of a saltwater base. You can actually measure the available fresh water. The top level of the water is often only three to five feet below the surface, and its bottom level only four or five feet below that. If you know the area of the island, you can work out the actual number of gallons of fresh water coming in, and the storage within the water table. Islands can be tropical paradises if a lot of people don't go piling in on them. If they do, it will soon be necessary to use seawater to drink, or start bringing in water. And the plants will die if the fresh water within the water table is drawn off and the water table is allowed to fill up with salt water.
+由于岛屿集水有限，低岛上真正发生的是淡水坐在盐水基底之上。你实际上可以测量可用淡水。水面顶部往往只在地表以下三到五英尺，其底部只在那以下四到五英尺。如果你知道岛屿面积，你可以算出实际进入的淡水加仑数和地下水储水量。如果很多人不涌上去，岛屿可以是热带天堂。如果他们涌上去了，很快就需要用海水饮用或开始运水进来。如果地下水中的淡水被抽走，地下水位被允许充满盐水，植物就会死亡。
 
-You must not pollute this water table. Here, the dry toilet becomes a real necessity. You can't run even two or three septic tanks into that water table on a small island.
+你不能污染这个地下水。在这里，干厕成为真正的必需品。你不能在小岛上往地下水里跑哪怕两三个化粪池。
 
-Conditions of aridity exist mainly on the low islands with a finite water storage. There, one must be very efficient about using water. You must employ a whole set of strategies. I have worked as a designer in these particular conditions. The demand for designers in the atoll marine islands is very, very high. We can't begin to fill that demand.
+干旱条件主要存在于储水有限的低岛上。在那里，必须非常高效地用水。必须采用一整套策略。我曾作为设计师在这些特定条件下工作。环礁海岛对设计师的需求非常非常高。我们无法开始满足那个需求。
 
-![overhead drawing of an atoll and a small island](pdcimages/4-fig1.bmp "The atoll is basically a series of small islands around a closed lagoon, and the cay, which may be right beside it, is a small island surrounded by ocean")
+![overhead drawing of an atoll and a small island](pdcimages/4-fig1.bmp "环礁基本上是一系列小岛围绕一个封闭潟湖，而沙礁可能就在旁边，是被海洋环绕的小岛")
 
-The atoll is basically a series of small islands around a closed lagoon; and the cay, which may be right beside it, is a small island surrounded by ocean. The atolls are circular islands and a few little sand patches, just starting to be islands.
+环礁基本上是一系列小岛围绕一个封闭潟湖；而沙礁 (cay) 可能就在旁边，是被海洋环绕的小岛。环礁是圆形岛屿和几个小沙块，刚刚开始成为岛。
 
-Atolls are composed of coral and sand, with an accumulation of biomass brought in by sea birds and migratory animals. The sea makes the island, really. These are calcareous islands, mainly calcium, either ground up shell, or coral, or both. Many of these islands are mined for phosphates In fact, all phosphates, no matter in what mineral structure they occur, have this derivation. They are accumulations of the manure of sea birds that have been feeding on sea animals.
+环礁由珊瑚和沙组成，有海鸟和迁徙动物带来的生物质积累。实际上是海造了岛。这些是钙质岛，主要是钙，要么是磨碎的贝壳，要么是珊瑚，或两者兼有。许多这样的岛被开采磷酸盐。事实上，所有磷酸盐，无论以什么矿物结构出现，都有这个来源。它们是海鸟粪便的积累，这些鸟一直以海洋动物为食。
 
-![drawing of a small flat island with palm trees](pdcimages/4-fig2.bmp "The combination of phosphates and calcareous sands results in the formation in the soil of a layer of concrete about 18 inches down.") 
+![drawing of a small flat island with palm trees](pdcimages/4-fig2.bmp "磷酸盐和钙质沙的结合导致土壤中约18英寸深处形成一层混凝土。")
 
-The combination of those phosphates and the calcareous sands forms the soil, which is free sand, and somewhat of a layer of "concrete" about 18 inches down. This concrete (calcium triphosphate) layer has various names. We will call it platen to differentiate it from another layer we will be discussing later in our study of tropical areas. This layer of platen varies in depth from maybe nine inches to two or three feet thick. It is often quite level on top, but of variable depth below. This has an effect on the water table Rain penetrates very little. The rain tends to follow this platen layer out and run off, and is thereby lost to storage on the island. Thus,only a very shallow-rooted agriculture is possible.
+磷酸盐和钙质沙的结合形成土壤，即自由沙，以及约 18 英寸深处某种"混凝土"层。这种混凝土（磷酸三钙）层有各种名称。我们称之为 platen（硬磐层），以区别于我们稍后在热带地区研究中将讨论的另一层。这层 platen 深度从大约九英寸到两三英尺厚不等。顶部通常相当平，但下方深度不定。这对地下水位有影响。雨水渗透很少。雨水倾向于沿这层 platen 向外流并径流流失，从而无法在岛上储存。因此，只有非常浅根的农业是可能的。
 
-So how did all these low islands get these big trees, like coconut, growing on them? The answer is, almost exclusively, by human intervention. The coconuts have no trouble establishing on the high islands, which often lack platen because they do not have the calcium build-up that the low islands have. But, nearly always, whenever these trees appear on the low islands, they get there by human agency. Both the ancient and the modern Polynesian sagas document this well.
+那么这些低岛上怎么会有大树，比如椰子？答案几乎完全是人类干预。椰子在高岛上建立没有问题，高岛通常缺乏 platen，因为它们没有低岛那样的钙积累。但是，几乎总是，每当这些树出现在低岛上，都是通过人类力量到达的。古代和现代波利尼西亚传说都很好地记录了这一点。
 
-![drawing of a palm tree planted in layers of sand and platen](pdcimages/4-fig3.bmp "The tree keeps the platen open.")
+![drawing of a palm tree planted in layers of sand and platen](pdcimages/4-fig3.bmp "树保持 platen 敞开。")
 
-To start getting a foothold on these islands, it is necessary to shovel away the layer of sand and break up the platen below it, getting through to what is a rather brackish groundwater. Then, everything you can get in the way of humus, you put in that hole. When your hole is filling up, you put a tree in, preferably a coconut. The tree keeps the platen open. So, down from the tree trunk and around it's circumference, the platen is cracked and permeable to rain. The tree sets up its own little ground water system. Then, to establish more trees, you go about this again and again. Within twenty years, your trees are in production.
+要在这些岛上站稳脚跟，需要铲掉沙层，打破下面的 platen，通到相当咸的地下水。然后，你能弄到的所有腐殖质，都放进那个洞。当洞快填满时，你种一棵树进去，最好是椰子。树保持 platen 敞开。所以，从树干向下和围绕其周长，platen 被裂开并可渗透雨水。树建立了自己的小地下水系统。然后，要种更多树，你一次又一次这样做。二十年内，你的树就开始产了。
 
-Start the process of vegetation on these islands in this way. A lot of vegetation occurs naturally, such as various grasses, and queer little twisted plants, which can sometimes be peculiar to the island. However, to get a productive forest started, you are in for this platen smashing.
+用这种方式开始岛上的植被过程。很多植被自然发生，如各种草和奇怪的小扭曲植物，有时可能是该岛特有的。然而，要开始一个生产性森林，你就得砸 platen。
 
-Now we will move to the magical ring garden. You all know that circles, like pyramids, have tremendous life forces and surges of energy. Here is the ideal place to use them. Break up the platen and take it away. Heap up the sand around the edge. Fill up your circle with mulch and plant your vegetable crop in the mulch, putting a single drip system into the center. This makes a very successful island garden -- circle gardening. The fairies can dance around it.
+现在我们转向神奇的环形花园。你们都知道，圆形，像金字塔一样，有巨大的生命力和能量涌动。这里是使用它们的理想之地。打破 platen 并移走。在边缘堆起沙。用覆盖物填满你的圆圈，在覆盖物中种蔬菜，在中心放一个单一滴灌系统。这造出了一个非常成功的岛园——环形园艺。仙女可以在周围跳舞。
 
-Because drip-water normally will extend laterally about two to two and a half feet, you would probably have a maximum effective diameter of about four to five feet. If we make our hole deep enough -- and it need not be a deep hole -- it is also touching the water table at the base of the humus, and there is a "wick watering" system as well.
+因为滴灌水通常横向延伸约两到两英尺半，你可能有一个大约四到五英尺的最大有效直径。如果我们把洞做得够深——不需要很深——它也在腐殖质底部接触地下水位，还有一个"灯芯浇水"系统。
 
-It is no good removing all the top sand, smashing up the platen and throwing it away, replacing the platen with mulch, and putting sand back over the mulch. A new layer of platen will reform above the mulch within twelve months. If you want to make a lot of concrete, that would be the way. You could smash it up every 12 months, take it away and make stone walls out of it.
+移走所有顶沙、砸碎 platen 扔掉、用覆盖物替换 platen、再把沙盖回覆盖物上是不行的。新 platen 层会在十二个月内在覆盖物上方重新形成。如果你想造大量混凝土，那就是方法。你可以每 12 个月砸一次，拿走做石墙。
 
-Once you have started these drainage holes through the platen, the water rapidly turns quite fresh. When you first come on a calcareous island that has never been inhabited, then it is your trees and your first few plants that start the fresh water process. It will pay to put a lot of effort into those. Make some quite large holes, bring in canoe loads of mulch. The whole process, once you have started it off, will continue on its own.
+一旦你通过 platen 开始了这些排水洞，水很快变得相当淡。当你第一次来到一座从未有人居住的钙质岛，那么是你的树和最初几株植物开始了淡水过程。值得在这方面投入大量精力。挖一些相当大的洞，运来独木舟量的覆盖物。整个过程，一旦你启动了，就会自行继续。
 
-We plant the inner edge of our ring garden with cabbages and peas and beans. We might put in a few more arid plants just on the outside or, we would put a circle of reinforcing wire into it, and grow cucumbers and beans up on this.
+我们在环形花园的内边缘种卷心菜、豌豆和豆。我们可能在外面再放一些更耐旱的植物，或者放一圈加固铁丝，让黄瓜和豆爬上去。
 
-If we look at the geometry of what we have done, we may find that we have been pretty clever. Within a four foot circle we may have put twelve running feet of row crop within reach of a single drip point. That would be smart work, very efficient use of space.
+如果我们看我们做的事的几何，可能发现自己相当聪明。在一个四英尺圆圈内，我们可能在一个滴灌点的范围内放了十二延英尺的行作物。那是聪明的工作，非常高效利用空间。
 
-What we don't want to do on an arid coral atoll is to set up a system of sprinklers. Before the water hit the ground, we would lose much of it to the hot wind We would also lose water in surface evaporation. In addition, this would accelerate the formation of platen below the surface. So instead of using sprinkler systems, we make what is basically a large wick, composed of fibrous organic material. Then we start a small pipe or tap just going drip, drip, drip into our wick at the top. And we drip, drip at the center. By adjusting the drip rate, we can get this area fairly saturated. That water reaches out to the roots of the plants.
+在干旱珊瑚环礁上我们不想做的是设置喷灌系统。水还没落地就会在热风中损失很多。我们还会在表面蒸发中失水。此外，这会加速表面下 platen 的形成。所以我们不用喷灌系统，而是造一个基本上是大灯芯的东西，由纤维有机材料组成。然后在顶部用小管或龙头滴、滴、滴到灯芯里。在中心滴、滴。通过调节滴速，我们可以让这个区域相当饱和。水到达植物根部。
 
-The center of your little ring garden is a very pleasant place to sit, so leave a few empty spots. You can sit surrounded by plants. Nobody can see you, and you are eating well.
+你的小环形花园中心是一个非常宜人的地方，所以留几个空位。你可以坐在植物环绕中。没人能看到你，而你吃得很好。
 
-Then it is up to you, for I have never really analyzed this -- I don't know whether you would go on making circle patterns, or whether you would make some linear patterns. The main thing, though, is to decrease the area of pathway, and concentrate the number of linear feet you are going to get in around the least number of drip points. It may be a matter of hose efficiency. I don't know; It is a subject that might require spending a couple of hours just working out a pattern.
+然后由你决定——因为我从未真正分析过这个——我不知道你是否会继续做圆形图案，还是做一些线性图案。主要的是减少通道面积，并在最少的滴灌点周围集中最多的延英尺数。这可能是软管效率的问题。我不知道；这是一个可能需要花几个小时来设计图案的课题。
 
-However you design it, it is a garden that still needs application of mulch, and it needs watering. So, look at the linear efficiencies, and look at the fairies running around the edge of your rings, and the power surges going on around there!
+无论如何设计，它仍是一个需要施加覆盖物和浇水的花园。所以，看线性效率，看仙女在你圆环边缘奔跑，那里能量涌动！
 
-Whether we are looking at an island in the bay out here, or at a calcareous island, we can't use septic tanks. The reason is that we are dealing with a very small water catchment system. We can't pump industrial wastes into an island water table. You have to govern the use of the surface with respect for the storages. On atoll systems, you have to store water as surface water.
+无论我们看的是海湾里的岛还是钙质岛，我们都不能用化粪池。原因是我们处理的是非常小的集水系统。我们不能把工业废液泵入岛屿地下水。你必须尊重储水来管理表面使用。在环礁系统上，你必须把水作为地表水储存。
 
-It is possible to make small gley ponds, lined with leaves of papaw, grapes, banana -- anything that ferments very fast. Then pump it full of water from the ground well. You can thus double the amount of water that you have in that particular profile.
+可以做小型胶泥塘，用木瓜叶、葡萄叶、香蕉叶衬底——任何发酵很快的东西。然后从地下井泵满水。这样你可以将该剖面中的水量翻倍。
 
-To keep sandy banks from collapsing, take coconut logs and line the banks with them. Once you have vegetation in this system, you are not so worried about instability of the banks.
+为防止沙岸坍塌，用椰子原木衬岸。一旦这个系统中有植被，你就不太担心岸的不稳定了。
 
-A question that intrigued me was, "What would you ever grow in a pond on a coral atoll?" Because here is your fringing reef. You already have crayfish, fish - any amount of good seafood. I think probably the best thing to grow would be some aquatic plant food, something not common to the islands, also some rather exotic fresh water food such as prawns. Raise some ducks to feed the prawns via the algae cycle. If you are going to recommend water holes to seashore people who are already eating a lot of fish food, they probably don't want to grow fish in that area. I think if there are plenty of fish and plenty of shell fish, perhaps I would like some prawns and some of the very many varieties of tropical water crop that are high nutrient.
+一个让我着迷的问题是："在珊瑚环礁上的池塘里你到底种什么？"因为这里有你的边缘礁。你已经有龙虾、鱼——大量好的海鲜。我认为可能最好种一些水生植物食物，岛上不常见的东西，还有一些相当异国情调的淡水食物如对虾。养些鸭子通过对藻循环喂对虾。如果你要推荐水坑给已经在吃很多鱼的海岸人，他们可能不想在那个区域养鱼。我想如果有很多鱼和贝类，也许我想要一些对虾和许多高营养的热带水作物品种。
 
-We can do something else. We can take the water out of our water hole. Go down very close to the water table, and you can grow semi-aquatics here, while growing plants of different root penetration just off the banks. That looks good and works well. Put some tubers up there on the bank, and other plants of different water demand down here.
+我们可以做别的事。我们可以把水从水坑里取出。非常接近地下水位，你可以在这里种半水生植物，同时在岸上种不同根深的植物。那看起来好且效果好。在岸上放一些块茎，在这里放不同需水量的其他植物。
 
-It is quite possible for a pond to grow its own gley. Then allow it to fill gradually and grade the banks up, so that you turn it from a dry hole to a sealed pond by the, process of a crop, which you grow within the pond and roll down.
+池塘完全可能自己长出胶泥。然后让它逐渐填满，把岸坡起来，这样你通过一种作物过程把它从干洞变成密封池塘——在池塘内种作物然后滚下。
 
-Another obvious and very plentiful source of water is any and all small roofs. Some of the water can be stored high up off the ground in above-ground tanks.
+另一个明显且非常充足的水源是任何和所有小屋顶。一些水可以储存在地面以上的高架水箱中。
 
-If your client insists on having septic tanks, the best thing to do is to put them right at the perimeter of the island. The general flow of water is outward, unless your water usage is exceeding the fresh water fall.
+如果你的客户坚持要化粪池，最好的做法是放在岛的周边。水的总流向是向外的，除非你的用水超过淡水补给。
 
-Arrange your settlement on the periphery of the island, and draw water from central areas. Even so, if you use an excessive amount of water, the sea enters the edges, quickly signified by the death of trees from the effects of salt. You will also have a reverse flow of those pollutants. If there are too many people on an island, then the beaches become unusable because of the pollutants dashing up in the sparkling green waters.
+把定居点安排在岛周边，从中央区域取水。即便如此，如果你用水过量，海水从边缘侵入，很快表现为树木因盐害死亡。你还会看到那些污染物的反向流。如果岛上人太多，海滩因污染物在碧绿海水中翻涌而无法使用。
 
-So for these low islands, you have grow-hole technology: there is a pit, wick-watering gardening technology; there is gley technology for collecting free surface water, and for creating a growing situation. There is a roof catchment, and surface storage in tanks. And with this peripheral housing idea, you will be keeping your waste from the main water lanes. But to build up a large village at the center of your island could be a disastrous technique. You have to think your way through these situations all the time.
+所以对于这些低岛，你有种植坑技术：有坑、灯芯浇水园艺技术；有胶泥技术用于收集自由表面水和创造生长条件。有屋顶集水和水箱表面储存。有了这个周边住房理念，你会让废物远离主要水道。但在岛中心建一个大村庄可能是灾难性的技术。你必须时刻想清楚这些情况。
 
-![diagram of winds at equator](pdcimages/4-fig4.bmp "On all oceanic islands we have two sets of winds.")
+![diagram of winds at equator](pdcimages/4-fig4.bmp "在所有大洋岛屿上我们有两套风。")
 
-On all oceanic islands, whether low islands or high islands, we have two sets of wind, and two periods of calm. We have spring-autumn periods of calm, and we have winter-summer winds. For the most part, these winds are either northeast-southwest, or northwest-southeast. Winds of many land situations don't differ a great deal, but islands are usually of this nature. So you have wind-break problems and erosion problems.
+在所有大洋岛屿上，无论是低岛还是高岛，我们都有两套风和两个静风期。有春-秋静风期，有冬-夏季风。大多数情况下，这些风要么是东北-西南向，要么是西北-东南向。许多陆地情况的风差异不大，但岛屿通常具有这种性质。所以你有防风问题和侵蚀问题。
 
-You have to be careful not to lose your island to erosion. It is quite possible to lose islands in this way. From the air, I have observed in these bays out here that waves are in the process of wiping out islands. Waves never cease to attack. Where the winds sweep on shore with waves, the process of erosion proceeds very rapidly. We can lose these islands because we let this wind attack directly.
+你必须小心不要让岛被侵蚀掉。完全可能以这种方式失去岛屿。从空中，我在这些海湾观察到波浪正在消灭岛屿。波浪从不停止攻击。在风带着浪扫上岸的地方，侵蚀过程非常快。我们可能因为这些风直接攻击而失去这些岛屿。
 
-![drawing of wind and waves around a low island](pdcimages/4-fig5.bmp "It is quite possible to lose islands to erosion.")
+![drawing of wind and waves around a low island](pdcimages/4-fig5.bmp "完全可能因侵蚀而失去岛屿。")
 
-This process can be diverted by some change, like a little tree on the shoreline deflecting the winds upward. As the number of trees increases, the wind deflects and the trees begin to win out against the sea. A whole set of plants can become established along the shoreline, actually stopping the force of wave erosion.
+这个过程可以被某些改变所转移，比如岸边一棵小树将风向上偏转。随着树的数量增加，风偏转，树开始对海占上风。一整套植物可以沿海岸线建立，实际上阻止波浪侵蚀的力量。
 
-The highest that vegetation can build an island is to about six feet -- vegetation alone -- so don't tamper with this shoreline vegetation. Or, if you tamper with it, you better have other defenses ready. You could deliberately tamper with this vegetation, let the sea come inside your island, create a harbor effect, but then you should have very good, previously-built defenses around your harbor area. If you remove a strip of this deflecting vegetation, you have much broader wave running inland and coming with much greater force, because it is in a streamlined wind. Whenever the force of the wind lifts over vegetation, you get a low pressure coming in and the waves break further out and run much less up the beach. Don't muck around on these two very critical shorelines.
+植被单独能建造岛屿的最高高度约为六英尺——所以不要乱动这海岸线植被。或者，如果你动了它，你最好有其他防御准备。你可以故意动这个植被，让海进入你岛内，创造港口效果，但那你应该有非常好的、预先建好的港口区域防御。如果你移走一条偏转植被带，你会有更宽的波浪冲入内陆且力量更大，因为它在流线型风中。每当风的力量越过植被升起，你得到一个低压进来，波浪在更远处破碎，冲上沙滩少得多。不要在这两条非常关键的海岸线上乱来。
 
-Remove the trees to make an airstrip, and you will have the sea come marching in across your airstrip, cutting it to pieces. Disaster. It will be hard to put that island back again. Contain an airstrip within vegetation, preferably at an angle to the winds. It is good to have trees alongside the airstrip and to keep your coastline intact. Then, when you drop below your tree level, you can land. The main thing is to preserve coastline vegetation at the ends of the air strip.
+砍树做 airstrip，海会越过你的 airstrip 进来，把它切成碎片。灾难。很难把那个岛恢复。把 airstrip 包在植被中，最好与风成角度。在 airstrip 旁边有树并保持海岸线完整是好的。然后，当你降到树冠以下时，你可以降落。主要是在 airstrip 两端保留海岸线植被。
 
-Atolls mainly need windbreaks on the outside areas. Atolls and cays have very different conditions of sea surrounding them. Cays have fairly turbulent seas around them; while the atolls have very quiet and shallow seas within them. Large regions of the internal lagoons are shallow, and are revealed at high tide. These are very rich growing areas; they have some land nutrient input from rainfall. So they are very productive. They have large fish -- sharks, rays, barracuda, schools of fish, mullet. Some atolls are really in a fish farm situation.
+环礁主要需要外部区域的防风带。环礁和沙礁周围的海况非常不同。沙礁周围有相当湍急的海；而环礁内部有非常安静和浅的海。内潟湖的大片区域很浅，在退潮时露出。这些是非常肥沃的种植区；它们有来自降雨的一些陆地营养输入。所以它们非常高产。它们有大鱼——鲨鱼、魟鱼、梭鱼、鱼群、鲻鱼。一些环礁实际上处于鱼场状态。
 
-Mangroves occur within those atolls, though in some they are absent, because they have been utilized as firewood, or perhaps they just never got established there. But you can bring them in and they will quickly carry out the island into the lagoon. You can accomplish this in two ways. You can either put mangroves along raised barriers, which you make from logs and sand, forming further fish-trap enclosures, which may increase the fish population. There are plants that stand right here on the shoreline on which the waves break. Basically, there are three genera -- Pemphis, Tournefortia, and Scaevola. These are plants that will stand there in the sea, maybe growing about fifteen feet high. Behind them, you put a set of very tall plants. Where climate permits, you would use one of the palms. And it is possible to use the date palm. You don't ordinarily think of the date palm as being an island palm, but rather an oasis palm. But when you re-think the matter, you will see the basic conditions are very similar. We should be trying a lot more things, such as mangroves inland in the deserts. We should try many of our coastal species in the desert, and a lot more of our desert species on the coast.
+红树林出现在那些环礁内，虽然有些缺失，因为被用作柴火，或也许从未在那里建立。但你可以把它们引入，它们会迅速把岛延伸到潟湖中。你可以用两种方式做到。你可以沿凸起的屏障放红树林，屏障用原木和沙做，形成更多鱼阱围栏，可能增加鱼群。有些植物就站在波浪破碎的海岸线上。基本上有三个属——Pemphis、Tournefortia 和 Scaevola。这些是能站在海里的植物，可能长到约十五英尺高。在它们后面，你放一组非常高的植物。在气候允许的地方，你会用一种棕榈。也可以用枣椰。你通常不认为枣椰是岛棕榈，而是绿洲棕榈。但当你重新思考，你会发现基本条件非常相似。我们应该尝试更多东西，比如红树林在沙漠内陆。我们应该尝试许多海岸物种在沙漠中，更多沙漠物种在海岸上。
 
-It was an accidental occurrence that started some date palms growing on the Hawaiian coast. A Catholic priest on the Hawaiian Islands was eating a package of dates sent by a supporter. He discarded the pits, which sprouted and grew and took off along the coast just as well as the coconut palm.
+一次偶然事件让一些枣椰在夏威夷海岸生长起来。夏威夷群岛上一位天主教神父在吃一包支持者寄来的枣。他丢弃了枣核，枣核发芽生长，沿海岸长得和椰子树一样好。
 
-![drawing of trees deflecting wind over an island](pdcimages/4-fig6.bmp "As the number of trees increases, the wind is deflected and the trees begin to win over the sea.")
+![drawing of trees deflecting wind over an island](pdcimages/4-fig6.bmp "随着树的数量增加，风被偏转，树开始对海占上风。")
 
-You are not going to get much bearing from the front line trees on an island coast. They are principally useful as a windbreak. The next line will give some yield; and from the third line of trees -- that's within fifty feet -- you will start to get a normal yield. The palms are very good along the coastline.
+你不会从岛海岸前排树得到多少产量。它们主要用作防风带。第二排会给一些产量；从第三排树——在五十英尺以内——你开始得到正常产量。棕榈沿海岸线非常好。
 
-In cold climates, you may be setting out Coprosma. They will stand right on the coast. Coprosma repens, bayberries, will stand well towards the forefront, but not quite as far forward as these others. The New Zealand mirrorbush is another one. There is the beach plum, Prunus maritima. There are others such as Prunus catalonica, Rosa rugosa. They grow right on the beach. Just make sure, though, that the trees you bring in are growing on oceanic beaches. Many things will grow on the coastline of sheltered water, but will not take that front-line oceanic assault.
+在寒冷气候中，你可能会种 Coprosma。它们能站在海岸上。Coprosma repens、杨梅，能站到相当前面，但不如那些其他植物那么前。新西兰镜木是另一个。还有海滩李 Prunus maritima。还有 Prunus catalonica、Rosa rugosa 等。它们就长在海滩上。只要确保你引入的树长在大洋海滩上。许多东西会长在遮蔽水域的海岸线上，但承受不了前排大洋冲击。
 
-Now there is another set of front line plants that are for the main part needle-leaf plants. There is the whole group of Casuarina, tamarix, Monterey pine, and a great plant with wide climatic range, the Norfolk Island pine, and the Monterey cypress.
+还有另一组前排植物，主要是针叶植物。有整个 Casuarina 群、柽柳、蒙特雷松、以及气候范围广的好植物诺福克岛松和蒙特雷柏。
 
-You are not looking for yield here. You are looking more to the mulch potential of this set of trees, because these trees stand front on the ocean, the first to receive the winds from the sea. They are the front-line species. Of course, you can mix them up. You can put a row of palms and needle leafs and broad leaves. There are a very few thick-leafed plants. The sea grape is one.
+你在这里不是在找产量。你更多是在看这组树的覆盖潜力，因为这些树站在面向海洋的前排，最先接收来自海上的风。它们是前排物种。当然，你可以混合。你可以放一排棕榈和针叶和阔叶。有很少几种厚叶植物。海葡萄是一种。
 
-There is a very small group of plants that will not take any salt at all on their leaves. Some of these seem to be large nut trees. Chestnut does not like salt at all; and I don't think walnuts are real fond of salt on their leaves. Almonds, peaches, apricots, apples, have to be somewhat sheltered. The pistachio doesn't want salt at all.
+有一小组植物完全不能忍受叶上有任何盐。其中一些似乎是大坚果树。栗子完全不喜欢盐；我认为核桃也不太喜欢叶上有盐。杏仁、桃、杏、苹果必须有一定遮蔽。开心果完全不想要盐。
 
-Of all the vegetables I know of, none of them suffer badly from salt. Many grow near the sea. So you put in a coastal defense system and maybe extend your island into your lagoon system. You might as well use these extensions for other reasons. They might incidentally be fish traps, rearing systems. Warn your client of the drastic results of hacking off the foreshore vegetation to get a better view. Reestablishing a coastline is very difficult once erosion has started. Watch your water balances. Recommend minimal use, and see that you get maximum surface storage. Maintain potential surface storage at all times.
+在我知道的所有蔬菜中，没有一种严重受盐害。许多就长在海边。所以你建立海岸防御系统，也许把你的岛延伸到潟湖系统中。你不妨出于其他原因使用这些延伸。它们可能顺便是鱼阱、饲养系统。警告你的客户，砍掉海岸植被以获得更好视野会导致严重后果。一旦侵蚀开始，重建海岸线非常困难。注意你的水平衡。建议最小用水，确保最大表面储存。始终保持潜在表面储存。
 
-Islands can be interesting experimental stations. Some weird animals have developed on island, such as the giant tortoises, the big ones that you can sit on. They are great lawn mowers, and very good at converting table scraps into fertilizer. A herd of giant tortoises is an excellent thing to have lumbering about in the undergrowth, cleaning up the old fallen coconuts. There is a whole series of land crabs that do quite a lot of work on islands as compost shredders and insectivores. They find insect larvae and consume them. They lessen wood beetle infestation. Pigs can be useful on islands, and they are fairly easily controlled. Ducks do well, and chickens.
+岛屿可以是有趣的实验站。一些奇怪的动物在岛上发展，比如巨龟，你可以坐在上面的那种。它们是很好的割草机，非常擅长把餐桌残渣转化为肥料。一群巨龟在灌木丛中蹒跚是极好的，清理掉落的旧椰子。有一整系列陆蟹在岛上做了相当多的工作，作为堆肥撕碎者和食虫者。它们找到昆虫幼虫并消费。它们减少甲虫侵害。猪在岛上可以有用，而且相当容易控制。鸭子和鸡也行。
 
-You have to look at your nitrogen turnover on islands. Put in some nitrogenous species. There are many island legumes. Some of them are vines, ground vines; some are little trees; some are tall trees.
+你必须看岛上的氮周转。放入一些固氮物种。有许多岛生豆科植物。有些是藤，地藤；有些是小树；有些是大树。
 
-You can eat the leaves, the flowers, and the pods.of the horseradish tree, the Moringa. It is nice to have in the garden -- a vegetable hedge. It is quite a tall little tree. It grows to 20 or 30 feet. So you look after the nutrients within the garden systems, you look after the windbreaks. You set out central gardening, and, on low islands, peripheral occupational zones to decrease the risk of contamination of the water table.
+你可以吃辣根树 (Moringa) 的叶、花和豆荚。花园里有它很好——一道蔬菜篱笆。它是一种相当高的小树。长到 20 或 30 英尺。所以你照管花园系统内的营养，照管防风带。你设置中央园艺，在低岛上设置周边作业区以减少地下水污染风险。
 
-We would probably have to bring in worms, and bring in a handful of compost to get all our little bacterial and fungal and algae forms onto the island, because we can be starting from a sterile environment. We should bring in a handful of soil with almost every plant we bring in. These plants have soil associates. The nitrogen-fixing bacteria for legumes are not necessarily going to be there. There are also some varieties of trees that won't grow from seed unless started in their own soil.
+我们可能必须引入蚯蚓，带一把堆肥来把我们所有的小细菌、真菌和藻类形式弄到岛上，因为我们可能从一个无菌环境开始。我们应该几乎每株植物都带一把土。这些植物有土壤伙伴。固氮细菌不一定在那里。也有一些树品种不从种子长，除非在它们自己的土壤中开始。
 
-Finally, a further word on mangroves with respect to their importance for the whole global nutrient cycle… Mangrove is a generic term for estuarial forest plants and the genera are drawn for the main part from sub-tropical and tropical rain plants, such as Sonnerata, Rhizopodia, Aegiceras and Nipa, in the palms. The Nipa palms are mangroves. Avicenna is another mangrove -- one that comes all the way to latitude forty. All of these have twisty stems and leathery leaves, and they stand out in these quiet tidal waters. As a system, they are very productive. I think perhaps the mangroves have the highest biomass turnover of any system. Aegicera is a superb honey plant, responsible for most of the tropical honey of good quality.
+最后，关于红树林对整个全球营养循环的重要性再说几句……红树林是河口森林植物的通称，属主要来自亚热带和热带雨林植物，如 Sonnerata、Rhizopodia、Aegiceras 和棕榈中的 Nipa。Nipa 棕榈是红树林。Avicenna 是另一种红树林——一直延伸到纬度四十。所有这些都有扭曲的茎和革质叶，站在这些安静的潮汐水中。作为一个系统，它们非常高产。我认为红树林可能有任何系统中最高的生物量周转率。Aegicera 是一种极好的蜜源植物，负责大部分优质热带蜂蜜。
 
-They all lay a very thick leaf mulch in the sea amongst their roots, which turns into a nice loose mud which people detest. So they cut down the mangroves, and get washed away when they do it. You can always put little walkways out into the mangroves, two planks wide, you know, if you have to walk through there.
+它们都在根间的海中铺一层很厚的叶覆盖，变成人们厌恶的松软泥。所以他们砍掉红树林，砍了就被冲走。你总是可以铺小步道进入红树林，两块板宽，如果你必须走过去的话。
 
-You say that the bald cypress will tolerate tidal water? Well, then, there you have another mangrove. More species come in as you go up river in mixtures of sea and fresh water.
+你说落羽松能耐潮汐水？那么你又有一红树林。更多物种在河上游海水和淡水混合处出现。
 
-They all lay down this really rich leaf mulch, which goes through several animals like shrimps, little anthropoids, diatoms. That leaf is really used. The whole food chain starts within these seas. It is an area that is responsible for most of the offshore shrimp fisheries. The mangrove jacks and quite specific fish are associated with the mangrove stands. Mangroves are very enriching systems. They should be heavily encouraged and widely distributed. Instead, they are everywhere being degraded and filled in and drained and chopped. Then everyone wonders why fish are getting scarce.
+它们都铺下这真正肥沃的叶覆盖，经过虾、小节肢动物、硅藻等几种动物。那叶子真的被利用了。整个食物链在这些海中开始。它是一个对大多数近海虾渔业负责的区域。红树林石斑鱼和相当特定的鱼与红树林林分相关。红树林是非常富化的系统。应该大力鼓励和广泛分布。相反，它们到处被退化和填埋和排水和砍伐。然后每个人都想知道为什么鱼越来越少。
 
-The mangrove palms are useful, too. They have either some useful fruits, some honey yields, or some stem products. Some of the mangroves have very durable woods and timbers. Some have edible, if not particularly delicious, fruits. However, their real value is in the enormous life-turnover in the system. The mangroves are great places for crocodiles. There is nothing quite comparable to moving through the mangroves in a canoe at two miles an hour, with a 40 foot crocodile bellowing behind, who can touch 30 miles an hour if he speeds up. There are alligators in mangroves, and little fish that spit at you and bug their eyes. There are whole hosts of organisms ripping around in there, all of enormous value to the nutrient cycle.
+红树林棕榈也有用。它们要么有一些有用的果实，一些蜂蜜产量，要么一些茎产品。一些红树林有非常耐用的木材。一些有可食的，虽然不是特别美味的果实。然而，它们的真正价值在于系统中巨大的生命周转。红树林是鳄鱼的好地方。没有什么比在红树林中乘独木舟以两英里时速穿行，后面一条四十英尺鳄鱼咆哮——加速可达三十英里时速——更可比的了。红树林中有鳄鱼，还有对你吐水和鼓眼的小鱼。有整个一群生物在那里撕来撕去，都对营养循环有巨大价值。
 
-And there we will leave the low islands, the atoll with its quiet lagoon, and the sun sinking slowly in the West.
+我们就在这里离开低岛，环礁和它安静的潟湖，太阳缓缓西沉。
