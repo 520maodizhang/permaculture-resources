@@ -1,369 +1,946 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>朴门知识库 · 管理 v3</title>
+<title>🌳 朴门知识库管理 v4.0</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde@11/dist/easymde.min.css">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--g1:#2d7a3e;--g2:#4caf50;--bg:#faf8f1;--card:#fff;--border:#e0ddd5;--text:#2c2416;--muted:#8a8275;--err:#d93025;--warn:#f59e0b}
-body{font-family:-apple-system,'Segoe UI','Noto Sans SC',sans-serif;background:var(--bg);color:var(--text)}
-.login{display:flex;align-items:center;justify-content:center;min-height:100vh}
-.login-box{background:var(--card);padding:40px;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.08);max-width:500px;width:90%}
-.login-box h1{font-size:22px;margin-bottom:4px;color:var(--g1)}
-.ver{font-size:11px;color:var(--muted);margin-bottom:12px}
-.login-box p{font-size:14px;color:var(--muted);margin-bottom:12px;line-height:1.6}
-.login-box input{width:100%;padding:12px 16px;border:2px solid var(--border);border-radius:10px;font-size:14px;margin-bottom:12px}
-.login-box input:focus{outline:none;border-color:var(--g2)}
-.login-box button{width:100%;padding:12px;border:none;border-radius:10px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;font-size:15px;font-weight:600;cursor:pointer}
-.login-box button:disabled{opacity:.6;cursor:wait}
-.login-box a{color:var(--g1);font-size:13px}
-.err-msg{font-size:13px;margin-bottom:12px;display:none;padding:10px 14px;border-radius:8px;line-height:1.5;white-space:pre-line}
-.err-msg.err{color:var(--err);background:#fce8e6}
-.err-msg.ok{color:var(--g1);background:#e6f4ea}
-.err-msg.warn{color:var(--warn);background:#fef3e2}
-.help-box{margin-top:16px;padding:14px;background:rgba(76,175,80,.05);border-radius:10px;font-size:13px;color:var(--muted);line-height:1.7}
-.help-box b{color:var(--g1)}
-.help-box code{background:var(--bg);padding:2px 6px;border-radius:4px;font-family:monospace;font-size:12px}
-.diag-btn{background:var(--card)!important;color:var(--g1)!important;border:2px solid var(--g2)!important;margin-top:8px;font-size:13px!important}
-.app{display:none}
-.topbar{background:var(--card);border-bottom:1px solid var(--border);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
-.topbar h1{font-size:18px;color:var(--g1)}
-.topbar .user{font-size:13px;color:var(--muted)}
-.topbar button{padding:6px 16px;border:1px solid var(--border);border-radius:8px;background:var(--card);cursor:pointer;font-size:13px;margin-left:12px}
-.main{display:flex;height:calc(100vh - 52px)}
-.sidebar{width:300px;border-right:1px solid var(--border);overflow-y:auto;padding:16px;background:var(--card);flex-shrink:0}
-.sidebar h3{font-size:12px;color:var(--muted);margin:16px 0 6px;text-transform:uppercase;letter-spacing:1px}
-.sidebar h3:first-child{margin-top:0}
-.file-item{padding:8px 12px;border-radius:8px;cursor:pointer;font-size:14px;display:flex;align-items:center;gap:8px}
-.file-item:hover{background:rgba(76,175,80,.08)}
-.file-item.active{background:rgba(76,175,80,.15);color:var(--g1);font-weight:600}
-.new-file{padding:8px 12px;border-radius:8px;cursor:pointer;font-size:13px;color:var(--g1);border:1px dashed var(--g2);margin-top:6px;text-align:center}
-.new-file:hover{background:rgba(76,175,80,.08)}
-.sb-err{color:var(--err);font-size:13px;padding:8px 12px}
-.editor{flex:1;display:none;flex-direction:column;padding:24px;overflow:hidden}
-.editor.show{display:flex}
-.ed-head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
-.ed-head input{flex:1;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:14px}
-.btn-save{padding:8px 20px;border:none;border-radius:8px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;font-weight:600;cursor:pointer;font-size:14px;white-space:nowrap}
-.btn-save:disabled{opacity:.5;cursor:not-allowed}
-.ed-body{flex:1;display:flex;gap:16px;overflow:hidden}
-.ed-body textarea{flex:1;padding:16px;border:1px solid var(--border);border-radius:10px;font-family:'SF Mono','Fira Code',monospace;font-size:14px;line-height:1.6;resize:none;overflow-y:auto;outline:none}
-.ed-body textarea:focus{border-color:var(--g2)}
-.preview{flex:1;padding:16px;border:1px solid var(--border);border-radius:10px;overflow-y:auto;background:var(--card)}
-.preview h1{font-size:22px;margin:16px 0 8px;color:var(--g1)}
-.preview h2{font-size:18px;margin:14px 0 6px}
-.preview h3{font-size:16px;margin:12px 0 4px}
-.preview p{margin:8px 0;line-height:1.7}
-.preview ul{margin:8px 0;padding-left:24px}
-.preview li{margin:4px 0}
-.preview code{background:var(--bg);padding:2px 6px;border-radius:4px;font-family:monospace;font-size:13px}
-.preview pre{background:var(--bg);padding:12px;border-radius:8px;overflow-x:auto;margin:8px 0}
-.preview strong{font-weight:700}
-.preview table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13px}
-.preview th,.preview td{border:1px solid var(--border);padding:6px 10px;text-align:left}
-.preview th{background:rgba(76,175,80,.1);font-weight:600;color:var(--g1)}
-.preview tr:nth-child(even){background:rgba(0,0,0,.02)}
-.preview a{color:var(--g1);text-decoration:underline}
-.preview img{max-width:100%;border-radius:8px;margin:8px 0}
-.preview blockquote{border-left:3px solid var(--g2);padding-left:12px;margin:8px 0;color:var(--muted)}
-.preview hr{border:none;border-top:1px solid var(--border);margin:12px 0}
-.preview h4{font-size:15px;margin:10px 0 4px}
-.preview h5{font-size:14px;margin:8px 0 4px}
-.preview h6{font-size:13px;margin:8px 0 4px;color:var(--muted)}
-.toast{position:fixed;bottom:24px;right:24px;padding:12px 24px;border-radius:10px;color:#fff;font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,.15);display:none;z-index:100}
-.toast.ok{background:var(--g1)}
-.toast.fail{background:var(--err)}
+:root {
+  --primary: #2d7a3e; --secondary: #4caf50; --bg: #faf8f1; --card: #ffffff;
+  --border: #e0ddd5; --text: #2c2416; --muted: #8a8275; --error: #d93025;
+  --warning: #f59e0b; --success: #2d7a3e; --sidebar-w: 280px; --topbar-h: 56px;
+  --tab-h: 44px; --radius: 8px; --shadow: 0 2px 8px rgba(0,0,0,.08); --shadow-lg: 0 4px 20px rgba(0,0,0,.12);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; }
+body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif; background:var(--bg); color:var(--text); font-size:14px; line-height:1.6; }
+a { color:var(--primary); text-decoration:none; } a:hover { text-decoration:underline; }
+button { cursor:pointer; font-family:inherit; font-size:inherit; border:none; background:none; }
+input,textarea,select { font-family:inherit; font-size:inherit; }
+::-webkit-scrollbar { width:8px; height:8px; } ::-webkit-scrollbar-track { background:transparent; } ::-webkit-scrollbar-thumb { background:#ccc; border-radius:4px; }
+
+#login-page { display:flex; align-items:center; justify-content:center; min-height:100vh; background:linear-gradient(135deg,#2d7a3e 0%,#1a5c2a 100%); }
+.login-card { background:var(--card); border-radius:16px; padding:40px; width:440px; max-width:90vw; box-shadow:var(--shadow-lg); }
+.login-card h1 { font-size:24px; text-align:center; margin-bottom:8px; }
+.login-card .subtitle { text-align:center; color:var(--muted); margin-bottom:28px; font-size:13px; }
+.login-card label { display:block; margin-bottom:6px; font-weight:600; font-size:13px; }
+.login-card input[type=password] { width:100%; padding:10px 14px; border:2px solid var(--border); border-radius:var(--radius); margin-bottom:16px; transition:border-color .2s; }
+.login-card input[type=password]:focus { outline:none; border-color:var(--primary); }
+.btn { display:inline-flex; align-items:center; gap:6px; padding:8px 16px; border-radius:var(--radius); font-weight:600; transition:all .2s; white-space:nowrap; }
+.btn-primary { background:var(--primary); color:#fff; } .btn-primary:hover { background:#246830; }
+.btn-secondary { background:var(--secondary); color:#fff; } .btn-secondary:hover { background:#3d9b4a; }
+.btn-outline { border:2px solid var(--border); color:var(--text); background:var(--card); } .btn-outline:hover { border-color:var(--primary); color:var(--primary); }
+.btn-danger { background:var(--error); color:#fff; } .btn-danger:hover { background:#b3261e; }
+.btn-sm { padding:4px 10px; font-size:12px; } .btn-block { width:100%; justify-content:center; }
+.btn:disabled { opacity:.5; cursor:not-allowed; }
+.login-card .btn-block { margin-bottom:12px; }
+.login-help { text-align:center; margin-top:16px; font-size:12px; color:var(--muted); }
+.diag-result { margin-top:12px; padding:12px; border-radius:var(--radius); font-size:12px; display:none; }
+.diag-result.show { display:block; }
+.diag-result.ok { background:#e8f5e9; color:var(--success); } .diag-result.err { background:#fce8e6; color:var(--error); }
+
+#app { display:none; height:100vh; flex-direction:column; }
+#app.show { display:flex; }
+.topbar { height:var(--topbar-h); background:var(--primary); color:#fff; display:flex; align-items:center; padding:0 20px; box-shadow:var(--shadow); z-index:100; }
+.topbar .logo { font-size:18px; font-weight:700; margin-right:auto; }
+.topbar .user-info { display:flex; align-items:center; gap:12px; font-size:13px; }
+.topbar .user-info img { width:32px; height:32px; border-radius:50%; }
+.topbar .logout-btn { background:rgba(255,255,255,.2); color:#fff; padding:6px 14px; border-radius:var(--radius); font-size:13px; } .topbar .logout-btn:hover { background:rgba(255,255,255,.3); }
+.tab-nav { height:var(--tab-h); background:var(--card); border-bottom:1px solid var(--border); display:flex; padding:0 20px; gap:4px; }
+.tab-nav button { padding:0 20px; height:100%; font-weight:600; color:var(--muted); border-bottom:3px solid transparent; transition:all .2s; }
+.tab-nav button:hover { color:var(--text); } .tab-nav button.active { color:var(--primary); border-bottom-color:var(--primary); }
+.tab-content { flex:1; overflow:auto; padding:24px; }
+.tab-pane { display:none; } .tab-pane.active { display:block; }
+
+.stats-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin-bottom:24px; }
+.stat-card { background:var(--card); border-radius:var(--radius); padding:20px; box-shadow:var(--shadow); }
+.stat-card .stat-icon { font-size:28px; margin-bottom:8px; }
+.stat-card .stat-value { font-size:28px; font-weight:700; color:var(--primary); }
+.stat-card .stat-label { color:var(--muted); font-size:13px; margin-top:4px; }
+.section-title { font-size:16px; font-weight:700; margin-bottom:12px; display:flex; align-items:center; gap:8px; }
+.section-title .actions { margin-left:auto; display:flex; gap:8px; }
+.card { background:var(--card); border-radius:var(--radius); padding:20px; box-shadow:var(--shadow); margin-bottom:20px; }
+table { width:100%; border-collapse:collapse; }
+th,td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--border); font-size:13px; }
+th { font-weight:700; color:var(--muted); font-size:12px; text-transform:uppercase; }
+.status-badge { display:inline-block; padding:2px 10px; border-radius:12px; font-size:12px; font-weight:600; }
+.status-empty { background:#fce8e6; color:var(--error); } .status-partial { background:#fef7e0; color:var(--warning); } .status-good { background:#e8f5e9; color:var(--success); }
+.gap-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:12px; margin-bottom:20px; }
+.gap-item { background:var(--card); border-radius:var(--radius); padding:16px; box-shadow:var(--shadow); text-align:center; position:relative; }
+.gap-item .gap-dot { font-size:20px; } .gap-item .gap-name { font-weight:600; margin:6px 0 2px; } .gap-item .gap-count { color:var(--muted); font-size:12px; }
+.gap-item .gap-priority { margin-top:8px; } .gap-item select { font-size:11px; padding:2px 6px; border:1px solid var(--border); border-radius:4px; }
+.recent-list { list-style:none; } .recent-list li { padding:10px 0; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; font-size:13px; }
+.recent-list li:last-child { border-bottom:none; }
+.recent-list .commit-msg { flex:1; } .recent-list .commit-meta { color:var(--muted); font-size:12px; white-space:nowrap; }
+.quick-actions { display:flex; gap:12px; flex-wrap:wrap; }
+.suggestion-box { background:#fff8e1; border:1px solid #ffe082; border-radius:var(--radius); padding:14px 18px; margin-bottom:20px; }
+.suggestion-box h4 { margin-bottom:6px; } .suggestion-box ul { padding-left:20px; } .suggestion-box li { margin-bottom:4px; }
+
+.content-layout { display:flex; gap:0; height:calc(100vh - var(--topbar-h) - var(--tab-h) - 48px); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); background:var(--card); }
+.content-sidebar { width:var(--sidebar-w); border-right:1px solid var(--border); display:flex; flex-direction:column; overflow:hidden; flex-shrink:0; }
+.sidebar-search { padding:10px; border-bottom:1px solid var(--border); position:relative; }
+.sidebar-search input { width:100%; padding:8px 12px 8px 32px; border:1px solid var(--border); border-radius:var(--radius); }
+.sidebar-search .search-icon { position:absolute; left:20px; top:50%; transform:translateY(-50%); color:var(--muted); }
+.sidebar-tree { flex:1; overflow-y:auto; padding:4px 0; }
+.tree-dir { } .tree-dir-header { display:flex; align-items:center; padding:6px 10px; cursor:pointer; font-weight:600; font-size:13px; transition:background .15s; }
+.tree-dir-header:hover { background:#f5f3ed; } .tree-dir-header .chevron { font-size:10px; margin-right:6px; transition:transform .2s; width:12px; }
+.tree-dir.collapsed .chevron { transform:rotate(-90deg); } .tree-dir-header .dir-icon { margin-right:6px; }
+.tree-dir-header .new-btn { margin-left:auto; opacity:0; transition:opacity .15s; font-size:16px; color:var(--primary); padding:0 4px; }
+.tree-dir-header:hover .new-btn { opacity:1; }
+.tree-dir-children { overflow:hidden; } .tree-dir.collapsed .tree-dir-children { display:none; }
+.tree-file { display:flex; align-items:center; padding:5px 10px 5px 34px; cursor:pointer; font-size:13px; transition:background .15s; }
+.tree-file:hover { background:#f5f3ed; } .tree-file.active { background:#e8f5e9; color:var(--primary); font-weight:600; }
+.tree-file .file-icon { margin-right:6px; } .tree-file .file-name { flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.tree-file .file-menu { opacity:0; margin-left:auto; } .tree-file:hover .file-menu { opacity:1; }
+.search-results { padding:4px 10px; } .search-result-item { padding:8px 10px; border-radius:4px; cursor:pointer; margin-bottom:4px; }
+.search-result-item:hover { background:#f5f3ed; } .search-result-item .sr-file { font-weight:600; font-size:13px; }
+.search-result-item .sr-snippet { font-size:12px; color:var(--muted); margin-top:2px; }
+.search-result-item mark { background:#fff3cd; padding:0 2px; border-radius:2px; }
+.content-main { flex:1; display:flex; flex-direction:column; overflow:hidden; }
+.content-placeholder { display:flex; align-items:center; justify-content:center; flex:1; color:var(--muted); font-size:16px; flex-direction:column; gap:12px; }
+.editor-header { padding:12px 16px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:12px; background:var(--card); }
+.editor-path { flex:1; font-size:13px; color:var(--muted); } .editor-path input { border:1px solid var(--border); border-radius:4px; padding:4px 8px; font-size:13px; width:100%; }
+.editor-body { flex:1; display:flex; overflow:hidden; }
+.frontmatter-form { padding:12px 16px; border-bottom:1px solid var(--border); background:#f9f7f0; }
+.frontmatter-form h4 { margin-bottom:8px; font-size:13px; } .frontmatter-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.frontmatter-grid .fm-field { display:flex; flex-direction:column; gap:4px; } .frontmatter-grid label { font-size:12px; color:var(--muted); }
+.frontmatter-grid input, .frontmatter-grid textarea { padding:6px 8px; border:1px solid var(--border); border-radius:4px; font-size:13px; }
+.frontmatter-grid .fm-full { grid-column:1/-1; }
+.editor-split { flex:1; display:flex; overflow:hidden; }
+.editor-col { flex:1; overflow:hidden; display:flex; flex-direction:column; } .editor-col + .editor-col { border-left:1px solid var(--border); }
+.preview-col { overflow-y:auto; padding:16px; } .preview-col h1 { font-size:24px; margin:16px 0 8px; } .preview-col h2 { font-size:20px; margin:14px 0 6px; }
+.preview-col h3 { font-size:16px; margin:12px 0 4px; } .preview-col p { margin:8px 0; } .preview-col ul,.preview-col ol { margin:8px 0; padding-left:24px; }
+.preview-col code { background:#f0ede5; padding:2px 6px; border-radius:3px; font-family:monospace; font-size:13px; }
+.preview-col pre { background:#2c2416; color:#e8e4dc; padding:12px; border-radius:6px; overflow-x:auto; margin:8px 0; }
+.preview-col pre code { background:none; color:inherit; padding:0; }
+.preview-col blockquote { border-left:4px solid var(--secondary); padding:8px 16px; margin:8px 0; background:#f9f7f0; color:var(--muted); }
+.preview-col table { border:1px solid var(--border); margin:8px 0; } .preview-col th,.preview-col td { border:1px solid var(--border); }
+.preview-col img { max-width:100%; border-radius:6px; } .preview-col hr { border:none; border-top:2px solid var(--border); margin:16px 0; }
+.preview-col a { color:var(--primary); }
+.auto-save-indicator { font-size:12px; color:var(--muted); }
+.draft-indicator { font-size:12px; padding:2px 8px; border-radius:10px; background:#fff3cd; color:#856404; }
+.EasyMDEContainer { flex:1; display:flex; flex-direction:column; } .EasyMDEContainer .CodeMirror { flex:1; border-radius:0; }
+.editor-toolbar-extra { display:flex; gap:8px; align-items:center; }
+
+.media-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:16px; }
+.media-card { background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden; transition:transform .2s; }
+.media-card:hover { transform:translateY(-2px); box-shadow:var(--shadow-lg); }
+.media-card img { width:100%; height:140px; object-fit:cover; display:block; cursor:pointer; }
+.media-card .media-info { padding:10px 12px; }
+.media-card .media-name { font-size:12px; font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.media-card .media-size { font-size:11px; color:var(--muted); margin-top:2px; }
+.media-card .media-actions { display:flex; gap:4px; padding:0 12px 10px; }
+.media-card .media-actions button { font-size:11px; padding:3px 8px; border:1px solid var(--border); border-radius:4px; color:var(--muted); } .media-card .media-actions button:hover { border-color:var(--primary); color:var(--primary); }
+.upload-zone { border:3px dashed var(--border); border-radius:var(--radius); padding:40px; text-align:center; margin-bottom:20px; transition:all .2s; cursor:pointer; background:var(--card); }
+.upload-zone.dragover { border-color:var(--primary); background:#e8f5e9; }
+.upload-zone .upload-icon { font-size:48px; color:var(--muted); margin-bottom:12px; }
+.upload-progress { margin-top:12px; } .upload-progress-bar { height:6px; background:var(--border); border-radius:3px; overflow:hidden; }
+.upload-progress-fill { height:100%; background:var(--primary); transition:width .3s; }
+.filter-bar { display:flex; gap:12px; margin-bottom:16px; align-items:center; }
+.filter-bar input { padding:8px 12px; border:1px solid var(--border); border-radius:var(--radius); flex:1; max-width:300px; }
+
+.settings-section { background:var(--card); border-radius:var(--radius); padding:20px; box-shadow:var(--shadow); margin-bottom:20px; }
+.settings-section h3 { margin-bottom:12px; font-size:16px; }
+.config-editor { width:100%; min-height:300px; padding:12px; border:1px solid var(--border); border-radius:var(--radius); font-family:monospace; font-size:13px; resize:vertical; }
+.template-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:12px; }
+.template-card { border:2px solid var(--border); border-radius:var(--radius); padding:16px; cursor:pointer; transition:all .2s; }
+.template-card:hover { border-color:var(--primary); } .template-card.selected { border-color:var(--primary); background:#e8f5e9; }
+.template-card h4 { margin-bottom:6px; } .template-card p { font-size:12px; color:var(--muted); }
+.deploy-status { padding:12px 16px; border-radius:var(--radius); margin-bottom:12px; } .deploy-status.idle { background:#f5f3ed; } .deploy-status.running { background:#e3f2fd; } .deploy-status.success { background:#e8f5e9; } .deploy-status.failed { background:#fce8e6; }
+
+.modal-overlay { position:fixed; inset:0; background:rgba(0,0,0,.5); display:none; align-items:center; justify-content:center; z-index:1000; }
+.modal-overlay.show { display:flex; }
+.modal { background:var(--card); border-radius:12px; padding:24px; width:500px; max-width:90vw; max-height:85vh; overflow-y:auto; box-shadow:var(--shadow-lg); }
+.modal-lg { width:800px; } .modal h2 { font-size:18px; margin-bottom:16px; }
+.modal-body { margin-bottom:20px; } .modal-footer { display:flex; gap:10px; justify-content:flex-end; }
+.modal .close-btn { position:absolute; top:16px; right:20px; font-size:24px; color:var(--muted); } .modal .close-btn:hover { color:var(--text); }
+.diff-view { font-family:monospace; font-size:12px; } .diff-line { padding:2px 8px; white-space:pre-wrap; word-break:break-all; }
+.diff-add { background:#e6ffed; color:#22863a; } .diff-del { background:#ffebe9; color:#cb2415; } .diff-ctx { color:var(--muted); }
+.commit-list { list-style:none; } .commit-list li { padding:12px 0; border-bottom:1px solid var(--border); }
+.commit-list .commit-msg { font-weight:600; font-size:13px; } .commit-list .commit-meta { font-size:12px; color:var(--muted); margin-top:4px; display:flex; gap:12px; align-items:center; }
+.commit-list .commit-actions { margin-left:auto; display:flex; gap:6px; }
+
+#toast-container { position:fixed; bottom:24px; right:24px; z-index:2000; display:flex; flex-direction:column; gap:8px; }
+.toast { background:var(--card); border-radius:var(--radius); padding:12px 20px; box-shadow:var(--shadow-lg); display:flex; align-items:center; gap:10px; min-width:280px; animation:slideIn .3s ease; border-left:4px solid var(--primary); }
+.toast.success { border-left-color:var(--success); } .toast.error { border-left-color:var(--error); } .toast.warning { border-left-color:var(--warning); }
+.toast .toast-icon { font-size:18px; } .toast .toast-msg { flex:1; font-size:13px; }
+@keyframes slideIn { from { transform:translateX(100%); opacity:0; } to { transform:translateX(0); opacity:1; } }
+.context-menu { position:fixed; background:var(--card); border:1px solid var(--border); border-radius:6px; box-shadow:var(--shadow-lg); z-index:999; display:none; min-width:160px; padding:4px 0; }
+.context-menu.show { display:block; } .context-menu button { display:block; width:100%; text-align:left; padding:8px 16px; font-size:13px; } .context-menu button:hover { background:#f5f3ed; }
+.context-menu .divider { height:1px; background:var(--border); margin:4px 0; }
+.loading { display:inline-block; width:16px; height:16px; border:2px solid var(--border); border-top-color:var(--primary); border-radius:50%; animation:spin 1s linear infinite; }
+@keyframes spin { to { transform:rotate(360deg); } }
+.loading-overlay { position:fixed; inset:0; background:rgba(255,255,255,.7); display:none; align-items:center; justify-content:center; z-index:1500; } .loading-overlay.show { display:flex; }
+.loading-overlay .loading-box { text-align:center; } .loading-overlay .loading-text { margin-top:12px; color:var(--muted); }
+@media(max-width:768px) { .content-sidebar { width:220px; } .editor-split { flex-direction:column; } .preview-col { border-left:none; border-top:1px solid var(--border); } }
+
+
 </style>
 </head>
 <body>
-<div class="login" id="login">
-  <div class="login-box">
+<!--BODY-->
+<div id="login-page">
+  <div class="login-card">
     <h1>🌳 朴门知识库管理</h1>
-    <div class="ver">v3.0 · 如果看不到 v3.0 请强制刷新 Ctrl+Shift+R</div>
-    <p>输入 GitHub <b>Personal Access Token</b> 登录。<br>⚠️ 不是密码，是 <code>ghp_</code> 开头的 Token。</p>
-    <div class="err-msg" id="loginErr"></div>
-    <input type="password" id="tokenInput" placeholder="ghp_xxxxxxxxxxxx" onkeydown="if(event.key==='Enter')doLogin()">
-    <button id="loginBtn" onclick="doLogin()">登录</button>
-    <button class="diag-btn" onclick="runDiagnostic()">🔍 诊断连接</button>
-    <div class="help-box">
-      <b>创建 Token：</b>点下面的链接 → 确认勾选 <code>repo</code> → Generate → 复制 <code>ghp_...</code><br>
-      <a href="https://github.com/settings/tokens/new?scopes=repo&description=permaculture-cms" target="_blank" style="display:inline-block;margin-top:8px;font-weight:600">→ 创建 Token</a>
+    <p class="subtitle">v4.0 · 通过 GitHub API 管理内容</p>
+    <label>GitHub Personal Access Token</label>
+    <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" autocomplete="off">
+    <button class="btn btn-primary btn-block" onclick="doLogin()">登录</button>
+    <button class="btn btn-outline btn-block" onclick="runDiagnostics()">诊断连接</button>
+    <div class="diag-result" id="diag-result"></div>
+    <div class="login-help">
+      需要具有 <code>repo</code> 权限的 Token ·
+      <a href="https://github.com/settings/tokens/new?scopes=repo&description=permaculture-cms" target="_blank">创建 Token →</a>
     </div>
   </div>
 </div>
-<div class="app" id="app">
+
+<div id="app">
   <div class="topbar">
-    <h1>🌳 朴门知识库管理</h1>
-    <div style="display:flex;align-items:center">
-      <span class="user" id="userInfo"></span>
-      <button onclick="logout()">退出</button>
+    <div class="logo">🌳 朴门知识库管理 v4.0</div>
+    <div class="user-info">
+      <img id="user-avatar" src="" alt="">
+      <span id="user-name"></span>
+      <button class="logout-btn" onclick="doLogout()">退出</button>
     </div>
   </div>
-  <div class="main">
-    <div class="sidebar" id="sidebar"></div>
-    <div class="editor" id="editor">
-      <div class="ed-head">
-        <input id="filepath" placeholder="文件路径">
-        <button class="btn-save" id="savebtn" onclick="saveFile()">保存</button>
-      </div>
-      <div class="ed-body">
-        <textarea id="content" oninput="renderPreview()" placeholder="Markdown..."></textarea>
-        <div class="preview" id="preview"></div>
+  <div class="tab-nav">
+    <button class="active" data-tab="dashboard" onclick="switchTab('dashboard')">仪表盘</button>
+    <button data-tab="content" onclick="switchTab('content')">内容管理</button>
+    <button data-tab="media" onclick="switchTab('media')">媒体库</button>
+    <button data-tab="settings" onclick="switchTab('settings')">设置</button>
+  </div>
+  <div class="tab-content">
+    <div class="tab-pane active" id="pane-dashboard"></div>
+    <div class="tab-pane" id="pane-content">
+      <div class="content-layout">
+        <div class="content-sidebar">
+          <div class="sidebar-search">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="sidebar-search-input" placeholder="搜索文件内容..." oninput="handleSidebarSearch(this.value)">
+          </div>
+          <div class="sidebar-tree" id="sidebar-tree"></div>
+        </div>
+        <div class="content-main" id="content-main">
+          <div class="content-placeholder">
+            <div style="font-size:48px">📄</div>
+            <div>选择左侧文件开始编辑</div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="tab-pane" id="pane-media"></div>
+    <div class="tab-pane" id="pane-settings"></div>
   </div>
 </div>
-<div class="toast" id="toast"></div>
+
+<div id="toast-container"></div>
+<div class="modal-overlay" id="modal-overlay"><div class="modal" id="modal-box" style="position:relative"></div></div>
+<div class="context-menu" id="context-menu"></div>
+<div class="loading-overlay" id="loading-overlay"><div class="loading-box"><div class="loading" style="width:32px;height:32px"></div><div class="loading-text" id="loading-text">加载中...</div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/easymde@11/dist/easymde.min.js"></script>
 <script>
-var REPO='520maodizhang/permaculture-resources',API='https://bskfs7ud-3456.devbridge-s2.hwtunnel.com/api'
-var token='',currentSha=null
-var dirs=[{path:'',label:'根目录'},{path:'00-foundations',label:'基础理论'},{path:'01-core-texts',label:'核心文献'},{path:'06-reference',label:'参考资料'},{path:'07-learning-paths',label:'学习路径'},{path:'AI-Powered-Agroforestry-Planning-',label:'AI农林业规划'},{path:'CPlant',label:'CPlant'},{path:'Polyculture-Design-Tool',label:'多样性设计工具'},{path:'awesome-permaculture',label:' awesome-permaculture'},{path:'beacon-food-forest',label:'信标食物森林'},{path:'mollison-1981-pdc',label:'Mollison 1981 PDC'},{path:'permaculture-card-deck-printable',label:'朴门卡片牌组'},{path:'permaculture-climate',label:'朴门气候'},{path:'permaculture-pamphlets',label:'朴门小册子'},{path:'planetary-homestead-manifesto',label:'行星家园宣言'},{path:'powerplant',label:'PowerPlant'},{path:'web-resources',label:'网络资源'}]
+/*JS1*/
+const REPO = '520maodizhang/permaculture-resources';
+const API = 'https://gh-proxy-permaculture.netlify.app/api';
+const RAW_BASE = 'https://raw.githubusercontent.com/' + REPO + '/main/';
+const DIRS = [
+  {path:'00-foundations', name:'基础理论', icon:'📚'},
+  {path:'01-core-texts', name:'核心文献', icon:'📖'},
+  {path:'02-design-elements', name:'设计要素', icon:'🌿'},
+  {path:'03-design-process', name:'设计流程', icon:'🔄'},
+  {path:'04-regional-adaptations', name:'区域适配', icon:'🌍'},
+  {path:'05-community-social', name:'社区与社会朴门', icon:'👥'},
+  {path:'06-reference', name:'参考资料', icon:'📋'},
+  {path:'07-learning-paths', name:'学习路径', icon:'🛤️'},
+  {path:'08-case-studies', name:'案例研究', icon:'🔬'},
+  {path:'mollison-1981-pdc', name:'Mollison 1981 PDC', icon:'🎓'},
+];
+const MEDIA_DIR = 'public/images';
+const TEMPLATES = {
+  '基础理论模板': {sections:['## 定义','## 核心要点','## 实践应用','## 相关链接']},
+  '文献模板': {sections:['## 作者','## 年份','## 摘要','## 核心观点','## 下载链接']},
+  '术语模板': {sections:['## 英文','## 中文','## 定义','## 相关术语']},
+  '案例模板': {sections:['## 位置','## 气候带','## 规模','## 设计要素','## 效果','## 教训']},
+  '学习路径模板': {sections:['## 目标','## 前置条件','## 步骤','## 资源','## 评估']},
+};
+let token = localStorage.getItem('gh_token') || '';
+let currentUser = null;
+let fileTree = {};
+let searchIndex = [];
+let currentFile = null;
+let currentEditor = null;
+let easyMDE = null;
+let autoSaveTimer = null;
+let mediaFiles = [];
+let dirStats = {};
+let draftExists = false;
+let unsavedChanges = false;
 
-// 兼容的 fetch with timeout
-function fetchTO(url,opts,ms){
-  ms=ms||15000
-  return new Promise(function(resolve,reject){
-    var ctrl=new AbortController()
-    var timer=setTimeout(function(){ctrl.abort();reject(new Error('超时'))},ms)
-    var o=opts||{}
-    o.signal=ctrl.signal
-    fetch(url,o).then(function(res){clearTimeout(timer);resolve(res)},function(err){clearTimeout(timer);reject(err)})
-  })
+function apiFetch(path, options = {}) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), options.timeout || 18000);
+  const headers = { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github+json', ...(options.headers || {}) };
+  if (options.body && typeof options.body === 'object') { headers['Content-Type'] = 'application/json'; options.body = JSON.stringify(options.body); }
+  return fetch(API + path, { ...options, headers, signal: controller.signal }).finally(() => clearTimeout(timeout));
+}
+function b64encode(str) { return btoa(unescape(encodeURIComponent(str))); }
+function b64decode(b64) { return decodeURIComponent(escape(atob(b64.replace(/\n/g,'')))); }
+function showToast(msg, type = 'success') {
+  const icons = { success:'✅', error:'❌', warning:'⚠️' };
+  const el = document.createElement('div'); el.className = 'toast ' + type;
+  el.innerHTML = `<span class="toast-icon">${icons[type]||'ℹ️'}</span><span class="toast-msg">${msg}</span>`;
+  document.getElementById('toast-container').appendChild(el);
+  setTimeout(() => { el.style.opacity='0'; el.style.transform='translateX(100%)'; setTimeout(()=>el.remove(),300); }, 3500);
+}
+function showModal(html, large) {
+  const box = document.getElementById('modal-box');
+  box.className = 'modal' + (large ? ' modal-lg' : '');
+  box.innerHTML = html;
+  document.getElementById('modal-overlay').classList.add('show');
+}
+function closeModal() { document.getElementById('modal-overlay').classList.remove('show'); }
+function showLoading(text) { document.getElementById('loading-text').textContent = text||'加载中...'; document.getElementById('loading-overlay').classList.add('show'); }
+function hideLoading() { document.getElementById('loading-overlay').classList.remove('show'); }
+function confirmDialog(title, msg, onConfirm) {
+  showModal(`<h2>${title}</h2><div class="modal-body"><p>${msg}</p></div><div class="modal-footer"><button class="btn btn-outline" onclick="closeModal()">取消</button><button class="btn btn-danger" id="confirm-btn">确认</button></div>`);
+  document.getElementById('confirm-btn').onclick = () => { closeModal(); onConfirm(); };
+}
+function formatDate(iso) { if(!iso) return '-'; const d = new Date(iso); return d.toLocaleDateString('zh-CN') + ' ' + d.toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'}); }
+function escapeHtml(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function closeContextMenu() { document.getElementById('context-menu').classList.remove('show'); }
+document.addEventListener('click', closeContextMenu);
+
+async function doLogin() {
+  const input = document.getElementById('token-input');
+  token = input.value.trim();
+  if (!token) { showToast('请输入 Token', 'error'); return; }
+  showLoading('验证 Token...');
+  try {
+    const res = await apiFetch('/user');
+    if (!res.ok) throw new Error('Token 无效: ' + res.status);
+    currentUser = await res.json();
+    localStorage.setItem('gh_token', token);
+    hideLoading();
+    showApp();
+  } catch(e) { hideLoading(); showToast('登录失败: ' + e.message, 'error'); }
+}
+async function runDiagnostics() {
+  const result = document.getElementById('diag-result');
+  result.className = 'diag-result'; result.innerHTML = '';
+  token = document.getElementById('token-input').value.trim();
+  let html = '';
+  try {
+    const r1 = await fetch(API + '/rate_limit', { signal: AbortSignal.timeout(10000) });
+    html += r1.ok ? '<div>✅ 代理连接正常</div>' : '<div>❌ 代理连接失败</div>';
+  } catch(e) { html += '<div>❌ 代理连接失败: ' + escapeHtml(e.message) + '</div>'; }
+  if (token) {
+    try {
+      const r2 = await apiFetch('/user');
+      html += r2.ok ? '<div>✅ Token 验证通过</div>' : '<div>❌ Token 验证失败 (' + r2.status + ')</div>';
+    } catch(e) { html += '<div>❌ Token 验证失败</div>'; }
+  } else { html += '<div>⚠️ 未输入 Token，跳过验证</div>'; }
+  try {
+    const r3 = await fetch(API + '/repos/' + REPO, { headers: { 'Authorization': 'Bearer ' + (token||'x') }, signal: AbortSignal.timeout(10000) });
+    html += r3.ok ? '<div>✅ 仓库访问正常</div>' : '<div>❌ 仓库访问失败 (' + r3.status + ')</div>';
+  } catch(e) { html += '<div>❌ 仓库访问失败</div>'; }
+  result.innerHTML = html; result.classList.add('show', html.includes('❌') ? 'err' : 'ok');
+}
+function doLogout() { localStorage.removeItem('gh_token'); token = ''; currentUser = null; location.reload(); }
+function showApp() {
+  document.getElementById('login-page').style.display = 'none';
+  document.getElementById('app').classList.add('show');
+  document.getElementById('user-name').textContent = currentUser.login;
+  const avatar = document.getElementById('user-avatar');
+  if (currentUser.avatar_url) { avatar.src = currentUser.avatar_url; } else { avatar.style.display = 'none'; }
+  loadDashboard();
+}
+function switchTab(tab) {
+  document.querySelectorAll('.tab-nav button').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  document.getElementById('pane-' + tab).classList.add('active');
+  if (tab === 'dashboard') loadDashboard();
+  if (tab === 'content' && !fileTree._loaded) loadFileTree();
+  if (tab === 'media') loadMediaLibrary();
+  if (tab === 'settings') loadSettings();
 }
 
-function showErr(m){var e=document.getElementById('loginErr');e.textContent=m;e.className='err-msg err';e.style.display='block'}
-function showOk(m){var e=document.getElementById('loginErr');e.textContent=m;e.className='err-msg ok';e.style.display='block'}
-function showWarn(m){var e=document.getElementById('loginErr');e.textContent=m;e.className='err-msg warn';e.style.display='block'}
-function logout(){localStorage.removeItem('gh_token');token='';location.reload()}
-
-;(function(){var s=localStorage.getItem('gh_token');if(s){token=s;validateAndShow()}})()
-
-// 诊断：直连测试，显示详细结果
-async function runDiagnostic(){
-  var lines=['🔍 诊断开始...']
-  showWarn(lines.join('\n'))
-  // 测试1: 直连 GitHub API (公开接口)
-  try{
-    var res=await fetchTO(API+'/zen',{},8000)
-    if(res.ok){var t=await res.text();lines.push('✅ 直连 GitHub API: 成功 ("'+t.substring(0,30)+'")')}
-    else{lines.push('⚠️ 直连 GitHub API: HTTP '+res.status)}
-  }catch(e){lines.push('❌ 直连 GitHub API: '+e.message)}
-  showWarn(lines.join('\n'))
-  // 测试2: 直连带认证 (用当前token)
-  var tok=document.getElementById('tokenInput').value.trim()
-  if(tok){
-    try{
-      var res2=await fetchTO(API+'/user',{headers:{'Authorization':'Bearer '+tok,'Accept':'application/vnd.github+json'}},8000)
-      if(res2.ok){var u=await res2.json();lines.push('✅ Token 验证: 成功! 用户: '+u.login);showOk(lines.join('\n'));return}
-      else{var d=await res2.json().catch(function(){return{}});lines.push('❌ Token 验证: HTTP '+res2.status+' '+(d.message||''))}
-    }catch(e){lines.push('❌ Token 验证: '+e.message)}
-  }else{lines.push('⏭️ Token 验证: 跳过(未输入token)')}
-  showWarn(lines.join('\n'))
-  // 测试3: CORS 检查
-  try{
-    var res3=await fetchTO(API+'/zen',{method:'OPTIONS',headers:{'Origin':'https://permaculture-design.surge.sh'}},5000)
-    var aco=res3.headers.get('access-control-allow-origin')
-    lines.push(aco?('✅ CORS: 允许 '+aco):('⚠️ CORS: 无 access-control-allow-origin 头'))
-  }catch(e){lines.push('⚠️ CORS 检查: '+e.message)}
-  var finalMsg=lines.join('\n')
-  if(finalMsg.indexOf('✅ Token')>=0){showOk(finalMsg)}else{showErr(finalMsg)}
-}
-async function doLogin(){
-  token=document.getElementById('tokenInput').value.trim()
-  if(!token){showErr('请输入 Token');return}
-  if(token.indexOf('ghp_')!==0&&token.indexOf('github_pat_')!==0){showErr('Token 格式不对！以 ghp_ 或 github_pat_ 开头，不是密码。');return}
-  await validateAndShow()
-}
-
-async function validateAndShow(){
-  var btn=document.getElementById('loginBtn')
-  btn.disabled=true;btn.textContent='验证中...'
-  document.getElementById('loginErr').style.display='none'
-  try{
-    var res=await fetchTO(API+'/user',{
-      headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json'}
-    },15000)
-    if(!res.ok){
-      var d=await res.json().catch(function(){return{}})
-      if(res.status===401){showErr('Token 无效或已过期。GitHub 返回: '+(d.message||'Bad credentials')+'\n请确认复制了完整的 ghp_... 字符串。')}
-      else if(res.status===403){showErr('Token 权限不足。需勾选 repo 权限。GitHub 返回: '+(d.message||''))}
-      else{showErr('GitHub 返回错误 '+res.status+': '+(d.message||''))}
-      localStorage.removeItem('gh_token')
-      btn.disabled=false;btn.textContent='登录';return
+async function loadDashboard() {
+  const pane = document.getElementById('pane-dashboard');
+  pane.innerHTML = '<div class="loading"></div>';
+  let totalPages = 0, totalWords = 0, totalImages = 0, lastUpdate = '-';
+  try {
+    const commitsRes = await apiFetch('/repos/' + REPO + '/commits?per_page=1');
+    if (commitsRes.ok) { const commits = await commitsRes.json(); if (commits.length) lastUpdate = formatDate(commits[0].commit.committer.date); }
+  } catch(e) {}
+  try {
+    const mediaRes = await apiFetch('/repos/' + REPO + '/contents/' + MEDIA_DIR);
+    if (mediaRes.ok) { const items = await mediaRes.json(); totalImages = Array.isArray(items) ? items.filter(i=>i.type==='file').length : 0; }
+  } catch(e) {}
+  for (const dir of DIRS) {
+    try {
+      const res = await apiFetch('/repos/' + REPO + '/contents/' + dir.path);
+      if (res.ok) {
+        const items = await res.json();
+        const files = Array.isArray(items) ? items.filter(i => i.type === 'file' && i.name.endsWith('.md')) : [];
+        dirStats[dir.path] = files.length;
+        totalPages += files.length;
+        for (const f of files) { try { const fr = await apiFetch('/repos/' + REPO + '/contents/' + dir.path + '/' + f.name); if (fr.ok) { const fd = await fr.json(); totalWords += (b64decode(fd.content)||'').split(/\s+/).length; } } catch(e){} }
+      } else { dirStats[dir.path] = 0; }
+    } catch(e) { dirStats[dir.path] = 0; }
+  }
+  let gapHtml = '', suggestions = [];
+  for (const dir of DIRS) {
+    const count = dirStats[dir.path] || 0;
+    const dot = count === 0 ? '🔴' : count <= 3 ? '🟡' : '🟢';
+    const status = count === 0 ? '空' : count <= 3 ? '进行中' : '完整';
+    const cls = count === 0 ? 'status-empty' : count <= 3 ? 'status-partial' : 'status-good';
+    const priority = localStorage.getItem('priority_' + dir.path) || '中';
+    gapHtml += `<div class="gap-item"><div class="gap-dot">${dot}</div><div class="gap-name">${dir.icon} ${dir.name}</div><div class="gap-count">${count} 页 · <span class="status-badge ${cls}">${status}</span></div><div class="gap-priority"><select onchange="localStorage.setItem('priority_${dir.path}',this.value)"><option ${priority==='高'?'selected':''}>高</option><option ${priority==='中'?'selected':''}>中</option><option ${priority==='低'?'selected':''}>低</option></select></div></div>`;
+    if (count === 0) suggestions.push(dir.name);
+  }
+  let suggHtml = '';
+  if (suggestions.length) { suggHtml = '<div class="suggestion-box"><h4>📋 下一步建议</h4><ul>' + suggestions.map(s => `<li>「${s}」目录为空，建议优先添加内容</li>`).join('') + '</ul></div>'; }
+  else { suggHtml = '<div class="suggestion-box"><h4>✅ 内容覆盖良好</h4><p>所有目录都有内容，继续保持！</p></div>'; }
+  let commitsHtml = '<li>加载失败</li>';
+  try {
+    const cr = await apiFetch('/repos/' + REPO + '/commits?per_page=10');
+    if (cr.ok) {
+      const commits = await cr.json();
+      commitsHtml = commits.map(c => `<li><span class="commit-msg">${escapeHtml(c.commit.message.split('\n')[0])}</span><span class="commit-meta">${c.commit.author?.name||''} · ${formatDate(c.commit.author?.date)}</span></li>`).join('');
     }
-    var user=await res.json()
-    localStorage.setItem('gh_token',token)
-    document.getElementById('login').style.display='none'
-    document.getElementById('app').style.display='block'
-    document.getElementById('userInfo').textContent=user.login
-    await loadSidebar()
-  }catch(e){
-    showErr('无法连接 GitHub API: '+e.message+'\n\n可能原因：\n① 浏览器无法访问 api.github.com\n② 网络代理/防火墙拦截\n\n请先点「诊断连接」测试。')
-    localStorage.removeItem('gh_token')
-    btn.disabled=false;btn.textContent='登录'
+  } catch(e) {}
+  let tableHtml = '';
+  for (const dir of DIRS) {
+    const count = dirStats[dir.path] || 0;
+    const status = count === 0 ? '<span class="status-badge status-empty">空</span>' : count <= 3 ? '<span class="status-badge status-partial">进行中</span>' : '<span class="status-badge status-good">完整</span>';
+    tableHtml += `<tr><td>${dir.icon} ${dir.name}</td><td>${dir.path}</td><td>${count}</td><td>${status}</td></tr>`;
+  }
+  pane.innerHTML = `
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-icon">📄</div><div class="stat-value">${totalPages}</div><div class="stat-label">总页面数</div></div>
+      <div class="stat-card"><div class="stat-icon">📝</div><div class="stat-value">${totalWords.toLocaleString()}</div><div class="stat-label">总字数</div></div>
+      <div class="stat-card"><div class="stat-icon">🖼️</div><div class="stat-value">${totalImages}</div><div class="stat-label">媒体文件</div></div>
+      <div class="stat-card"><div class="stat-icon">🕐</div><div class="stat-value" style="font-size:14px">${lastUpdate}</div><div class="stat-label">最后更新</div></div>
+    </div>
+    <div class="quick-actions" style="margin-bottom:20px">
+      <button class="btn btn-primary" onclick="switchTab('content');setTimeout(()=>showNewFileDialog(DIRS[0].path),300)">📝 新建页面</button>
+      <button class="btn btn-secondary" onclick="switchTab('media')">🖼️ 上传图片</button>
+      <button class="btn btn-outline" onclick="triggerDeploy()">🚀 一键部署</button>
+    </div>
+    ${suggHtml}
+    <div class="card"><div class="section-title">📊 内容完整度</div><div class="gap-grid">${gapHtml}</div></div>
+    <div class="card"><div class="section-title">📋 目录详情</div><table><thead><tr><th>目录名</th><th>路径</th><th>页面数</th><th>状态</th></tr></thead><tbody>${tableHtml}</tbody></table></div>
+    <div class="card"><div class="section-title">🕐 最近编辑</div><ul class="recent-list">${commitsHtml}</ul></div>`;
+}
+
+async function loadFileTree() {
+  const treeEl = document.getElementById('sidebar-tree');
+  treeEl.innerHTML = '<div class="loading"></div>';
+  fileTree = {}; searchIndex = [];
+  for (const dir of DIRS) {
+    fileTree[dir.path] = { name: dir.name, icon: dir.icon, path: dir.path, dirs: [], files: [] };
+    try { await fetchDirContents(dir.path, fileTree[dir.path]); } catch(e) {}
+  }
+  fileTree._loaded = true;
+  renderFileTree();
+  buildSearchIndex();
+}
+async function fetchDirContents(path, node) {
+  const res = await apiFetch('/repos/' + REPO + '/contents/' + path);
+  if (!res.ok) return;
+  const items = await res.json();
+  if (!Array.isArray(items)) return;
+  for (const item of items) {
+    if (item.type === 'dir') {
+      const child = { name: item.name, path: item.path, dirs: [], files: [] };
+      node.dirs.push(child);
+      await fetchDirContents(item.path, child);
+    } else if (item.type === 'file' && item.name.endsWith('.md')) {
+      node.files.push({ name: item.name, path: item.path, sha: item.sha, size: item.size });
+    }
   }
 }
-
-async function ghApi(path,method,body){
-  var o={method:method||'GET',headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','Content-Type':'application/json'}}
-  if(body)o.body=JSON.stringify(body)
-  return await fetchTO(API+'/repos/'+REPO+'/contents/'+path,o,20000)
+function renderFileTree() {
+  const treeEl = document.getElementById('sidebar-tree');
+  let html = '';
+  for (const dir of DIRS) {
+    const node = fileTree[dir.path];
+    if (node) html += renderDirNode(node, true);
+  }
+  html += renderMediaDirNode();
+  treeEl.innerHTML = html;
 }
+function renderMediaDirNode() {
+  return `<div class="tree-dir"><div class="tree-dir-header" onclick="switchTab('media')"><span class="chevron">▼</span><span class="dir-icon">🖼️</span>媒体库<span class="new-btn" onclick="event.stopPropagation();switchTab('media')">+</span></div></div>`;
+}
+function renderDirNode(node, isTop) {
+  const fileCount = countAllFiles(node);
+  let html = `<div class="tree-dir collapsed" data-path="${node.path}"><div class="tree-dir-header" onclick="toggleDir(this)"><span class="chevron">▼</span><span class="dir-icon">${isTop ? (fileTree[node.path]?.icon||'📁') : '📁'}</span>${node.name} <span style="color:var(--muted);font-size:11px">(${fileCount})</span><span class="new-btn" onclick="event.stopPropagation();showNewFileDialog('${node.path}')">+</span></div><div class="tree-dir-children">`;
+  for (const sub of node.dirs) html += renderDirNode(sub, false);
+  for (const f of node.files) {
+    html += `<div class="tree-file" onclick="openFile('${f.path}','${f.sha||''}')"><span class="file-icon">📄</span><span class="file-name">${f.name}</span><span class="file-menu" onclick="event.stopPropagation();showFileMenu(event,'${f.path}','${f.sha||''}')">⋯</span></div>`;
+  }
+  html += `</div></div>`;
+  return html;
+}
+function countAllFiles(node) { let c = node.files.length; for (const d of node.dirs) c += countAllFiles(d); return c; }
+function toggleDir(header) { header.parentElement.classList.toggle('collapsed'); }
 
-async function loadSidebar(){
-  var sb=document.getElementById('sidebar');sb.innerHTML=''
-  for(var i=0;i<dirs.length;i++){
-    var dir=dirs[i]
-    var h=document.createElement('h3');h.textContent=dir.label;sb.appendChild(h)
-    try{
-      var res=await ghApi(dir.path)
-      if(!res.ok){var e=document.createElement('div');e.className='sb-err';e.textContent='HTTP '+res.status;sb.appendChild(e);continue}
-      var items=await res.json()
-      if(!Array.isArray(items)){var e2=document.createElement('div');e2.className='sb-err';e2.textContent='非目录';sb.appendChild(e2);continue}
-      var mds=items.filter(function(x){return x.type==='file'&&x.name.endsWith('.md')})
-      if(!mds.length){var e3=document.createElement('div');e3.style.cssText='font-size:13px;color:#aaa;padding:4px 12px';e3.textContent='（空）';sb.appendChild(e3)}
-      for(var j=0;j<mds.length;j++){
-        var f=mds[j]
-        var el=document.createElement('div');el.className='file-item'
-        el.innerHTML='<span>📄</span> '+f.name.replace('.md','')
-        ;(function(el,f){el.onclick=function(){document.querySelectorAll('.file-item').forEach(function(x){x.classList.remove('active')});el.classList.add('active');openFile(f.path,f.sha)}})(el,f)
-        sb.appendChild(el)
-      }
-      var nf=document.createElement('div');nf.className='new-file';nf.textContent='+ 新建'
-      ;(function(dir){nf.onclick=function(){newFile(dir.path)}})(dir)
-      sb.appendChild(nf)
-    }catch(e){var el=document.createElement('div');el.className='sb-err';el.textContent=e.message;sb.appendChild(el)}
+async function buildSearchIndex() {
+  searchIndex = [];
+  for (const dir of DIRS) {
+    const node = fileTree[dir.path];
+    if (node) await indexNodeFiles(node);
   }
 }
-
-async function openFile(path,sha){
-  currentSha=sha
-  document.getElementById('editor').classList.add('show')
-  document.getElementById('filepath').value=path
-  document.getElementById('savebtn').disabled=true
-  document.getElementById('content').value='加载中...'
-  try{
-    var res=await ghApi(path)
-    if(res.ok){var d=await res.json();document.getElementById('content').value=decodeURIComponent(escape(atob(d.content.replace(/\n/g,''))));currentSha=d.sha;renderPreview()}
-    else{document.getElementById('content').value='加载失败: '+res.status}
-  }catch(e){document.getElementById('content').value='错误: '+e.message}
-  document.getElementById('savebtn').disabled=false
-}
-
-function newFile(dirPath){
-  var name=prompt('文件名（不含.md）:');if(!name)return
-  var path=dirPath?dirPath+'/'+name+'.md':name+'.md'
-  currentSha=null;document.getElementById('editor').classList.add('show')
-  document.getElementById('filepath').value=path
-  document.getElementById('content').value='# '+name+'\n\n';renderPreview()
-}
-
-async function saveFile(){
-  var path=document.getElementById('filepath').value
-  var content=document.getElementById('content').value
-  var btn=document.getElementById('savebtn');btn.disabled=true;btn.textContent='保存中...'
-  try{
-    var body={message:'CMS: 更新 '+path,content:btoa(unescape(encodeURIComponent(content)))}
-    if(currentSha)body.sha=currentSha
-    var res=await ghApi(path,'PUT',body)
-    if(res.ok){var d=await res.json();currentSha=d.content.sha;showToast('✅ 已提交','ok');await loadSidebar()}
-    else{var e=await res.json().catch(function(){return{}});showToast('❌ '+(e.message||'失败'),'fail')}
-  }catch(e){showToast('❌ '+e.message,'fail')}
-  btn.disabled=false;btn.textContent='保存'
-}
-
-function renderPreview(){
-  var md=document.getElementById('content').value
-  var lines=md.split('\n')
-  var html=''
-  var i=0
-  while(i<lines.length){
-    var line=lines[i]
-    // Table detection
-    if(line.trim().startsWith('|')&&i+1<lines.length&&lines[i+1].trim().match(/^\|[\s\-:|]+\|$/)){
-      var headers=line.trim().split('|').filter(function(x,i,a){return i>0&&i<a.length-1}).map(function(x){return x.trim()})
-      i+=2 // skip header and separator
-      html+='<table><thead><tr>'
-      headers.forEach(function(h){html+='<th>'+escMd(h)+'</th>'})
-      html+='</tr></thead><tbody>'
-      while(i<lines.length&&lines[i].trim().startsWith('|')){
-        var cells=lines[i].trim().split('|').filter(function(x,i,a){return i>0&&i<a.length-1}).map(function(x){return x.trim()})
-        html+='<tr>'
-        cells.forEach(function(c){html+='<td>'+escMd(c)+'</td>'})
-        html+='</tr>'
-        i++
-      }
-      html+='</tbody></table>'
-      continue
-    }
-    // Headers
-    if(line.match(/^#{1,6} /)){
-      var lvl=line.match(/^#+/)[0].length
-      var txt=line.replace(/^#+ /,'')
-      html+='<h'+lvl+'>'+escMd(txt)+'</h'+lvl+'>'
-      i++;continue
-    }
-    // Horizontal rule
-    if(line.trim().match(/^(-{3,}|\*{3,}|_{3,})$/)){html+='<hr>';i++;continue}
-    // Blockquote
-    if(line.startsWith('> ')){
-      var bq=''
-      while(i<lines.length&&lines[i].startsWith('> ')){bq+=escMd(lines[i].substring(2))+' ';i++}
-      html+='<blockquote>'+bq.trim()+'</blockquote>'
-      continue
-    }
-    // Unordered list
-    if(line.match(/^[\-\*\+] /)){
-      html+='<ul>'
-      while(i<lines.length&&lines[i].match(/^[\-\*\+] /)){html+='<li>'+escMd(lines[i].replace(/^[\-\*\+] /,''))+'</li>';i++}
-      html+='</ul>'
-      continue
-    }
-    // Ordered list
-    if(line.match(/^\d+\. /)){
-      html+='<ol>'
-      while(i<lines.length&&lines[i].match(/^\d+\. /)){html+='<li>'+escMd(lines[i].replace(/^\d+\. /,''))+'</li>';i++}
-      html+='</ol>'
-      continue
-    }
-    // Code block
-    if(line.trim().startsWith('```')){
-      var code=''
-      i++
-      while(i<lines.length&&!lines[i].trim().startsWith('```')){code+=lines[i]+'\n';i++}
-      i++ // skip closing ```
-      html+='<pre><code>'+escHtml(code)+'</code></pre>'
-      continue
-    }
-    // Empty line
-    if(line.trim()===''){i++;continue}
-    // Normal paragraph
-    var para=''
-    while(i<lines.length&&lines[i].trim()!==''&&!lines[i].match(/^#{1,6} /)&&!lines[i].trim().startsWith('|')&&!lines[i].match(/^[\-\*\+] /)&&!lines[i].match(/^\d+\. /)&&!lines[i].startsWith('> ')&&!lines[i].trim().startsWith('```')&&!lines[i].trim().match(/^(-{3,}|\*{3,}|_{3,})$/)){
-      para+=lines[i]+' ';i++
-    }
-    if(para)html+='<p>'+escMd(para.trim())+'</p>'
+async function indexNodeFiles(node) {
+  for (const f of node.files) {
+    try {
+      const res = await apiFetch('/repos/' + REPO + '/contents/' + f.path);
+      if (res.ok) { const data = await res.json(); searchIndex.push({ path: f.path, name: f.name, content: b64decode(data.content) || '' }); }
+    } catch(e) {}
   }
-  document.getElementById('preview').innerHTML=html
+  for (const d of node.dirs) await indexNodeFiles(d);
 }
-function escMd(s){
-  return s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
-    .replace(/\*(.+?)\*/g,'<em>$1</em>')
-    .replace(/`([^`]+)`/g,'<code>$1</code>')
-    .replace(/!\[([^\]]*)\]\(([^)]+)\)/g,'<img alt="$1" src="$2">')
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank">$1</a>')
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank">$1</a>')
+function handleSidebarSearch(query) {
+  const treeEl = document.getElementById('sidebar-tree');
+  query = query.trim().toLowerCase();
+  if (!query) { renderFileTree(); return; }
+  let html = '<div class="search-results">';
+  let count = 0;
+  for (const item of searchIndex) {
+    const content = item.content.toLowerCase();
+    const idx = content.indexOf(query);
+    if (idx >= 0 || item.name.toLowerCase().includes(query)) {
+      if (count >= 50) break;
+      count++;
+      let snippet = '';
+      if (idx >= 0) { const start = Math.max(0, idx - 30); snippet = '...' + escapeHtml(item.content.substring(start, idx + query.length + 50)) + '...'; snippet = snippet.replace(new RegExp(escapeHtml(query), 'gi'), m => '<mark>' + m + '</mark>'); }
+      html += `<div class="search-result-item" onclick="openFile('${item.path}')"><div class="sr-file">📄 ${escapeHtml(item.name)}</div><div class="sr-snippet">${snippet}</div></div>`;
+    }
+  }
+  html += count === 0 ? '<div style="color:var(--muted);padding:12px">未找到匹配文件</div>' : `<div style="color:var(--muted);padding:8px;font-size:12px">找到 ${count} 个结果</div>`;
+  html += '</div>';
+  treeEl.innerHTML = html;
 }
-function escHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 
-
-function showToast(msg,type){
-  var t=document.getElementById('toast')
-  t.textContent=msg;t.className='toast '+type;t.style.display='block'
-  setTimeout(function(){t.style.display='none'},3000)
+function showFileMenu(e, path, sha) {
+  e.stopPropagation();
+  const menu = document.getElementById('context-menu');
+  menu.innerHTML = `<button onclick="openFile('${path}')">✏️ 编辑</button><button onclick="deleteFile('${path}','${sha}')">🗑️ 删除</button><button onclick="copyPath('${path}')">📋 复制路径</button>`;
+  menu.style.left = e.clientX + 'px'; menu.style.top = e.clientY + 'px';
+  menu.classList.add('show');
 }
+function copyPath(path) { navigator.clipboard.writeText(path).then(() => showToast('已复制: ' + path)); closeContextMenu(); }
+async function deleteFile(path, sha) {
+  closeContextMenu();
+  confirmDialog('删除文件', `确定删除 <code>${path}</code> 吗？此操作不可撤销。`, async () => {
+    showLoading('删除中...');
+    try {
+      if (!sha) { const r = await apiFetch('/repos/' + REPO + '/contents/' + path); if (r.ok) { const d = await r.json(); sha = d.sha; } }
+      const res = await apiFetch('/repos/' + REPO + '/contents/' + path, { method: 'DELETE', body: { message: '删除: ' + path, sha } });
+      if (res.ok) { showToast('已删除'); loadFileTree(); if (currentFile === path) closeEditor(); } else throw new Error('删除失败: ' + res.status);
+    } catch(e) { showToast(e.message, 'error'); } finally { hideLoading(); }
+  });
+}
+function showNewFileDialog(dirPath) {
+  let tplHtml = '';
+  for (const name of Object.keys(TEMPLATES)) tplHtml += `<div class="template-card" onclick="selectTemplate('${name}',this)" data-tpl="${name}"><h4>${name}</h4><p>${TEMPLATES[name].sections.length} 个章节</p></div>`;
+  showModal(`<h2>新建页面</h2><div class="modal-body"><label style="display:block;margin-bottom:6px;font-weight:600">文件名（不含.md）</label><input type="text" id="new-filename" placeholder="my-new-page" style="width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:6px;margin-bottom:16px"><label style="display:block;margin-bottom:6px;font-weight:600">选择模板</label><div class="template-grid" id="template-picker">${tplHtml}</div></div><div class="modal-footer"><button class="btn btn-outline" onclick="closeModal()">取消</button><button class="btn btn-primary" onclick="createNewFile('${dirPath}')">创建</button></div>`);
+}
+let selectedTemplate = null;
+function selectTemplate(name, el) { selectedTemplate = name; document.querySelectorAll('#template-picker .template-card').forEach(c => c.classList.remove('selected')); el.classList.add('selected'); }
+async function createNewFile(dirPath) {
+  const name = document.getElementById('new-filename').value.trim();
+  if (!name) { showToast('请输入文件名', 'error'); return; }
+  if (!selectedTemplate) { showToast('请选择模板', 'error'); return; }
+  const path = dirPath + '/' + name + '.md';
+  let content = `---\ntitle: ${name}\norder: 1\ntags: []\ndescription: \ndate: ${new Date().toISOString().split('T')[0]}\n---\n\n`;
+  for (const s of TEMPLATES[selectedTemplate].sections) content += s + '\n\n';
+  closeModal();
+  showLoading('创建文件...');
+  try {
+    const res = await apiFetch('/repos/' + REPO + '/contents/' + path, { method: 'PUT', body: { message: '新建: ' + path, content: b64encode(content) } });
+    if (res.ok) { showToast('已创建'); loadFileTree(); openFile(path); } else { const d = await res.json(); throw new Error(d.message || '创建失败'); }
+  } catch(e) { showToast(e.message, 'error'); } finally { hideLoading(); }
+}
+
+async function openFile(path, sha) {
+  if (unsavedChanges && !confirm('有未保存的更改，确定切换文件吗？')) return;
+  closeContextMenu();
+  currentFile = path;
+  unsavedChanges = false;
+  document.querySelectorAll('.tree-file').forEach(f => f.classList.remove('active'));
+  showLoading('加载文件...');
+  try {
+    const res = await apiFetch('/repos/' + REPO + '/contents/' + path);
+    if (!res.ok) throw new Error('加载失败: ' + res.status);
+    const data = await res.json();
+    const content = b64decode(data.content) || '';
+    currentFile = path;
+    renderEditor(path, content, data.sha);
+    loadDraftStatus(path);
+  } catch(e) { showToast(e.message, 'error'); } finally { hideLoading(); }
+}
+function parseFrontmatter(content) {
+  const match = content.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+  if (!match) return { frontmatter: null, body: content };
+  const fmText = match[1]; const body = match[2];
+  const fm = {};
+  fmText.split('\n').forEach(line => {
+    const m = line.match(/^(\w+):\s*(.*)$/);
+    if (m) {
+      let val = m[2].trim();
+      if (val.startsWith('[') && val.endsWith(']')) { val = val.slice(1,-1).split(',').map(s=>s.trim().replace(/^["']|["']$/g,'')).filter(s=>s); }
+      fm[m[1]] = val;
+    }
+  });
+  return { frontmatter: fm, body };
+}
+function buildFrontmatter(fm) {
+  if (!fm) return '';
+  let lines = ['---'];
+  for (const [k, v] of Object.entries(fm)) {
+    if (Array.isArray(v)) lines.push(`${k}: [${v.join(', ')}]`);
+    else lines.push(`${k}: ${v || ''}`);
+  }
+  lines.push('---', '');
+  return lines.join('\n');
+}
+function renderEditor(path, content, sha) {
+  const main = document.getElementById('content-main');
+  const { frontmatter, body } = parseFrontmatter(content);
+  let fmHtml = '';
+  if (frontmatter) {
+    fmHtml = `<div class="frontmatter-form"><h4>📝 元数据</h4><div class="frontmatter-grid">
+      <div class="fm-field"><label>标题</label><input type="text" id="fm-title" value="${escapeHtml(frontmatter.title||'')}"></div>
+      <div class="fm-field"><label>排序</label><input type="number" id="fm-order" value="${escapeHtml(String(frontmatter.order||''))}"></div>
+      <div class="fm-field"><label>标签 (逗号分隔)</label><input type="text" id="fm-tags" value="${escapeHtml(Array.isArray(frontmatter.tags)?frontmatter.tags.join(', '):frontmatter.tags||'')}"></div>
+      <div class="fm-field"><label>日期</label><input type="date" id="fm-date" value="${escapeHtml(frontmatter.date||'')}"></div>
+      <div class="fm-field fm-full"><label>描述</label><textarea id="fm-description" rows="2">${escapeHtml(frontmatter.description||'')}</textarea></div>
+    </div></div>`;
+  } else {
+    fmHtml = `<div class="frontmatter-form"><button class="btn btn-outline btn-sm" onclick="addFrontmatter()">+ 添加元数据</button></div>`;
+  }
+  main.innerHTML = `<div class="editor-header">
+    <div class="editor-path"><input type="text" id="editor-path-input" value="${path}" style="max-width:400px"></div>
+    <span class="auto-save-indicator" id="auto-save-indicator"></span>
+    <span class="draft-indicator" id="draft-indicator" style="display:none">有草稿更改</span>
+    <button class="btn btn-outline btn-sm" onclick="saveDraft()">存为草稿</button>
+    <button class="btn btn-outline btn-sm" onclick="showVersionHistory('${path}')">历史</button>
+    <button class="btn btn-primary btn-sm" onclick="saveFile()">💾 保存</button>
+  </div>
+  ${fmHtml}
+  <div class="editor-body">
+    <div class="editor-split">
+      <div class="editor-col"><textarea id="mde-textarea">${escapeHtml(body)}</textarea></div>
+      <div class="editor-col"><div class="preview-col" id="preview-panel"></div></div>
+    </div>
+  </div>`;
+  currentEditor = { path, sha, content, frontmatter, body };
+  initMarkdownEditor(body);
+  updatePreview(body);
+  if (autoSaveTimer) clearInterval(autoSaveTimer);
+  autoSaveTimer = setInterval(autoSave, 30000);
+}
+function addFrontmatter() {
+  currentEditor.frontmatter = { title: '', order: 1, tags: [], description: '', date: new Date().toISOString().split('T')[0] };
+  const newContent = buildFrontmatter(currentEditor.frontmatter) + currentEditor.body;
+  renderEditor(currentEditor.path, newContent, currentEditor.sha);
+}
+function initMarkdownEditor(body) {
+  const textarea = document.getElementById('mde-textarea');
+  if (typeof EasyMDE !== 'undefined') {
+    try {
+      easyMDE = new EasyMDE({
+        element: textarea, spellChecker: false, autofocus: true,
+        toolbar: ['bold','italic','heading','quote','code','link','image','table','unordered-list','ordered-list','|','preview','|',{name:'insert-image',action:()=>insertImageFromLibrary(),className:'fa fa-picture-o',title:'从媒体库插入图片'}],
+        renderingConfig: { codeSyntaxHighlighting: true },
+      });
+      easyMDE.codemirror.on('change', () => { unsavedChanges = true; updatePreview(easyMDE.value()); });
+    } catch(e) { easyMDE = null; textarea.value = body; textarea.oninput = () => { unsavedChanges = true; updatePreview(textarea.value); }; }
+  } else { textarea.value = body; textarea.style.width = '100%'; textarea.style.minHeight = '400px'; textarea.oninput = () => { unsavedChanges = true; updatePreview(textarea.value); }; }
+}
+function getEditorContent() {
+  const body = easyMDE ? easyMDE.value() : document.getElementById('mde-textarea').value;
+  let fm = currentEditor.frontmatter;
+  if (fm) {
+    const titleEl = document.getElementById('fm-title'); if (titleEl) {
+      fm.title = titleEl.value; fm.order = parseInt(document.getElementById('fm-order').value)||1;
+      fm.tags = document.getElementById('fm-tags').value.split(',').map(s=>s.trim()).filter(s=>s);
+      fm.date = document.getElementById('fm-date').value; fm.description = document.getElementById('fm-description').value;
+    }
+  }
+  return (fm ? buildFrontmatter(fm) : '') + body;
+}
+function updatePreview(md) { document.getElementById('preview-panel').innerHTML = renderMarkdown(md); }
+function renderMarkdown(md) {
+  if (!md) return '';
+  let html = escapeHtml(md);
+  html = html.replace(/```(\w*)\n([\s\S]*?)```/g, (m,lang,code) => `<pre><code>${code}</code></pre>`);
+  html = html.replace(/^###### (.+)$/gm, '<h6>$1</h6>').replace(/^##### (.+)$/gm, '<h5>$1</h5>').replace(/^#### (.+)$/gm, '<h4>$1</h4>').replace(/^### (.+)$/gm, '<h3>$1</h3>').replace(/^## (.+)$/gm, '<h2>$1</h2>').replace(/^# (.+)$/gm, '<h1>$1</h1>');
+  html = html.replace(/\*\*([^\*]+)\*\*/g, '<strong>$1</strong>').replace(/\*([^\*]+)\*/g, '<em>$1</em>').replace(/`([^`]+)`/g, '<code>$1</code>');
+  html = html.replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>');
+  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+  html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1">');
+  html = html.replace(/^---$/gm, '<hr>');
+  html = html.replace(/^\|(.+)\|$/gm, (m) => { const cells = m.split('|').filter(c=>c.trim()||c==='').map(c=>`<td>${c.trim()}</td>`).join(''); return `<tr>${cells}</tr>`; });
+  html = html.replace(/(<tr>[\s\S]*?<\/tr>)/g, '<table>$1</table>');
+  html = html.replace(/^[-*] (.+)$/gm, '<li>$1</li>').replace(/(<li>[\s\S]*?<\/li>)/g, '<ul>$1</ul>');
+  html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+  html = html.replace(/\n\n/g, '</p><p>').replace(/^([\s\S]+)$/, '<p>$1</p>');
+  return html;
+}
+function autoSave() {
+  if (!currentFile || !unsavedChanges) return;
+  const content = getEditorContent();
+  localStorage.setItem('draft_' + currentFile, content);
+  document.getElementById('auto-save-indicator').textContent = '已自动保存 ' + new Date().toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'});
+}
+async function saveFile() {
+  if (!currentFile) return;
+  showLoading('保存中...');
+  try {
+    const content = getEditorContent();
+    const newPath = document.getElementById('editor-path-input').value.trim();
+    const isRename = newPath !== currentFile;
+    const body = { message: '更新: ' + (isRename ? newPath : currentFile), content: b64encode(content), sha: currentEditor.sha };
+    const res = await apiFetch('/repos/' + REPO + '/contents/' + (isRename ? newPath : currentFile), { method: 'PUT', body });
+    if (!res.ok) { const d = await res.json(); throw new Error(d.message || '保存失败'); }
+    const data = await res.json();
+    if (isRename && newPath !== currentFile) { await apiFetch('/repos/' + REPO + '/contents/' + currentFile, { method: 'DELETE', body: { message: '重命名', sha: currentEditor.sha } }); currentFile = newPath; }
+    currentEditor.sha = data.content?.sha || currentEditor.sha;
+    unsavedChanges = false;
+    localStorage.removeItem('draft_' + currentFile);
+    showToast('已保存');
+    loadFileTree();
+  } catch(e) { showToast(e.message, 'error'); } finally { hideLoading(); }
+}
+function closeEditor() {
+  currentFile = null; currentEditor = null;
+  if (easyMDE) { easyMDE.toTextArea(); easyMDE = null; }
+  if (autoSaveTimer) { clearInterval(autoSaveTimer); autoSaveTimer = null; }
+  document.getElementById('content-main').innerHTML = '<div class="content-placeholder"><div style="font-size:48px">📄</div><div>选择左侧文件开始编辑</div></div>';
+}
+document.addEventListener('keydown', e => { if ((e.ctrlKey||e.metaKey) && e.key === 's') { e.preventDefault(); if (currentFile) saveFile(); } });
+window.addEventListener('beforeunload', e => { if (unsavedChanges) { e.preventDefault(); e.returnValue = ''; } });
+
+async function loadMediaLibrary() {
+  const pane = document.getElementById('pane-media');
+  pane.innerHTML = `<div class="upload-zone" id="upload-zone" onclick="document.getElementById('media-file-input').click()">
+    <div class="upload-icon">🖼️</div><div>拖放图片到此处或点击上传</div><div style="font-size:12px;color:var(--muted);margin-top:8px">支持多文件上传</div>
+    <input type="file" id="media-file-input" multiple accept="image/*" style="display:none" onchange="handleFileUpload(this.files)">
+  </div>
+  <div class="filter-bar"><input type="text" id="media-filter" placeholder="🔍 按文件名搜索..." oninput="filterMedia(this.value)"></div>
+  <div class="media-grid" id="media-grid"><div class="loading"></div></div>`;
+  const zone = document.getElementById('upload-zone');
+  zone.ondragover = e => { e.preventDefault(); zone.classList.add('dragover'); };
+  zone.ondragleave = () => zone.classList.remove('dragover');
+  zone.ondrop = e => { e.preventDefault(); zone.classList.remove('dragover'); handleFileUpload(e.dataTransfer.files); };
+  mediaFiles = [];
+  try {
+    const res = await apiFetch('/repos/' + REPO + '/contents/' + MEDIA_DIR);
+    if (res.ok) { const items = await res.json(); if (Array.isArray(items)) mediaFiles = items.filter(i => i.type === 'file'); }
+  } catch(e) {}
+  renderMediaGrid(mediaFiles);
+}
+function renderMediaGrid(files) {
+  const grid = document.getElementById('media-grid');
+  if (!files.length) { grid.innerHTML = '<div style="color:var(--muted);padding:20px">暂无图片</div>'; return; }
+  grid.innerHTML = files.map(f => {
+    const url = RAW_BASE + MEDIA_DIR + '/' + f.name;
+    return `<div class="media-card"><img src="${url}" alt="${f.name}" onclick="window.open('${url}','_blank')"><div class="media-info"><div class="media-name">${f.name}</div><div class="media-size">${(f.size/1024).toFixed(1)} KB</div></div><div class="media-actions"><button onclick="copyMediaUrl('${f.name}')">复制URL</button><button onclick="insertToEditor('${f.name}')">插入编辑器</button><button onclick="deleteMedia('${f.name}','${f.sha}')">删除</button></div></div>`;
+  }).join('');
+}
+function filterMedia(query) {
+  query = query.trim().toLowerCase();
+  renderMediaGrid(mediaFiles.filter(f => f.name.toLowerCase().includes(query)));
+}
+function copyMediaUrl(name) { navigator.clipboard.writeText('/images/' + name).then(() => showToast('已复制: /images/' + name)); }
+function insertToEditor(name) {
+  if (!easyMDE && !document.getElementById('mde-textarea')) { showToast('请先打开编辑器', 'warning'); return; }
+  const md = `![${name}](/images/${name})`;
+  if (easyMDE) { const cm = easyMDE.codemirror; cm.replaceSelection(md); } else { const ta = document.getElementById('mde-textarea'); ta.value += md; }
+  showToast('已插入');
+}
+async function handleFileUpload(files) {
+  if (!files || !files.length) return;
+  for (const file of files) {
+    if (!file.type.startsWith('image/')) { showToast(file.name + ' 不是图片', 'warning'); continue; }
+    showLoading('上传 ' + file.name + '...');
+    try {
+      const reader = new FileReader();
+      const base64 = await new Promise((resolve, reject) => { reader.onload = () => resolve(reader.result.split(',')[1]); reader.onerror = reject; reader.readAsDataURL(file); });
+      const path = MEDIA_DIR + '/' + file.name;
+      const res = await apiFetch('/repos/' + REPO + '/contents/' + path, { method: 'PUT', body: { message: '上传图片: ' + file.name, content: base64 } });
+      if (res.ok) showToast('已上传: ' + file.name); else { const d = await res.json(); throw new Error(d.message || '上传失败'); }
+    } catch(e) { showToast(e.message, 'error'); } finally { hideLoading(); }
+  }
+  loadMediaLibrary();
+}
+async function deleteMedia(name, sha) {
+  closeContextMenu();
+  confirmDialog('删除图片', `确定删除 <code>${name}</code> 吗？`, async () => {
+    showLoading('删除中...');
+    try {
+      const res = await apiFetch('/repos/' + REPO + '/contents/' + MEDIA_DIR + '/' + name, { method: 'DELETE', body: { message: '删除图片: ' + name, sha } });
+      if (res.ok) { showToast('已删除'); loadMediaLibrary(); } else throw new Error('删除失败');
+    } catch(e) { showToast(e.message, 'error'); } finally { hideLoading(); }
+  });
+}
+function insertImageFromLibrary() { switchTab('media'); showToast('点击图片卡片上的"插入编辑器"按钮', 'warning'); }
+
+async function saveDraft() {
+  if (!currentFile) return;
+  showLoading('保存草稿...');
+  try {
+    const content = getEditorContent();
+    const branchRes = await apiFetch('/repos/' + REPO + '/branches/draft');
+    if (!branchRes.ok) {
+      const mainRes = await apiFetch('/repos/' + REPO + '/branches/main');
+      if (!mainRes.ok) throw new Error('无法获取主分支');
+      const mainData = await mainRes.json();
+      const createRes = await apiFetch('/repos/' + REPO + '/git/refs', { method: 'POST', body: { ref: 'refs/heads/draft', sha: mainData.commit.sha } });
+      if (!createRes.ok) throw new Error('无法创建草稿分支');
+    }
+    let sha;
+    const fileRes = await apiFetch('/repos/' + REPO + '/contents/' + currentFile + '?ref=draft');
+    if (fileRes.ok) { const d = await fileRes.json(); sha = d.sha; }
+    const res = await apiFetch('/repos/' + REPO + '/contents/' + currentFile, { method: 'PUT', body: { message: '草稿: ' + currentFile, content: b64encode(content), sha, branch: 'draft' } });
+    if (!res.ok) { const d = await res.json(); throw new Error(d.message || '保存草稿失败'); }
+    showToast('已保存到草稿分支');
+    unsavedChanges = false;
+  } catch(e) { showToast(e.message, 'error'); } finally { hideLoading(); }
+}
+async function loadDraftStatus(path) {
+  try {
+    const res = await apiFetch('/repos/' + REPO + '/contents/' + path + '?ref=draft');
+    if (res.ok) {
+      const draftData = await res.json();
+      const draftContent = b64decode(draftData.content) || '';
+      if (draftContent !== currentEditor.content) { const el = document.getElementById('draft-indicator'); if (el) el.style.display = 'inline-block'; }
+    }
+  } catch(e) {}
+}
+async function publishContent() {
+  if (!currentFile) return;
+  showModal(`<h2>发布内容</h2><div class="modal-body"><p>步骤 1/3: 保存到草稿分支...</p><div id="publish-steps"></div></div><div class="modal-footer"><button class="btn btn-outline" onclick="closeModal()">取消</button><button class="btn btn-primary" id="publish-confirm-btn" onclick="executePublish()">开始发布</button></div>`);
+}
+async function executePublish() {
+  const steps = document.getElementById('publish-steps');
+  try {
+    steps.innerHTML = '<div>⏳ 保存到草稿分支...</div>';
+    await saveDraft();
+    steps.innerHTML = '<div>✅ 已保存草稿</div><div>⏳ 生成预览差异...</div>';
+    let mainContent = '', draftContent = '';
+    try { const r = await apiFetch('/repos/' + REPO + '/contents/' + currentFile); if (r.ok) mainContent = b64decode((await r.json()).content)||''; } catch(e){}
+    try { const r = await apiFetch('/repos/' + REPO + '/contents/' + currentFile + '?ref=draft'); if (r.ok) draftContent = b64decode((await r.json()).content)||''; } catch(e){}
+    const diff = generateDiff(mainContent, draftContent);
+    steps.innerHTML = '<div>✅ 已保存草稿</div><div>✅ 差异已生成</div><div style="margin-top:12px"><strong>步骤 2/3: 预览差异</strong></div>';
+    showModal(`<h2>发布预览</h2><div class="modal-body"><p>以下是将要发布到 main 分支的更改：</p><div class="diff-view" style="max-height:400px;overflow-y:auto;border:1px solid var(--border);border-radius:6px;padding:8px">${diff}</div></div><div class="modal-footer"><button class="btn btn-outline" onclick="closeModal()">取消</button><button class="btn btn-primary" onclick="executeMerge()">步骤 3/3: 确认发布</button></div>`, true);
+  } catch(e) { showToast(e.message, 'error'); }
+}
+function generateDiff(oldText, newText) {
+  const oldLines = oldText.split('\n'), newLines = newText.split('\n');
+  let html = '';
+  const maxLen = Math.max(oldLines.length, newLines.length);
+  for (let i = 0; i < maxLen; i++) {
+    const o = oldLines[i], n = newLines[i];
+    if (o === n) html += `<div class="diff-line diff-ctx"> ${escapeHtml(n||'')}</div>`;
+    else { if (o !== undefined) html += `<div class="diff-line diff-del">- ${escapeHtml(o)}</div>`; if (n !== undefined) html += `<div class="diff-line diff-add">+ ${escapeHtml(n)}</div>`; }
+  }
+  return html || '<div style="color:var(--muted)">无差异</div>';
+}
+async function executeMerge() {
+  closeModal(); showLoading('合并到 main...');
+  try {
+    const res = await apiFetch('/repos/' + REPO + '/merges', { method: 'POST', body: { base: 'main', head: 'draft', commit_message: '发布: ' + currentFile } });
+    if (!res.ok) throw new Error('合并失败');
+    showToast('已发布到 main');
+    const el = document.getElementById('draft-indicator'); if (el) el.style.display = 'none';
+    triggerDeploy();
+  } catch(e) { showToast(e.message, 'error'); } finally { hideLoading(); }
+}
+async function showVersionHistory(path) {
+  showModal(`<h2>版本历史</h2><div class="modal-body"><div class="loading"></div></div>`, true);
+  try {
+    const res = await apiFetch('/repos/' + REPO + '/commits?path=' + encodeURIComponent(path) + '&per_page=20');
+    if (!res.ok) throw new Error('获取历史失败');
+    const commits = await res.json();
+    const html = commits.map(c => `<li><div class="commit-msg">${escapeHtml(c.commit.message.split('\n')[0])}</div><div class="commit-meta"><span>${c.commit.author?.name||''}</span><span>${formatDate(c.commit.author?.date)}</span><div class="commit-actions"><button class="btn btn-outline btn-sm" onclick="viewCommitVersion('${path}','${c.sha}')">查看</button><button class="btn btn-outline btn-sm" onclick="rollbackFile('${path}','${c.sha}')">回滚</button></div></div></li>`).join('');
+    showModal(`<h2>版本历史 · ${path}</h2><div class="modal-body"><ul class="commit-list">${html}</ul></div><div class="modal-footer"><button class="btn btn-outline" onclick="closeModal()">关闭</button></div>`, true);
+  } catch(e) { showToast(e.message, 'error'); closeModal(); }
+}
+async function viewCommitVersion(path, sha) {
+  showLoading('获取版本内容...');
+  try {
+    const res = await apiFetch('/repos/' + REPO + '/contents/' + path + '?ref=' + sha);
+    if (!res.ok) throw new Error('获取失败');
+    const data = await res.json();
+    const content = b64decode(data.content) || '';
+    showModal(`<h2>版本内容 · ${sha.substring(0,7)}</h2><div class="modal-body"><pre style="white-space:pre-wrap;max-height:400px;overflow-y:auto;background:#f5f3ed;padding:12px;border-radius:6px;font-size:12px">${escapeHtml(content)}</pre></div><div class="modal-footer"><button class="btn btn-outline" onclick="showVersionHistory('${path}')">返回</button></div>`, true);
+  } catch(e) { showToast(e.message, 'error'); } finally { hideLoading(); }
+}
+async function rollbackFile(path, sha) {
+  confirmDialog('回滚文件', `确定将 <code>${path}</code> 回滚到 ${sha.substring(0,7)} 吗？`, async () => {
+    showLoading('回滚中...');
+    try {
+      const vRes = await apiFetch('/repos/' + REPO + '/contents/' + path + '?ref=' + sha);
+      if (!vRes.ok) throw new Error('获取版本失败');
+      const vData = await vRes.json();
+      const content = b64decode(vData.content) || '';
+      const fRes = await apiFetch('/repos/' + REPO + '/contents/' + path);
+      let fileSha; if (fRes.ok) { const fData = await fRes.json(); fileSha = fData.sha; }
+      const res = await apiFetch('/repos/' + REPO + '/contents/' + path, { method: 'PUT', body: { message: '回滚到 ' + sha.substring(0,7), content: b64encode(content), sha: fileSha } });
+      if (res.ok) { showToast('已回滚'); closeModal(); openFile(path); } else throw new Error('回滚失败');
+    } catch(e) { showToast(e.message, 'error'); } finally { hideLoading(); }
+  });
+}
+async function triggerDeploy() {
+  showLoading('触发部署...');
+  try {
+    const wfRes = await apiFetch('/repos/' + REPO + '/actions/workflows');
+    let workflowId = 'deploy.yml';
+    if (wfRes.ok) { const wfs = await wfRes.json(); if (wfs.workflows?.length) workflowId = wfs.workflows[0].id; }
+    const res = await apiFetch('/repos/' + REPO + '/actions/workflows/' + workflowId + '/dispatches', { method: 'POST', body: { ref: 'main', inputs: {} } });
+    if (res.ok || res.status === 204) showToast('部署已触发'); else { const d = await res.json().catch(()=>({})); throw new Error(d.message || '触发失败 (' + res.status + ')'); }
+  } catch(e) { showToast('部署触发: ' + e.message, 'warning'); } finally { hideLoading(); }
+}
+
+async function loadSettings() {
+  const pane = document.getElementById('pane-settings');
+  let configContent = '', deployHtml = '<div class="deploy-status idle">未触发部署</div>';
+  try {
+    const res = await apiFetch('/repos/' + REPO + '/contents/.vitepress/config.ts');
+    if (res.ok) { const data = await res.json(); configContent = b64decode(data.content) || ''; }
+  } catch(e) {}
+  try {
+    const r = await apiFetch('/repos/' + REPO + '/actions/runs?per_page=5');
+    if (r.ok) { const runs = await r.json(); if (runs.workflow_runs?.length) { deployHtml = runs.workflow_runs.slice(0,5).map(run => `<div class="deploy-status ${run.status==='completed'?(run.conclusion==='success'?'success':'failed'):'running'}"> ${run.status==='completed'?(run.conclusion==='success'?'✅':'❌'):'⏳'} ${escapeHtml(run.name)} · ${run.status} · ${formatDate(run.created_at)}</div>`).join(''); } }
+  } catch(e) {}
+  let tplHtml = '';
+  for (const [name, tpl] of Object.entries(TEMPLATES)) tplHtml += `<div class="template-card"><h4>${name}</h4><p>${tpl.sections.join(' · ')}</p></div>`;
+  pane.innerHTML = `<div class="settings-section"><h3>⚙️ VitePress 配置</h3><p style="margin-bottom:12px;color:var(--muted)">编辑 .vitepress/config.ts</p><textarea class="config-editor" id="config-editor">${escapeHtml(configContent)}</textarea><div style="margin-top:12px"><button class="btn btn-primary" onclick="saveConfig()">保存配置</button></div></div>
+  <div class="settings-section"><h3>📋 页面模板</h3><div class="template-grid">${tplHtml}</div></div>
+  <div class="settings-section"><h3>🚀 部署</h3>${deployHtml}<div style="margin-top:12px"><button class="btn btn-primary" onclick="triggerDeploy()">一键部署</button></div></div>`;
+}
+async function saveConfig() {
+  const content = document.getElementById('config-editor').value;
+  showLoading('保存配置...');
+  try {
+    const res = await apiFetch('/repos/' + REPO + '/contents/.vitepress/config.ts');
+    let sha; if (res.ok) sha = (await res.json()).sha;
+    const putRes = await apiFetch('/repos/' + REPO + '/contents/.vitepress/config.ts', { method: 'PUT', body: { message: '更新 VitePress 配置', content: b64encode(content), sha } });
+    if (putRes.ok) showToast('配置已保存'); else throw new Error('保存失败');
+  } catch(e) { showToast(e.message, 'error'); } finally { hideLoading(); }
+}
+
+if (token) { document.getElementById('token-input').value = token; doLogin(); }
+document.getElementById('modal-overlay').addEventListener('click', e => { if (e.target.id === 'modal-overlay') closeModal(); });
+
 </script>
 </body>
 </html>
