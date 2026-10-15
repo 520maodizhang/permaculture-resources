@@ -1,5 +1,7 @@
 # 朴门 Permaculture 知识体系
 
+>
+> 🌐 在线访问：[permaculture-design.surge.sh](https://permaculture-design.surge.sh) · [CMS 后台](https://permaculture-design.surge.sh/admin/)
 > 一个系统整理朴门（Permaculture）设计思想的开放知识库。
 > 不是文件堆，而是有骨架、有血肉、有学习路径的知识体系。
 
