@@ -102,6 +102,7 @@ export default defineConfig({
 
   head: [
     ['meta', { name: 'theme-color', content: '#2d7a3e' }],
+    ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
     ['meta', { property: 'og:title', content: '朴门永续设计知识库' }],
     ['meta', { property: 'og:description', content: '系统化朴门永续设计知识体系 · 33 本经典文献 · 12 设计原则 · 三大伦理' }],
     ['meta', { property: 'og:type', content: 'website' }],
