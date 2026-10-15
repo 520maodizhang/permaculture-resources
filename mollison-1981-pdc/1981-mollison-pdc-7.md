@@ -1,313 +1,73 @@
-#PERMACULTURE FOR FIRE CONTROL
+# 防火朴门 (Permaculture for Fire Control)
 
-##BY BILL MOLLISON
+## 作者：比尔·莫里森 (Bill Mollison)
 
-###Pamphlet VII in the Permaculture Design Course Series
+### 朴门设计课程系列 · 第 VII 册
 
-**PUBLISHED BY YANKEE PERMACULTURE**
+**本讲义可自由复制传播，鼓励广泛分发 (Public Domain)**
 
-**Publisher and Distributor of Permaculture Publications**
-
-**Barking Frogs Permaculture Center**
-
-**P.O. Box 69, Sparr FL 32192-0069 USA**
-
-Email: <mailto:YankeePerm@aol.com>
-
-<http://www.barkingfrogspermaculture.org>
-
-![Cover Image](pdcimages/7-cover.bmp)
-
-**Edited from the Transcript of the Permaculture Design Course**
-
-**The Rural Education Center, Wilton, NH USA 1981**
-
-**Reproduction of this Pamphlet Is Free and Encouraged**
-
-**Re-edited for Markdown and Ebooks by [Nathan Luedtke](mailto:luedtke@gmail.com) in 2014**
+> 1981 年比尔·莫里森在美国新罕布什尔州乡村教育中心所授朴门设计课程实录。
 
 ***
 
-###PERMACULTURE FOR FIRE CONTROL
+### 防火朴门
 
-Fire in a landscape is a subject that I want to treat very seriously.
-It is a common hazard.
+景观中的火是一个我想非常认真对待的主题。它是一种常见的灾害。
 
-Fire has a periodicity specific to the site. This fire periodicity
-depends on two factors: First, the rate that fuel accumulates
-on site. This is a critical factor. The second factor is the
-amount of moisture contained on site. Any ridge top is far
-more fire prone than its valley systems. Typically, the vegetation
-of ridge tops may even be fire-dependent, with species that
-germinate well after fire burns the ridges. In the valley, on the
-other hand, you may get species that may be killed by fire, but
-which burn very suddenly. While ridges are more fire-prone
-than their adjoining valleys, so are the sun-facing sites more
-fire prone than their shaded slopes.
+火有特定于地点的周期性。这个火灾周期取决于两个因素：第一，现场燃料积累的速率。这是一个关键因素。第二个因素是现场含水量。任何山脊顶部远比其山谷系统更易着火。典型地，山脊顶部的植被甚至可能是火依赖的，有在火烧山脊后发芽良好的物种。另一方面，在山谷中，你可能得到可能被火杀死的物种，但它们燃烧非常突然。山脊比相邻山谷更易着火，向阳坡也比阴坡更易着火。
 
-It is possible to work out the fire periodicity on site by examining
-the cross-section cut of an old tree in the area, or even
-from historical records of fire in the area. With a rainfall of 30
-to 40 inches, a catastrophic fire will occur about every 25 or
-30 years. I am not talking about a local spot fire. I am talking
-about a fire that races through a large area.
+可以通过检查该地区老树的横截面，甚至从该地区火灾的历史记录来确定火灾周期。在 30 到 40 英寸降雨下，灾难性火灾大约每 25 或 30 年发生一次。我不是在说局部点状火。我是在说席卷大面积的火。
 
-‘A lot can be done to change that cycle. Advantage is gained if
-it can be delayed even one period. The less a site burns, the
-less it is likely to burn, because there will be more humus and
-more moisture incorporated into the site. On the other hand,
-the more it burns, the more likely it is to burn again soon. This
-is because fire removes a lot of moisture-retaining humus and
-kills a lot more than it consumes, resulting in a fire prone litter
-build-up. So the periodicity can change to a very short term if
-an area continues to burn. Areas that naturally experience fire
-every thirtieth year will burn every eighth or tenth year, once
-they are being burned at shorter intervals. Fire is a very destructive
-influence.
+可以做很多来改变那个周期。如果能延迟一个周期就获得了优势。一个地方烧得越少，越不可能再烧，因为会有更多腐殖质和水分纳入该地。另一方面，烧得越多，越可能很快再烧。这是因为火去除了大量保水腐殖质，杀死的远比消耗的多，导致易燃枯枝落叶积累。所以如果一个地区持续燃烧，周期可以变成非常短。自然每三十年经历一次火的地区，一旦以更短间隔被烧，就会每八或十年烧一次。火是一种非常破坏性的影响。
 
-In permaculture landscapes, there are sequences of defense
-that you must throw up. What you must do is reduce
-fuel. That must be the primary strategy. You can do this by
-creating non-fuel surfaces, such as roads and ponds, by constructing
-swales and doing pit mulching, and reducing fuel by
-means of browsing or grazing.
+在朴门景观中，有一系列你必须建立的防御。你必须做的是减少燃料。那必须是首要策略。你可以通过创造非燃料表面如道路和池塘、建造浅洼和坑覆盖、以及通过放牧或啃食减少燃料来做到。
 
-It is very simple to protect the house site. You only need a
-hundred feet of non-fuel systems between the house and the
-forest. That is not very far; it is a raking job. Select plant species
-for this area that have fire-resistant characteristics, such
-as very high ash content, a very high water content, very low total
-bulk, and which grow densely. The ice plants, the
-, some of the thick-leaf evergreen plants, whose littler decomposes
-very fast, have leaves that are highly nutritious and
-don’t last very long on the ground. A list of plant species useful
-for fire control in any area varies with the climate. Fire departments
-in fire-prone areas are often able to make
-recommendations.
+保护房屋地点非常简单。你只需要房屋和森林之间一百英尺的非燃料系统。那不是很远；是个耙地的活。为这个区域选择具有抗火特性的植物物种，如非常高的灰分含量、非常高的含水量、非常低的总生物量，且密集生长。冰叶植物、一些厚叶常绿植物——其落叶分解非常快、叶子高营养且在地上不持久——适合此用。任何地区用于防火的植物物种列表随气候而异。易火地区的消防部门通常能提供建议。
 
-Some trees, particularly the pines, and many of the leaf species,
-are litter accumulators. They form a hard and volatile litter
-that simply builds up and carries very large ground fire. Do
-not use plants to the fire danger side -- the downhill side --
-which have high volatile oil content. Eucalypts are a positive nono,
-and so are pine trees. Both are to some extent fire weeds.
-Both carry cones and hard fruits that often don’t open until
-fires. After fires, you will see a widespread covering of new
-growth from the seed of these trees. That is what they are
-waiting for, a fire to enable them to extend their range a little.
+一些树，特别是松树和许多阔叶树种，是枯枝落叶积累者。它们形成硬且易挥发的枯落物，简单积累并携带非常大的地表火。不要在火险方向——下坡方向——使用高挥发油含量的植物。桉树是绝对不行的，松树也是。两者在某种程度上都是火杂草。两者都携带球果和硬果，往往直到火灾才打开。火灾后，你会看到这些树种种子广泛覆盖的新生长。那就是它们在等待的——一场火让它们稍微扩展范围。
 
-So you halt fires by working from the valleys upward with
-plantings of low fuel vegetation. Re-establish the rain forest
-that would be on the site if it did not burn. Bring in a lot of species
-that naturally occur in the valleys.
+所以你通过从山谷向上种植低燃料植被来阻止火。重建如果不烧会在该地点的雨林。带入大量自然出现在山谷中的物种。
 
-Now let us look at the fire itself. What does the fire do? It
-doesn’t burn much. It burns a few leaves, and perhaps buildings
-in its path. The real danger of fire is radiation. Four hundred
-feet before a fire, your hair catches alight. Two hundred
-feet, your body starts to split and your fat catches alight. At
-100 feet, you are a torch. Radiation kills birds hundreds of feet
-from the fire. They just fall out of the air. Fire kills pigs very
-quickly. They don’t stand radiation. Goats survive quite well.
-They just lean into it. And human beings are good at surviving a
-fire because they dodge about and hide behind shadows.
+现在让我们看火本身。火做什么？它烧的不多。烧一些叶子，也许还有路径上的建筑。火的真正危险是辐射。火前四百英尺，你的头发着火。两百英尺，你的身体开始裂开，你的脂肪着火。一百英尺，你是一把火炬。辐射杀死离火数百英尺的鸟。它们直接从空中掉下来。火很快杀死猪。它们受不了辐射。山羊存活得相当好。它们就靠上去。人类善于在火中存活，因为他们躲闪并藏在阴影后面。
 
-So we need to throw fire shadows over the central part of
-the system that contains our client. We do it with earth banks,
-and we do it with trees like willows and poplars that have high
-water content and that throw out a black cloud of steam. They
-don’t let radiation through. So on many sites that you will design,
-where fire will be a future hazard, you pay a lot of attention
-to setting up fire-protection. In California, almost every
-plant depends on fire, and all have high oils, because they have
-been selected through a long history of fires. Greece was once
-a land of wet rain forests, with enormous oak and columnar
-beeches. It has become a skeleton of its former self, and its
-fire frequency is up and up. Now you really can’t burn Greece
-because the dirt is burned, the plants are burned, the hills are
-burned, the rocks slip down hill and you can’t burn rocks. The
-whole of the Mediterranean and much of North Africa has
-reached this condition.
+所以我们需要在包含我们客户的核心系统上投下火阴影。我们用土堤来做，也用像柳树和杨树这样含水量高且抛出黑色蒸汽云的树来做。它们不让辐射通过。所以在你将设计的许多地点，如果火将是未来隐患，你要非常注意建立防火。在加利福尼亚，几乎每种植物都依赖火，都有高油，因为它们经过漫长的火灾历史被选择。希腊曾经是湿润雨林之地，有巨大的橡树和柱状山毛榉。它已成为昔日自我的骨架，火灾频率越来越高。现在你真的烧不了希腊了，因为土烧了，植物烧了，山烧了，岩石滑下山，你烧不了岩石。整个地中海和北非大部分已达到这种状况。
 
-What we must do is start reversing the process. If your
-client is in that chaparral, then you must pay particular attention
-to fire protection. You will have to give him somewhere to
-go to when a fire comes. You really can’t save him on the surface.
-So you dig a T-shaped or L-shaped pit and earth it all up. It
-can be a length of road conduit, earthed over. Then your clients
-can hop underground and wait it out. When they are out
-of the radiation, they are out of trouble. In Coventry and other
-areas that were burnt in war, there were fire storms. Standing
-in a fire shelter, I have watched the glass pouring out of the
-windows in my car. It is hot out there, you think. It melts out the
-bearings in your car. You can’t drive. Always duck behind things
-in a fire. Just get out of the radiation. And keep your mouth
-shut. Don’t breathe. Otherwise, your lungs burn out. So if you
-don’t breathe until you get behind things, you are all right. The
-main thing is not to be in direct radiation. Often you can dig a
-fire shelter into a bank with a backhoe. In some areas, this
-work of a few minutes may be the critical factor for survival.
+我们必须做的是开始逆转这个过程。如果你的客户在那个灌丛中，那么你必须特别注意防火。你必须给他一个火来时去的地方。你真的无法在地表救他。所以你挖一个 T 形或 L 形的坑并全部覆土。可以是一段道路管道，覆土。然后你的客户可以跳到地下等火过去。当他们脱离辐射时，他们脱离了危险。在考文垂和其他战争中烧过的地区，有火风暴。站在火庇护所中，我看着玻璃从我的车窗流出。外面很热，你想。它融化了你车的轴承。你开不了车。在火中总是躲到东西后面。只要脱离辐射。闭上嘴。不要呼吸。否则，你的肺烧坏。所以如果你在到东西后面之前不呼吸，你就没事。主要的是不要在直接辐射中。通常你可以用反铲在堤中挖一个火庇护所。在某些地区，这几分钟的工作可能是生存的关键因素。
 
-Otherwise, give good advise to your clients: "Go behind the
-house and sit down ’til the front of the house is alright. Then
-walk around to the front of the house, because the fire will
-have gone past." Instruct clients about the need for litter reduction
-on the ground. Give them good instruction in pit mulching
-and swaleing. If you have a very bad fire site, construct a
-few big swales, and cover the swales with old carpet so that
-you get a very fast rot down. Put in a whole lot of plants that
-are quite fire-proof. You can stand behind a Coprosma, and you
-don’t even feel the fire, just a hot steam bath.
+否则，给你的客户好的建议："到房子后面坐下，直到房子前面没事了。然后走到房子前面，因为火已经过去了。"指导客户关于地面枯落物减少的需要。给他们坑覆盖和浅洼的好指导。如果你有一个非常糟糕的火险地点，建几个大浅洼，用旧地毯覆盖浅洼使其快速腐烂。放入大量相当防火的植物。你可以站在一株 Coprosma 后面，甚至感觉不到火，只是一次热蒸汽浴。
 
-You can take advantage of the normal attributes of the raking
-animals, such as chickens. They break up that ground litter
-and mix it with oxygen so that it really breaks down. Short grazers,
-such as sheep and wallaby, on the fire side, will reduce the
-standing litter to one inch, and you will not need to worry about
-ground fire.
+你可以利用耙地动物的正常属性，如鸡。它们破碎地面枯落物并与氧混合使其真正分解。火险方向的短啃食者，如羊和沙袋鼠，会将站立枯落物减少到一英寸，你就不需要担心地表火了。
 
-Just experimentally, I have lit around mulches, and they are
-not a risk. Sawdust, too, is good safe mulch. Actually, you may
-get a half inch fire across the top. It starts to smolder burn,
-but it doesn’t go anywhere. It can be quickly put out. You don’t
-need to worry about mulches.
+实验性地，我在覆盖物周围点过火，它们不是风险。锯末也是好的安全覆盖。实际上，你可能得到顶部半英寸的火。它开始阴燃，但不去任何地方。可以很快扑灭。你不需要担心覆盖物。
 
-The primary protection in fire is to have good sprinklers
-down hill. If you can turn on a couple of those, you can sit on
-the front verandah and enjoy the sight of water pouring over
-the landscape before the fire gets there. I’ve seen water from
-the fireman’s hose coming six feet from the nozzle and going
-up in the air as steam. If, before a fire gets there, you’ve turned
-your sprinklers on, and the ground is wet, the fire won’t cross
-that ground. If the fire is already there when you put the sprinklers
-on, then the water doesn’t get very far out of the sprinkler.
-So you must start your defenses before the fire.
+防火的首要保护是在下坡有好的喷淋器。如果你能打开几个，你可以坐在前门廊上享受水在火到达之前倾泻过景观的景象。我见过消防员水管的水从喷嘴出来六英尺就变成蒸汽升空。如果在火到达之前你已经打开了喷淋器，地面是湿的，火不会越过那片地面。如果火已经在那里时你才开喷淋器，那水出不了喷淋器多远。所以你必须在火之前开始防御。
 
-Sprinkler systems on roofs are very critical. A house is lost
-when ashes fall all over the roof, slide down it, prop against
-chimneys and fill gutters. The wind is blowing; the heat returns
-in under the roof and catches tar paper and insulation, and
-starts burning from the ceiling under the roofing. That is the
-way 99% of houses ignite.
+屋顶上的喷淋系统非常关键。房屋是在灰烬落满屋顶、滑下、靠在烟囱上和填满檐沟时丢失的。风在吹；热量从屋顶下返回，点燃柏油纸和隔热层，从屋顶下的天花板开始烧。这是 99% 的房屋着火方式。
 
-The safest houses in fire are wooden. They have a 13 to 15
-percent higher survival than stone or brick, which is a surprise,
-of course. In analysis of some houses of equal risk that didn’t
-survive, the brick outnumbered wood. Almost without exception,
-stone houses are taken by fire. Stone transmits heat rapidly
-to the inner surfaces. Bricks are equally fast heat transmitters.
-You can burn a wood house with a blow torch if you go
-around catching it in a lot of places. But a wooden house is
-very resistant. Basically, wooden houses won’t transmit heat
-through the fabric, and their drafting systems are better than
-in brick houses. White painted wooden houses, and paint generally,
-anything that will reflect radiation, is a protection.
+火中最安全的房屋是木制的。它们的存活率比石或砖高 13 到 15%，这当然令人惊讶。在对一些同等风险未存活的房屋的分析中，砖多于木。几乎无一例外，石头房被火带走。石头快速将热传到内表面。砖同样快速传热。你可以用喷灯绕着木房在很多地方点火来烧它。但木房非常耐燃。基本上，木房不会通过织物传热，其通风系统比砖房好。白色涂漆木房，以及一般涂漆，任何能反射辐射的东西，都是一种保护。
 
-When you are planning for fire, you must specify the use of
-screens and fire hardware mesh, so that large particles cannot
-enter the house system. The gutters should also be
-screened. Wherever you are experiencing snow, fire, or heavy
-leaf drop on the roof, it becomes necessary to put a rolledunder
-section on the bottom edge of the roof, and put the gutter
-back under, below that. Leaves will fall off. They can’t get in
-the gutter. Snow will slide off. When snow melts, the melt will
-go into the gutter. Fire ash will slide down and fall off. It won’t
-get caught in the gutter, either. That is a good device, and it
-can be fitted to existing roofs.
+当你为火规划时，你必须指定使用纱网和防火金属网，使大颗粒不能进入房屋系统。檐沟也应加网。无论你经历雪、火还是屋顶大量落叶，都有必要在屋顶底边做一个卷边，把檐沟放回下面。叶子会掉落。它们进不了檐沟。雪会滑下。雪融化时，融水进入檐沟。火灰会滑下掉落。也不会卡在檐沟中。这是一个好装置，可以安装在现有屋顶上。
 
-![Rolled Roof Section diagram - Illustration from Permaculture II by Bill Mollison, © 1979, all rights reserved.. Published by Tagari,31 Rulla Rd.,
-Sisters Creek TAS 73215 AUSTRALIA, Reproduced with permission.](pdcimages/7-fig1.bmp)
+![Rolled Roof Section diagram](pdcimages/7-fig1.bmp)
 
-Put a monsoon sprinkler on the ridge of the roof. It is only
-going to operate for a short period while the ash is falling. It will
-be the most sensible fixture that you can put on a house. The
-tap to it should be outside. Turn it on, and the whole house is
-being washed down for an essential half hour. The roof is continually
-washed, and the gutters are flowing. For this, you will
-need a gravity system, and it needs to be yours, because if it is
-part of a public system, every body will be drawing on it, and,
-likely, the system will be inadequate.
+在屋顶脊上放一个季风喷淋器。它只在灰烬下落的短时间内运作。它将是你能安装在房屋上最明智的装置。它的龙头应该在外面。打开它，整个房屋被冲洗关键半小时。屋顶持续冲洗，檐沟在流。为此，你需要一个重力系统，且需要是你自己的，因为如果是公共系统的一部分，每个人都会抽，系统很可能不够。
 
-You must say to your client, "Well, look, we will give you a few
-simple specifics in housing design, and you must watch how
-you lay out your roads and ponds. That will give you a much better
-chance of survival." Also, advise your client about how to
-proceed in case of fire.
+你必须对你的客户说："看，我们会给你一些房屋设计的简单细节，你必须注意道路和池塘的布局。那会给你更好的生存机会。"同时，建议你的客户火灾时如何行动。
 
-Fire builds up to high intensity about 2:00 to 3:00 p.m. Inevitably,
-the people at home are people with young children. Mostly,
-they won’t have a vehicle. They are a vulnerable group, and
-they must be told what to do. If the fire comes from this side,
-they have to stand here with their woolies on, woolen jackets,
-blankets over them, and a bucket of water so that wool won’t
-burn. Then go into this little shelter that we have provided and
-have a drink of water. We should try to get water in there. It’s
-worth it. Just walk in there and sit down, and leave your woolen
-blanket in the water. Dig that shelter into a little hill just at the
-back of the house, normally away from the fire, on the slope.
-Go maybe six feet deep. Open your back door, and hop down
-into your little root cellar, which is also a fire shelter. We must
-look after the people in ways like that.
+火在下午 2:00 到 3:00 达到最高强度。不可避免地，在家的人是有小孩的人。大多数时候，他们没有车。他们是一个脆弱群体，必须被告知怎么做。如果火从这边来，他们必须站在这里，穿上羊毛衫、羊毛夹克，盖上毯子，还有一桶水使羊毛不烧。然后进入我们提供的小庇护所喝口水。我们应该设法在里面放水。值得的。走进去坐下，把羊毛毯留在水中。把那个庇护所挖在房子后面的小山上，通常远离火，在坡上。也许六英尺深。打开后门，跳下你的小根窖，它也是火庇护所。我们必须以这样的方式照顾人。
 
-Advise people never to jump into water in fire. That is another
-no-no. There is no oxygen left in the water and they will faint
-straight away. It is like painting somebody’s body. We breathe a
-lot through our skins. The fish already are dying from oxygen
-loss before fires ever get there. The people in the water will
-faint and drown. So jumping in the pond is a no-no.
+建议人们永远不要在火中跳入水中。那是另一个禁忌。水中没有氧气留下，他们会立刻晕倒。就像给人身体刷漆一样。我们通过皮肤大量呼吸。鱼在火到达之前就已经因缺氧而死。水中的人会晕倒并淹死。所以跳进池塘是禁忌。
 
-In some areas, we will totally ignore this whole business, because
-for most of their history, those areas never burned. The
-prospects of a sweeping fire are remote.
+在某些地区，我们会完全忽略这整个事情，因为在它们大部分历史中，那些地区从未烧过。大火席卷的前景很遥远。
 
-Even in humid climates, high forested areas in the continental
-interior are not invulnerable to fire. When things dry up, and
-the wind whips about at 50 to 60 miles an hour, just a backfire
-from a car can set the whole area aflame. Fire travels about
-400 miles an hour. There is no running away from it; no driving
-away from it. When fire starts, it spirals up, and increases in
-breadth at the base. You will be looking up at the sky, and there
-is half of somebody’s house, way ahead of the fire -- an incredible
-sight. You will be looking up at a blue sky, an upstream of
-smoke, and there goes that burning house, a great fire in the
-sky. Then it drops. At that point another spiral starts up. These
-big spirals go up, taking everything that is burning with them,
-then drop it out, to start new spirals. A fire will cover a thousand
-square miles in an hour. So most people who are in it are
-in it. You can’t go away from it. You have to just hold your
-place and sit it out. Don’t start running. Don’t try to run ahead
-of it. You have more chance of surviving a fire if you run
-straight at it. If you run away from it you are dead. You have to
-just hold your place and sit it out. Don’t start running. You can’t
-drive your car, because the petrol will evaporate. Unlike Hollywood,
-gas tanks never blow up; cars never catch alight; only
-the tires do.
+即使在湿润气候中，大陆内部的高森林区也不是不可侵犯的。当东西干起来，风以 50 到 60 英里时速乱刮时，仅一辆车的回火就能点燃整个区域。火以约 400 英里时速传播。没有跑开；没有开走。火开始时，它螺旋上升，底部宽度增加。你会仰望天空，有半栋某人的房子，远在火的前面——难以置信的景象。你会仰望蓝天，一股上游烟雾，那栋燃烧的房子飞过，天空中的一场大火。然后它落下。那时另一个螺旋开始。这些大螺旋上升，带走一切燃烧的东西，然后丢下，开始新的螺旋。火一小时覆盖一千平方英里。所以大多数在其中的人就在其中。你无法离开它。你必须坚守你的位置坐等。不要开始跑。不要试图跑在它前面。如果你直冲火跑，生存机会更大。如果你跑离它，你死定了。你必须坚守位置坐等。不要开始跑。你开不了车，因为汽油会蒸发。与好莱坞不同，油箱从不爆炸；车从不着火；只有轮胎会。
 
-The sensible thing to do with high explosives, like drums of
-fuel and the like, is to store them away from a living situation,
-have them in separate sheds, a bit dispersed. When one ignites,
-it doesn’t ignite the others.
+对高爆炸物如燃料桶之类，明智的做法是远离居住环境储存，放在分开的棚中，分散一点。一个着了不会点燃其他。
 
-Don’t put your poor client at the head of a converging valley
-in the saddle. Don’t put your client where you would normally
-put an efficient windmill. Don’t put him where the ridges converge.
-No, no!
+不要把你可怜的客户放在会聚山谷的源头鞍部。不要把你的客户放在你通常放高效风车的地方。不要把他放在山脊会聚处。不，不！
 
-I witnessed an example of landscape architecture in an Australian
-fire-prone site. I was driving by this place, and I looked at
-this house -- I couldn’t believe it! There was an acre of fire-promoting
-vegetation just across the way, converging eucalyptus
-trees with pampas grass. It had been constructed by a
-landscape architect. While the aesthetics were reasonable;
-the function could be fatal.
+我目睹了一个澳大利亚易火地点的景观建筑例子。我开车经过这个地方，看到这栋房子——我不敢相信！对面有一英亩促进火灾的植被，会聚的桉树加潘帕草。它由一位景观建筑师建造。虽然美学还可以；功能可能是致命的。
 
-So in my mind, function always comes first, then aesthetics.
-A good function is often a very pleasing aesthetic. He could
-have had a couple fire banks up the driveway. We could have
-had given him a pond and, just below it, a Coprosma hedge.
+所以在我心中，功能永远第一，然后是美学。好的功能往往是非常悦人的美学。他本可以在车道上建几道防火堤。我们本可以给他一个池塘，就在下面，一排 Coprosma 篱笆。
 
-Construct the pond in front of the house, with your road beside
-it. The bank of the pond should rise toward the fire side.
-You will find that there isn’t any conflict between good fire control
-and good placement of your elements. But if you don’t have
-the initial planning, all sorts of things can go wrong.
+在房子前面建池塘，旁边是你的路。池塘的岸应朝火险方向升高。你会发现好的防火和好的元素布局之间没有冲突。但如果你没有初始规划，各种事情都可能出错。
